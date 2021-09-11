@@ -11,7 +11,7 @@ https://www.dixitpc.com.ar/
 Integrantes:
 ## Levy Ivan. 
 ## Jorge Géza Mátray Esteban. 
-## Mussa, Marco
+## Mussa, Marco 
 
 Acerca de: 
 Geza: Actualmente estoy estudiando desarrollo web, mientras trabajo reparando pcs y haciendo impresión 3d. 
