@@ -1,8 +1,7 @@
 
  fonts:
 
- https://fonts.google.com/specimen/Glory
  https://fonts.google.com/specimen/Oswald
  https://fonts.google.com/specimen/Ubuntu
- https://fonts.google.com/specimen/PT+Serif
+ 
 

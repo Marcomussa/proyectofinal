@@ -9,13 +9,18 @@ https://www.maximus.com.ar/
 https://www.dixitpc.com.ar/
 
 Integrantes:
-## Levy Ivan. 
-## Jorge Géza Mátray Esteban. 
-## Mussa, Marco 
+
+## Levy, Ivan. 
+## Mátray, Géza. 
+## Mussa, Marco. 
 
 Acerca de: 
-Geza: Actualmente estoy estudiando desarrollo web, mientras trabajo reparando pcs y haciendo impresión 3d. 
+
+Ivan: Estoy estudiando informática en primer año, me gusta el diseño y usar las herramientas de adobe. Mis hobbies son mirar futbol y entrenar. 
+
+Géza: Actualmente estoy estudiando desarrollo web, mientras trabajo reparando pcs y haciendo impresión 3d. 
 
 Marco: Estudio Ing. en Computacion en UNTREF. Mi hobbie es andar en bmx, leer y programar.
 
-Ivan: Estoy estudiando informática en primer año, me gusta el diseño y usar las herramientas de adobe. Mis hobbies son mirar futbol y entrenar. 
+
+Enlace de Trello : https://trello.com/b/n8mfm30o/trabajo-integrador-eq-11
