@@ -23,4 +23,4 @@ Géza: Actualmente estoy estudiando desarrollo web, mientras trabajo reparando p
 Marco: Estudio Ing. en Computacion en UNTREF. Mi hobbie es andar en bmx, leer y programar.
 
 
-Enlace de Trello : https://trello.com/b/n8mfm30o/trabajo-integrador-eq-11
+Enlace al tablero de trabajo: https://trello.com/b/n8mfm30o/trabajo-integrador-eq-11
