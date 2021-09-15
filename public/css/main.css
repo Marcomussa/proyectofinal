@@ -1,16 +1,79 @@
 /* Main */
 
-/* Nav */
-nav {
-    background: peru;
+/* Nav & Footer */
+nav,
+footer {
+    background: rgba(0,0,0,0.2);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;
+    margin-bottom: 10px;
 }
 
-nav ul li{
+.contendedorLogo img {
+    width: 100%;
+}
+
+nav ul li,
+footer .redesSociales ul li,
+footer .linksFooter ul li{
     display: inline-block;
-    margin-left: 10px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+footer .redesSociales {
+    width: 25%;
+    padding: 10px;
+}
+
+footer .redesSociales p {
+    font-size: 26px;
+}
+
+footer .redesSociales ul li {
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .redesSociales ul li a i {
+    font-size: 25px;
+}
+
+footer .linksFooter {
+    width: 50%;
+}
+
+footer .linksFooter ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .linksFooter .contenedorLogo {
+    width: 25%;
+}
+
+.fa-facebook-square {
+    color: rgb(66,103,178);
+}
+.fa-instagram-square {
+    color: rgb(233, 89, 80);
+}
+.fa-whatsapp-square {
+    color: rgb(37, 211, 102);
+}
+.fa-twitter-square {
+    color: rgb(29, 161, 242)
 }
