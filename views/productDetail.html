@@ -15,9 +15,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <!-- navbar -->
 
+    <!-- navbar -->
+
+    <nav>
+        <div class="contenedorLogo">
+            <img src="/public/img/logo.svg" alt="">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- producto elegido -->
@@ -26,13 +39,13 @@
         <img src="" alt="" class="imagenProducto">
         <h3 class="nombreProducto">Product name</h3>
         <h4 class="botonProducto">Price</h4> <!-- en un cuadrado -->
-            <div class="ofertaProducto">
-                <p class="oferta"><!-- oferta e icon --></p>
-                <p class="oferta"><!-- oferta e icon --></p>
-            </div>
-        <button class="añadirProducto"><!--icon--> Añadir producto</button>
-        <button class="añadirProducto"><!--icon--> Comprar producto</button>
+        <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
+        <button class="añadirProducto"> Comprar</button> <br>
         <a href="#" class="pagoProducto">Metodos de pago</a>
+        <div class="ofertaProducto">
+            <p class="oferta"><i class="fas fa-shipping-fast"></i> envio</p>
+            <p class="oferta"><i class="fas fa-percent"></i> cuotas</p>
+        </div>
     </section>
     <!-- descripcion del producto -->
     <section class="descripcionProducto">
@@ -46,22 +59,46 @@
             <img src="#" alt="" class="imagenSimilar">
             <h3 class="nombreSimilar">nombre</h3>
             <p class="precioSimilar">$Precio</p>
+            <a href="#">Comprar</a>
         </div>
         <div class="productoSimilar">
             <img src="#" alt="" class="imagenSimilar">
             <h3 class="nombreSimilar">nombre</h3>
             <p class="precioSimilar">$Precio</p>
+            <a href="#">Comprar</a>
         </div>
         <div class="productoSimilar">
             <img src="#" alt="" class="imagenSimilar">
             <h3 class="nombreSimilar">nombre</h3>
             <p class="precioSimilar">$Precio</p>
+            <a href="#">Comprar</a>
         </div>
     </section>
 
     <!-- footer -->
     <footer>
-        
+        <div class="redesSociales">
+            <p>Redes Sociales</p>
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="linksFooter">
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="contenedorLogo">
+            <img src="/public/img/logo.svg" alt="">
+        </div>
     </footer>
 </body>
 </html>
