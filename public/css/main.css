@@ -1,1 +1,16 @@
 /* Main */
+
+/* Nav */
+nav {
+    background: peru;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
