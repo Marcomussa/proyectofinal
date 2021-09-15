@@ -7,7 +7,7 @@
     -terminar el footer
     -hacer login y register
   -ivo:
-    -terminar el productdetail
-    -terminar el login
+    -terminar el Productdetailm
+    -terminar el Login
    
 opcional: investigar algo por fuera de lo que explican en las clases.
