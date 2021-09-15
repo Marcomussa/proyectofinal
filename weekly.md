@@ -1,13 +1,13 @@
 ## Semana 1 - sprint 2
   **Objetivos**
   -geza: 
-    -terminal el register
-    -terminar el productCart
+    -terminar el Home
+    -terminal el Register
   -marco:
-    -terminal el navbar
-    -terminar el footer
+    -terminal el Navbar
+    -terminar el Footer
   -ivo:
-    -terminar el productdetail
-    -terminar el login
+    -terminar el Productdetail
+    -terminar el Login
    
 opcional: investigar algo por fuera de lo que explican en las clases
