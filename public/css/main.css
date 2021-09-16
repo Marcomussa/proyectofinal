@@ -9,7 +9,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;
-    margin-bottom: 10px;
 }
 
 .contendedorLogo img {
@@ -84,6 +83,8 @@ footer .linksFooter .contenedorLogo {
 .contenedorLogIn {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0px;
+    background: rgba(255,255,255,0.5);
 }
 
 .contenedorLogIn .aside {
@@ -92,7 +93,7 @@ footer .linksFooter .contenedorLogo {
 }
 .contenedorLogIn .logIn {
     width: 60%;
-    border-left: 5px solid black;
+    border-left: 3px solid black;
     text-align: center;
 }
 .contenedorLogIn .logIn .logInExterno,
@@ -107,7 +108,7 @@ footer .linksFooter .contenedorLogo {
 .contenedorLogIn .logIn .logInExterno button, 
 .contenedorLogIn .logIn .logInInterno input {
     margin: 10px 0px;
-    width: 30%;
+    width: 40%;
 }
 
 .contenedorLogIn .logIn .logInInterno button,
@@ -116,5 +117,11 @@ footer .linksFooter .contenedorLogo {
 }
 
 .contenedorLogIn .logIn .nuevoCliente {
-    margin-top: 10px;
+    margin: 20px 0px;
+    border-top: 2px solid black;
+}
+
+.contenedorLogIn .logIn .nuevoCliente p {
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
