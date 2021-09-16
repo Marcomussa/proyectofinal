@@ -3,7 +3,7 @@
 /* Nav & Footer */
 nav,
 footer {
-    background: rgba(0,0,0,0.2);
+    background: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,9 @@ footer {
 .contendedorLogo img {
     width: 100%;
 }
-
+nav div ul li a{
+    color: black;
+}
 nav ul li,
 footer .redesSociales ul li,
 footer .linksFooter ul li{
@@ -76,4 +78,43 @@ footer .linksFooter .contenedorLogo {
 }
 .fa-twitter-square {
     color: rgb(29, 161, 242)
+}
+
+/* Log In Formulario */
+.contenedorLogIn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedorLogIn .aside {
+    width: 40%;
+    height: 10px;
+}
+.contenedorLogIn .logIn {
+    width: 60%;
+    border-left: 5px solid black;
+    text-align: center;
+}
+.contenedorLogIn .logIn .logInExterno,
+.contenedorLogIn .logIn .logInInterno ,
+.contenedorLogIn .logIn .nuevoCliente  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contenedorLogIn .logIn .logInExterno button, 
+.contenedorLogIn .logIn .logInInterno input {
+    margin: 10px 0px;
+    width: 30%;
+}
+
+.contenedorLogIn .logIn .logInInterno button,
+.contenedorLogIn .logIn .nuevoCliente button {
+    width: 15%;
+}
+
+.contenedorLogIn .logIn .nuevoCliente {
+    margin-top: 10px;
 }
