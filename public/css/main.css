@@ -125,3 +125,15 @@ footer .linksFooter .contenedorLogo {
     margin-top: 20px;
     margin-bottom: 5px;
 }
+
+/* product Detail */
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2opx;
+    
+}
+
+
+/* carusel */
