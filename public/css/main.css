@@ -1,5 +1,161 @@
 /* Main */
 
+.contenedorHome{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    
+    
+}
+.contenedorBanner {
+    width: 100%;height: 30vh;
+    align-self: center;
+    border: 1px white solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorBotonesHome {
+    width: 100%;height: 10vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+/* bontones */
+.bontonesHome {
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#0a0909;
+    border-color: #1d1c1c;
+    border-width: 3px;
+    border-style: solid;
+}
+.contenedorOfertas{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    padding: 2vw;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+/* Ofertas */
+.contenedorOfertas a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.contenedorOfertasSeccion {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    flex-direction: row;
+}
+
+/* contenedor de tarjeta de producto */
+.tarjetaProducto {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+    align-items: center;
+}
+.imagenProducto {
+    width: 20vw;
+    padding: 3px;
+    height: 465px;
+}
+.infoProducto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3px;
+}
+.nombreProducto {
+    font-size: 2rem;
+}
+.precioProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.precioTotalProducto {
+    font-weight: 700;
+    font-size: 1.4rem;
+    
+}
+.precioDescuentoProducto {
+    color: green;
+}
+/* lo + vendido */
+.contenedorVendido {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    padding: 2vw;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+.contenedorVendido a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.contenedorVendidoSeccion {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    flex-direction: row;
+}
+/* contenedor de tarjeta de lo + vendido */
+.tarjetaVendido {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+    align-items: center;
+}
+.imagenVendido {
+    width: 20vw;
+    padding: 3px;
+}
+.infoVendido {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3px;
+}
+.nombreVendido {
+    font-size: 2rem;
+}
+.precioVendido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.precioTotalVendido {
+    font-weight: 700;
+    font-size: 1.4rem;
+    
+}
+.precioDescuentoVendido {
+    color: green;
+}
+
 /* Nav & Footer */
 nav,
 footer {
