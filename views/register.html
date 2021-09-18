@@ -39,18 +39,22 @@
                 <input type="text" placeholder="name" class="name">
                 <input type="text" placeholder="email" class="email">
                 <input type="password" placeholder="contrasena" class="contrasena">
-                <input type="password" placeholder="repetir contraseña" class="contrasena">
-                <span class="terminos"><i class="far fa-square"></i> Acepto todas las condiciones de uso.</span>
-                <span class="terminos"><i class="far fa-square"></i> Quiero que me envien notificaciones</span>
+                <input type="password" placeholder="repetir contraseña" class="contrasena" required>
+              
+    <form class="condiciones">
+        <input type="checkbox" name="terminos" id="terminos" value="terminos" checked>
+         <label for="terminos"><a href="#" class="linkTerminos">Acepto los terminos</a></label>
+    </form>
+                <button class="botonRegistro">Registrarse</button>
                 <a href="/views/login.html" class="tengoCuenta">Ya tengo una cuenta</a>
-                <button>Registrarse</button>
+
             </div>
             <div class="nuevoCliente">
                 <div class="logInExterno">
                     <span>o sino</span>
-                    <button>Sign in con Google</button>
-                    <button>Sign In con Facebook</button>
-                    <button>Sign In con Apple</button>
+                    <button class="iniciar">Sign in con Google</button>
+                    <button class="iniciar">Sign In con Facebook</button>
+                    <button class="iniciar">Sign In con Apple</button>
                 </div>
             </div>
         </article>
