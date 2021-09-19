@@ -283,17 +283,49 @@ footer .linksFooter .contenedorLogo {
 }
 
 /* product Detail */
+.nombreProducto{
+    text-align: center;
+    font-size: 35px;
+}
 .producto{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 2opx;
+    padding: 20px;
+    justify-content: space-around;  
+    box-sizing: border-box;
+}
+
+/* datos del producto */
+.datosProducto{
+    margin-right: 100px;
+}
+
+.oferta{
     
 }
 
+.añadirProducto{
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#0a0909;
+    border-color: #1d1c1c;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
 
 /* carusel */
-
+  
 
 /* register */
 .condiciones{
@@ -307,3 +339,22 @@ footer .linksFooter .contenedorLogo {
 .linkTerminos:hover{
     color: crimson;
 }
+
+
+/* similares */
+.similares{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+.productoSimilar{
+    padding: 30px;
+}
+.busquedas{
+    display: flex;
+    margin-top: 50px;
+}
+
+
