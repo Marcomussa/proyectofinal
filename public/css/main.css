@@ -186,7 +186,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 footer .redesSociales {
@@ -245,7 +245,23 @@ footer .linksFooter .contenedorLogo {
 
 .contenedorLogIn .aside {
     width: 40%;
-    height: 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.contenedorLogIn .aside div{
+    width: 50%;
+    margin: 20px 0px;
+    text-align: center;
+}
+.contenedorLogIn .aside div p {
+    margin-top: 10px;
+}
+.contenedorLogIn .aside div i {
+    font-size: 50px;
+    padding-right: 10px;
 }
 .contenedorLogIn .logIn {
     width: 60%;
@@ -299,10 +315,6 @@ footer .linksFooter .contenedorLogo {
 /* datos del producto */
 .datosProducto{
     margin-right: 100px;
-}
-
-.oferta{
-    
 }
 
 .añadirProducto{

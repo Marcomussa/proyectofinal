@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script defer src="../app.js"></script>
 </head>
 <body>
     <nav>
@@ -23,33 +24,43 @@
         </div>
         <div>
             <ul>
-                <li><a href="#">A</a></li>
-                <li><a href="#">B</a></li>
-                <li><a href="#">C</a></li>
-                <li><a href="#">D</a></li>
-                <li><a href="#">E</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="#">Wishlist</a></li>
             </ul>
         </div>
     </nav>
     <section class="contenedorLogIn">
-        <article class="aside"></article>   
+        <article class="aside">
+            <div class="logoEnvios">
+                <i class="fas fa-truck"></i>
+                <p>Envios gratis a toda Argentina en compras superiores a $5000</p>
+            </div>
+            <div class="logoListaDeseos">
+                <i class="fas fa-thumbtack"></i>
+                <p>Utiliza la Lista de Deseos para guardar tus productos favoritos</p>
+            </div>
+        </article>   
         <article class="logIn">
             <h3>Log In</h3>
             <div class="logInExterno">
-                <button>Log In con Google</button>
-                <button>Log In con Facebook</button>
-                <button>Log In con Apple</button>
+                <button class='btn btn-primary'>Log In con Google</button>
+                <button class='btn btn-primary'>Log In con Facebook</button>
+                <button class='btn btn-primary'>Log In con Apple</button>
             </div>
             <span class="separadorLogIn">OR</span>
             <div class="logInInterno">
-                <input type="text" placeholder="email" class="email">
-                <input type="password" placeholder="contrasena" class="contrasena">
+                <input type="text" placeholder="email" class="email form-control" id="inputLogInEmail">
+                <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
+                <div id="logInErrores"></div>
                 <p><a href="#">Olvide mi contrasena</a></p>
-                <button>Ingresar</button>
+                <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
             </div>
             <div class="nuevoCliente">
                 <p>Nuevo Cliente?</p>
-                <button>Crear Cuenta</button>
+                <button class="btn btn-success">Crear Cuenta</button>
             </div>
         </article>
     </section>
