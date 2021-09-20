@@ -55,22 +55,18 @@
                 <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
                 <div id="logInErrores"></div>
                 <p><a href="#">Olvide mi contrasena</a></p>
-                <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
-            </div>
-            <div class="nuevoCliente">
-                <p>Nuevo Cliente?</p>
-                <button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button>
+                <div class="botonesLogIn">
+                    <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
+                    <button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button>
+                </div>
             </div>
             <div class="crearCuenta" id="crearCuenta">
-                <div class="nombreApellido">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                </div>
-                <div class="emailCrearCuenta">
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="passwordCrearCuenta">
-                    <input type="password" placeholder="Contrasena">
+                <div class="contenedorCrearCuenta">
+                    <input type="text" placeholder="Nombre" class="form-control">
+                    <input type="text" placeholder="Apellido" class="form-control">
+                    <input type="text" placeholder="Email" class="form-control">
+                    <input type="password" placeholder="Contrasena" class="form-control">
+                    <button class="btn btn-success">Crear Cuenta</button>
                 </div>
             </div>
         </article>

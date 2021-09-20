@@ -270,7 +270,8 @@ footer .linksFooter .contenedorLogo {
 }
 .contenedorLogIn .logIn .logInExterno,
 .contenedorLogIn .logIn .logInInterno ,
-.contenedorLogIn .logIn .nuevoCliente  {
+.contenedorLogIn .logIn .nuevoCliente,
+.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -278,9 +279,14 @@ footer .linksFooter .contenedorLogo {
     align-items: center;
 }
 .contenedorLogIn .logIn .logInExterno button, 
-.contenedorLogIn .logIn .logInInterno input {
+.contenedorLogIn .logIn .logInInterno input ,
+.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
     margin: 10px 0px;
     width: 40%;
+}
+
+.contenedorLogIn .logIn .logInInterno .botonesLogIn {
+    width: 100%;
 }
 
 .contenedorLogIn .logIn .logInInterno button,
@@ -288,22 +294,9 @@ footer .linksFooter .contenedorLogo {
     width: 15%;
 }
 
-.contenedorLogIn .logIn .nuevoCliente {
-    margin: 20px 0px;
-    border-top: 2px solid black;
-}
-
-.contenedorLogIn .logIn .nuevoCliente p {
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-.contenedorLogIn .logIn .crearCuenta .a{    
-    display: flex;
-    flex-wrap: wrap;
-}
 .contenedorLogIn .logIn .crearCuenta {
     display: none;
+    margin-top: 30px;
 }
 
 /* product Detail */
