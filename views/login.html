@@ -44,11 +44,10 @@
             </div>
         </article>   
         <article class="logIn">
-            <h3>Log In</h3>
+            <h3>Iniciar Sesion</h3>
             <div class="logInExterno">
-                <button class='btn btn-primary'>Log In con Google</button>
-                <button class='btn btn-primary'>Log In con Facebook</button>
-                <button class='btn btn-primary'>Log In con Apple</button>
+                <button class='btn btn-primary'>Iniciar con Google</button>
+                <button class='btn btn-primary'>Iniciar con Facebook</button>
             </div>
             <span class="separadorLogIn">OR</span>
             <div class="logInInterno">
@@ -60,7 +59,19 @@
             </div>
             <div class="nuevoCliente">
                 <p>Nuevo Cliente?</p>
-                <button class="btn btn-success">Crear Cuenta</button>
+                <button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button>
+            </div>
+            <div class="crearCuenta" id="crearCuenta">
+                <div class="nombreApellido">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <div class="emailCrearCuenta">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="passwordCrearCuenta">
+                    <input type="password" placeholder="Contrasena">
+                </div>
             </div>
         </article>
     </section>

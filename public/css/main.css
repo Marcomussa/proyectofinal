@@ -298,6 +298,14 @@ footer .linksFooter .contenedorLogo {
     margin-bottom: 5px;
 }
 
+.contenedorLogIn .logIn .crearCuenta .a{    
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorLogIn .logIn .crearCuenta {
+    display: none;
+}
+
 /* product Detail */
 .nombreProducto{
     text-align: center;
