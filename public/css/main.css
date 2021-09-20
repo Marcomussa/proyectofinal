@@ -334,6 +334,11 @@ footer .linksFooter .contenedorLogo {
     font-size: 15px;
     box-sizing: border-box;
 }
+.precioProducto{
+    font-size: 35px;
+    border: solid 3px #ab179e;
+    margin: 10px;
+}
 
 
 
