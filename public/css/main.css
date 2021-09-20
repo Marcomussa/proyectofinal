@@ -340,26 +340,6 @@ footer .linksFooter .contenedorLogo {
 /* carusel */
   
 
-/* register */
-.condiciones{
-    display: flex;
-    flex-direction: row;
-}
-.linkTerminos{
-    text-decoration: none;
-    color: black;
-}
-.linkTerminos:hover{
-    color: crimson;
-}
-.tengoCuenta{
-    color: black;
-}
-.tengoCuenta:hover{
-    color: crimson;
-}
-
-
 /* similares */
 .similares{
     display: flex;
