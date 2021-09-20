@@ -28,6 +28,7 @@
 
 // app.listen (3000, () => console.log('Server On port 3000') )
 
+const btnNuevaCuenta = document.querySelector('#btnNuevaCuenta')
 const btnCrearCuenta = document.querySelector('#btnCrearCuenta')
 const btnLogIn = document.querySelector('#buttonLogIn')
 const inputLogInEmail = document.querySelector('#inputLogInEmail')
@@ -36,7 +37,7 @@ const logInErrores = document.querySelector('#logInErrores')
 const contenedorCrearCuenta = document.querySelector('#crearCuenta')
 
 function mostrarCrearCuenta(){
-    btnCrearCuenta.addEventListener('click', function(){
+    btnNuevaCuenta.addEventListener('click', function(){
         contenedorCrearCuenta.style.display = 'block'
     })
 }
