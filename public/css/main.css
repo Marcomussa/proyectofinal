@@ -359,6 +359,12 @@ footer .linksFooter .contenedorLogo {
 .linkTerminos:hover{
     color: crimson;
 }
+.tengoCuenta{
+    color: black;
+}
+.tengoCuenta:hover{
+    color: crimson;
+}
 
 
 /* similares */
