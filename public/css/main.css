@@ -1,13 +1,13 @@
 /* Main */
 
 .contenedorHome{
-    background: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.425);
     width: 100%;
     
     
 }
 .contenedorBanner {
-    width: 100%;height: 30vh;
+    width: 100%;height: 50vh;
     align-self: center;
     border: 1px white solid;
     box-sizing: border-box;
@@ -25,12 +25,12 @@
     text-decoration:none;
     font-weight: 600;
     font-size: 20px;
-    color:#ffffff;
+    color:#000000;
     padding-top:15px;
     padding-bottom:15px;
     padding-left:40px;
     padding-right:40px;
-    background-color:#0a0909;
+    background-color:#ffffff60;
     border-color: #1d1c1c;
     border-width: 3px;
     border-style: solid;
@@ -44,12 +44,12 @@
     box-sizing: border-box;
     padding: 2vw;
     font-size: 1.8rem;
-    color: #ffffff;
+    color: #000000;
 }
 /* Ofertas */
 .contenedorOfertas a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 .contenedorOfertasSeccion {
     width: 100%;
@@ -65,13 +65,13 @@
     width: 21%;
     display: flex;
     flex-direction: column;
-    background-color: darkgoldenrod;
+    background-color: rgba(216, 205, 160, 0.945);
     align-items: center;
 }
 .imagenProducto {
     width: 20vw;
     padding: 3px;
-    height: 465px;
+    height: 250px;
 }
 .infoProducto {
     display: flex;
@@ -82,7 +82,7 @@
 .nombreProducto {
     font-size: 2rem;
 }
-.precioProducto {
+.precioProductoHome {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,11 +90,12 @@
 }
 .precioTotalProducto {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     
 }
 .precioDescuentoProducto {
     color: green;
+    font-size: 1.5rem;
 }
 /* lo + vendido */
 .contenedorVendido {
@@ -106,18 +107,18 @@
     box-sizing: border-box;
     padding: 2vw;
     font-size: 1.8rem;
-    color: #ffffff;
+    color: #000000;
 }
 .contenedorVendido a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 .contenedorVendidoSeccion {
     width: 100%;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, 0);
     flex-direction: row;
 }
 /* contenedor de tarjeta de lo + vendido */
@@ -125,7 +126,7 @@
     width: 21%;
     display: flex;
     flex-direction: column;
-    background-color: darkgoldenrod;
+    background-color: rgba(216, 205, 160, 0.945);
     align-items: center;
 }
 .imagenVendido {
@@ -141,7 +142,7 @@
 .nombreVendido {
     font-size: 2rem;
 }
-.precioVendido {
+.precioVendidoHome {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -149,7 +150,7 @@
 }
 .precioTotalVendido {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     
 }
 .precioDescuentoVendido {
