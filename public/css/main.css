@@ -300,6 +300,7 @@ footer .linksFooter .contenedorLogo {
 }
 
 /* product Detail */
+
 .nombreProducto{
     text-align: center;
     font-size: 35px;
@@ -450,9 +451,15 @@ footer .linksFooter .contenedorLogo {
 .imagenSimilar{
     width: 300px;
     height: 300px;
-
 }
-
+.nombreSimilar{
+    background-color:rgb(236, 229, 219);
+    text-align: center;
+}
+.precioSimilar{
+    font-size: large;
+    margin-bottom: -2px;
+}
 /* descripcion */
 .descripcionProducto{
     margin-top: 90px;
