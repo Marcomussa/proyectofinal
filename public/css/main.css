@@ -476,6 +476,12 @@ footer .linksFooter .contenedorLogo {
     font-size: large;
     margin-bottom: -2px;
 }
+
+/* i */
+.fa-shipping-fast{
+    color: #ab179e;
+}
+
 /* descripcion */
 .descripcionProducto{
     margin-top: 90px;
