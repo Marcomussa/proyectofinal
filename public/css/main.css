@@ -40,7 +40,7 @@
     padding-left:40px;
     padding-right:40px;
     background-color:#ffffff60;
-    border-color: #1d1c1c;
+    border-color: #1d1c1c00;
     border-width: 3px;
     border-style: solid;
 }
@@ -49,10 +49,10 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    border: 1px solid gainsboro;
+    border: 1px solid #dcdcdc00;
     box-sizing: border-box;
-    padding: 2vw;
-    font-size: 1.8rem;
+    padding: vw;
+    font-size: 1.5rem;
     color: #000000;
 }
 /* Ofertas */
@@ -112,10 +112,10 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    border: 1px solid gainsboro;
+    border: 1px solid #dcdcdc00;
     box-sizing: border-box;
-    padding: 2vw;
-    font-size: 1.8rem;
+    padding: vw;
+    font-size: 1.5rem;
     color: #000000;
 }
 .contenedorVendido a {
