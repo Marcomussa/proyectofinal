@@ -1,6 +1,8 @@
 /* Main */
-
-.contenedorHome{
+p {
+    margin-bottom: unset !important;  /*  el bootstrap trae margen en los p, no tocar */
+}/* sobreescribir más adelante con !important */
+.contenedorHome{ 
     background: rgba(255, 255, 255, 0.425);
     width: 100%;
     
@@ -30,28 +32,28 @@
 
 }
 /* bontones */
-.bontonesHome {
-    text-decoration:none;
+.botonesHome {
+    text-decoration: none;
     font-weight: 600;
     font-size: 20px;
-    color:#000000;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-    background-color:#ffffff60;
+    color: #000000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ffffff60;
     border-color: #1d1c1c00;
     border-width: 3px;
     border-style: solid;
+    width: 33%;
+    text-align: center;
 }
 .contenedorOfertas{
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #dcdcdc00;
+    justify-content: space-around;
+    border: 2px solid #0000009c;
     box-sizing: border-box;
-    padding: vw;
+    padding-bottom: 37px;
     font-size: 1.5rem;
     color: #000000;
 }
@@ -66,21 +68,24 @@
     display: flex;
     justify-content: space-around;
     border: 1px solid white;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* contenedor de tarjeta de producto */
 .tarjetaProducto {
-    width: 21%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background-color: rgba(216, 205, 160, 0.945);
     align-items: center;
+    margin: 5px;
 }
 .imagenProducto {
-    width: 20vw;
+    width: 100%;
     padding: 3px;
     height: 250px;
+    padding-top: 10px; 
 }
 .infoProducto {
     display: flex;
@@ -89,7 +94,7 @@
     padding: 3px;
 }
 .nombreProducto {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .precioProductoHome {
     display: flex;
@@ -99,22 +104,21 @@
 }
 .precioTotalProducto {
     font-weight: 700;
-    font-size: 2.1rem;
-    
+    font-size: 1rem;
 }
 .precioDescuentoProducto {
     color: green;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
 }
 /* lo + vendido */
 .contenedorVendido {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #dcdcdc00;
+    justify-content: space-around;
+    border: 2px solid #0000009c;
     box-sizing: border-box;
-    padding: vw;
+    padding-bottom: 37px;
     font-size: 1.5rem;
     color: #000000;
 }
@@ -127,20 +131,24 @@
     margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid rgba(0, 0, 0, 0);
-    flex-direction: row;
+    border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
 }
 /* contenedor de tarjeta de lo + vendido */
 .tarjetaVendido {
-    width: 21%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     background-color: rgba(216, 205, 160, 0.945);
     align-items: center;
+    margin: 5px;
 }
 .imagenVendido {
-    width: 20vw;
+    width: 100%;
     padding: 3px;
+    height: 250px;
+    padding-top: 10px; 
 }
 .infoVendido {
     display: flex;
@@ -159,11 +167,12 @@
 }
 .precioTotalVendido {
     font-weight: 700;
-    font-size: 2.1rem;
+    font-size: 1rem;
     
 }
 .precioDescuentoVendido {
     color: green;
+    font-size: 0.9rem;
 }
 
 /* Nav & Footer */
@@ -313,7 +322,7 @@ footer .linksFooter .contenedorLogo {
 
 .nombreProducto{
     text-align: center;
-    font-size: 35px;
+    font-size: 1.3rem;
 }
 .producto{
     margin-top: 30px;
@@ -451,6 +460,10 @@ footer .linksFooter .contenedorLogo {
     }to{
         transform: rotateY(360deg);
     }
+}
+
+@media screen and (min-width: 769px) {
+    
 }
 
 /* similares */
