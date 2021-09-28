@@ -257,6 +257,8 @@ footer .linksFooter .contenedorLogo {
     color: rgb(29, 161, 242)
 }
 
+
+
 /* Log In Formulario */
 .contenedorLogIn {
     display: flex;
@@ -493,4 +495,56 @@ footer .linksFooter .contenedorLogo {
     margin-left: 10px;
     margin-top: 60px;
     width: 50%;
+}
+
+@media (max-width: 1429px) {
+    .contenedorLogIn .logIn .logInInterno button,
+    .contenedorLogIn .logIn .nuevoCliente button {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .contenedorLogIn {
+        flex-direction: column;
+    }
+    .contenedorLogIn .aside {
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contenedorLogIn .logIn {
+       width: 100%;
+        border: none;
+    }
+}
+
+@media (max-width: 734px) {
+    .contenedorLogIn .logIn .logInExterno button, 
+    .contenedorLogIn .logIn .logInInterno input ,
+    .contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
+        margin: 10px 0px;
+        width: 80%;
+    }
+    .contenedorLogIn .logIn .logInInterno button,
+    .contenedorLogIn .logIn .nuevoCliente button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 991px) {
+    nav {
+        padding: 0px 20px;
+    } 
+    nav ul li {
+        margin-left: 0px;
+    } 
+    .contenedorNavItems ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contenedorNavItems ul li {
+        margin-top: 15px;
+    }
 }
