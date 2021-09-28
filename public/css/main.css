@@ -209,23 +209,34 @@ nav ul li a {
     font-size: 18px;
 }
 
+nav div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer .redesSociales {
     width: 25%;
     padding: 10px;
+    text-align: center;
 }
 
 footer .redesSociales p {
     font-size: 26px;
 }
 
+footer .redesSociales ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
 footer .redesSociales ul li {
     margin-right: 20px;
     margin-top: 10px;
-    text-align: center;
 }
 
 footer .redesSociales ul li a i {
-    font-size: 25px;
+    font-size: 45px;
 }
 
 footer .linksFooter {
@@ -233,12 +244,11 @@ footer .linksFooter {
 }
 
 footer .linksFooter ul{
+    padding: 0px;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-
-
 
 footer .linksFooter .contenedorLogo {
     width: 25%;
@@ -311,6 +321,7 @@ footer .linksFooter .contenedorLogo {
 
 .contenedorLogIn .logIn .logInInterno .botonesLogIn {
     width: 100%;
+    margin-top: 10px;
 }
 
 .contenedorLogIn .logIn .logInInterno button,
@@ -319,10 +330,16 @@ footer .linksFooter .contenedorLogo {
 }
 
 .contenedorLogIn .logIn .crearCuenta {
-    display: none;
     margin-top: 30px;
+    display: none;
 }
 
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
 /* product Detail */
 
 .nombreDelProducto{
@@ -350,7 +367,6 @@ footer .linksFooter .contenedorLogo {
 
 .nombreDeProducto{
     text-align: center;
-
     font-size: 2.5em;
 }
 
@@ -504,6 +520,16 @@ footer .linksFooter .contenedorLogo {
     }
 }
 
+@media (max-width: 1143px) {
+    footer .linksFooter ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .redesSociales ul li a i {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 1025px) {
     .contenedorLogIn {
         flex-direction: column;
@@ -516,6 +542,19 @@ footer .linksFooter .contenedorLogo {
     .contenedorLogIn .logIn {
        width: 100%;
         border: none;
+    }
+}
+
+@media (max-width: 812px) {
+    footer .redesSociales p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 995px) {
+    nav div:nth-child(3){
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
@@ -533,7 +572,8 @@ footer .linksFooter .contenedorLogo {
 }
 
 @media (max-width: 991px) {
-    nav {
+    nav,
+    footer{
         padding: 0px 20px;
     } 
     nav ul li {
@@ -546,5 +586,25 @@ footer .linksFooter .contenedorLogo {
     }
     .contenedorNavItems ul li {
         margin-top: 15px;
+    }
+}
+
+@media (max-width: 655px) {
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer .redesSociales {
+        width: 100%;
+    }
+    footer .redesSociales div ul{
+        justify-content: center;
+    }
+    footer .linksFooter{
+        width: 100%;
+    }
+    footer .contenedorLogo{
+        width: 100%;
+        text-align: center;
     }
 }
