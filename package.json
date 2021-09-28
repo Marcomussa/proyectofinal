@@ -4,7 +4,9 @@
   "description": "Idea del proyecto: Nuestro E-Commerce ofrecera todo tipo de productos relacionados al mundo de la tecnologia, especialmente al de las computadoras. Se incluiran todo tipo de componentes de pc y a fines.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pull": "git pull origin master",
+    "push": "git push origin master"
   },
   "repository": {
     "type": "git",
