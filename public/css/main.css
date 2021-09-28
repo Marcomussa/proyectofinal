@@ -172,9 +172,10 @@ footer {
     background: white;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 0px 100px;
+    flex-direction: row;
 }
 
 .contendedorLogo img {
@@ -227,6 +228,8 @@ footer .linksFooter ul{
     display: flex;
     justify-content: space-between;
 }
+
+
 
 footer .linksFooter .contenedorLogo {
     width: 25%;
@@ -352,8 +355,8 @@ footer .linksFooter .contenedorLogo {
 }
 
 .añadirProducto:hover, .añadirProducto2:hover{
-    color: red;
-    border-color: #ab179e;
+    color: #688b58;
+    border-color: #eb5e55;
     transition: all 1s;
 }
 .ofertaProducto{
@@ -362,13 +365,13 @@ footer .linksFooter .contenedorLogo {
 
 .precioProducto{
     font-size: 45px;
-    border: solid 3px #ab179e;
+    border: solid 3px #eb5e55;
     text-align: center;
 }
 .pagoProducto{
     font-size: 15px;
     text-decoration: none;
-    color:#ab179e;
+    color:#eb5e55;
 }
 .oferta1,.oferta2{
     margin-top: 10px;
@@ -467,6 +470,7 @@ footer .linksFooter .contenedorLogo {
 .busquedas{
     display: flex;
     margin-top: 50px;
+    margin-left: 10px;
 }
 .imagenSimilar{
     width: 300px;
@@ -482,11 +486,13 @@ footer .linksFooter .contenedorLogo {
 }
 
 /* i */
-.fa-shipping-fast{
-    color: #ab179e;
+.fas.fa-shipping-fast, .fas.fa-percent{
+    color: #7d8cc4;
 }
 
 /* descripcion */
 .descripcionProducto{
-    margin-top: 90px;
+    margin-left: 10px;
+    margin-top: 80px;
+    width: 50%;
 }
