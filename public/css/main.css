@@ -570,7 +570,6 @@ align-items: center;
     margin-top: 40px;
     width: 50%;
 }
-
 @media (max-width: 1429px) {
     .contenedorLogIn .logIn .logInInterno button,
     .contenedorLogIn .logIn .nuevoCliente button {
@@ -614,6 +613,7 @@ align-items: center;
         display: flex;
         justify-content: flex-start;
     }
+    
 }
 
 @media (max-width: 734px) {
@@ -630,6 +630,7 @@ align-items: center;
     .contenedorBanner {
        height: 25vh !important;
     }
+
 }
 
 @media (max-width: 991px) {
@@ -668,4 +669,16 @@ align-items: center;
         width: 100%;
         text-align: center;
     }
+    
 }
+
+@media (min-width: 370px){
+    .contenedorOfertasSeccion{
+    flex-direction: row !important;
+}
+.contenedorVendidoSeccion{
+    flex-direction: row !important;
+} 
+.tarjetaProducto:hover {
+    box-shadow: 0px 0px 25px rgb(100, 100, 100);
+}}
