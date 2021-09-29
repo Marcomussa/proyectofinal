@@ -8,15 +8,23 @@
     }
     .producto{
         display: flex;
+        align-items: center;
+        position: relative;
     }
     .caruselNombre{
+        text-align: center;
+        justify-content: center;
     }
     .nombreDeProducto{
-        font-size: 2em;
-        text-align:center;
+        font-size: 1.2em;
+        justify-content: center;
+        margin-right: 100px;
     }
     .carousel{
-        width: auto;
+        width:300px;
+        height: 250px;
+        text-align: center;
+        margin-right: 40px;
     }
     .similares{
         display: flex;
@@ -32,15 +40,30 @@
         justify-content: center;
     }
     .añadirProducto, .añadirProducto2{
-        width: auto;
+        width: 280px;
+        font-size: 0.7em;
     }
     .añadirProducto2{
         margin-top: -0.3px;
     }
-    .oferta1,.oferta2{
+    .precioProducto{
+        font-size: 30px;
     }
+    .descripcionProducto{
+        font-size: 0.8em;
+        width: 95%;
+    }
+    .des
     .busquedas{
         text-align: center;
+    }
+    .similares{
+        display: flex;
+        align-items: center;
+    }
+    .precioSimilar{
+        font-size: 1.4em;
+        margin-bottom: 40px;
     }
 }
 
@@ -53,7 +76,9 @@
 }
 
 @media (min-width: 1024px) {
-    
+    .productoSimilar{
+        margin-right: 30px;
+    }
 }
 
 @media (min-width: 1200px) {

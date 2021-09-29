@@ -18,10 +18,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="contenedorLogo">
+        <div class="contenedorLogo"> 
             <img src="/img/logo.svg" alt="">
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,29 +79,29 @@
     <h2 class="busquedas">en base a busquedas similares</h2>
     <!-- productos similares -->
     <section class="similares">
-        <div class="productoSimilar p1"  data-aos="zoom-in-up">
+        <div class="productoSimilar p1">
             <h3 class="nombreSimilar">nombre</h3>
-            <img src="/public/img/auriculares.jpg" alt="" class="imagenSimilar">
+            <img src="/img/auriculares.jpg" alt="" class="imagenSimilar">
             <p class="precioSimilar">$Precio</p>
             <button class="añadirProducto2"> Comprar</button> 
         </div>
         <div class="productoSimilar p2" data-aos="zoom-in-up">
             <h3 class="nombreSimilar">nombre</h3>
-            <img src="/public/img/mouse.jpg" alt="" class="imagenSimilar">
+            <img src="/img/mouse.jpg" alt="" class="imagenSimilar">
             <p class="precioSimilar">$Precio</p>
             <button class="añadirProducto2"> Comprar</button> 
 
         </div>
         <div class="productoSimilar p3" data-aos="zoom-in-up">
             <h3 class="nombreSimilar ">nombre</h3>
-            <img src="/public/img/teclado.jpg" alt="" class="imagenSimilar">
+            <img src="/img/teclado.jpg" alt="" class="imagenSimilar">
             <p class="precioSimilar">$Precio</p>
             <button class="añadirProducto2"> Comprar</button>
 
         </div>
         <div class="productoSimilar p4" data-aos="zoom-in-up">
             <h3 class="nombreSimilar">nombre</h3>
-            <img src="/public/img/mouse.jpg" alt="" class="imagenSimilar">
+            <img src="/img/mouse.jpg" alt="" class="imagenSimilar">
             <p class="precioSimilar">$Precio</p>
             <button class="añadirProducto2"> Comprar</button>
 
@@ -131,4 +135,7 @@
         </div>
     </footer>
 </body>
+<script>
+    AOS.init();
+  </script>
 </html>
