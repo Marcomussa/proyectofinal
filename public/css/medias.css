@@ -2,15 +2,49 @@
 
 
 /* medias del product detail */
-@media (max-width: 361px) {
-    
-}
-
 @media (min-width: 361px) {
-    
+    *{
+        box-sizing: border-box;
+    }
+    .producto{
+        display: flex;
+    }
+    .caruselNombre{
+    }
+    .nombreDeProducto{
+        font-size: 2em;
+        text-align:center;
+    }
+    .carousel{
+        width: auto;
+    }
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+    }
+    .datosProducto{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .añadirProducto, .añadirProducto2{
+        width: auto;
+    }
+    .añadirProducto2{
+        margin-top: -0.3px;
+    }
+    .oferta1,.oferta2{
+    }
+    .busquedas{
+        text-align: center;
+    }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 500px) {
     
 }
 
