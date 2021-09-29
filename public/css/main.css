@@ -420,7 +420,8 @@ footer .linksFooter .contenedorLogo {
 .cart {
     width: 100%;
     align-items: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-content: center;
 }
 .cartBarra{
@@ -450,24 +451,28 @@ align-items: center;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    width: 81%;
 }
 .sumaCart {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
+    justify-content: space-between;
 }
 .sumaEnvio {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
+    justify-content: space-between;
 }
 .totCEnv {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
+    justify-content: space-between;
 }
 .botonComCart  {
     border: #000000 solid 2px;
@@ -475,6 +480,9 @@ align-items: center;
     height: 7vh;
     display: flex;
     justify-content: end;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    background: red;
 }
 /* carusel */
 .caruselNombre{
