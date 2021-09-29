@@ -2,7 +2,7 @@
 
 
 /* medias del product detail */
-@media (min-width: 361px) {
+@media (min-width: 361px) and (max-width:767px){
     *{
         box-sizing: border-box;
     }
@@ -68,20 +68,54 @@
 }
 
 @media (min-width: 500px) {
-    
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+        margin: 5px;
+    }
+    .precioSimilar{
+        font-size: 1.4em;
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 768px) {
-    
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
     .productoSimilar{
         margin-right: 30px;
     }
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1200px) {
-    
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+    }
 }
 
