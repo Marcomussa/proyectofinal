@@ -534,7 +534,7 @@ align-items: center;
 .similares{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 30px;
     margin-top: 10px;
 }
