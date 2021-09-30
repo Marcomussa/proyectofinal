@@ -108,8 +108,6 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .productoSimilar{
-    }
     .producto{
         flex-direction: row;
     }
