@@ -176,3 +176,150 @@
     margin-top: 60px;
     width: 50%;
 }
+
+
+
+/*Estilos generales*/
+
+
+/* medias del product detail */
+@media (min-width: 361px) and (max-width:767px){
+    *{
+        box-sizing: border-box;
+    }
+    .producto{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .caruselNombre{
+        text-align: center;
+        justify-content: center;
+        width: auto;
+    }
+    .nombreDeProducto{
+        font-size: 1.2em;
+        justify-content: center;
+    }
+    .carousel{
+        width:350px;
+        height: 250px;
+        margin-left: 10px;
+    }
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+        margin: 3px;
+    }
+    .datosProducto{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .añadirProducto, .añadirProducto2{
+        width: 280px;
+        font-size: 0.7em;
+    }
+    .añadirProducto2{
+        margin-top: -0.3px;
+    }
+    .precioProducto{
+        font-size: 30px;
+    }
+    .descripcionProducto{
+        font-size: 0.8em;
+        width: 95%;
+    }
+    .des
+    .busquedas{
+        text-align: center;
+    }
+    .similares{
+        display: flex;
+        align-items: center;
+    }
+    .precioSimilar{
+        font-size: 1.4em;
+        margin-bottom: 40px;
+    }
+    .masArticulos{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 500px) {
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+        margin: 5px;
+        width: auto;
+    }
+    .precioSimilar{
+        font-size: 1.4em;
+        margin-bottom: 40px;
+    }
+    .masArticulos{
+        justify-content: flex-start;
+    }
+    .carousel{
+        width:600px;
+        height: 365px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .productoSimilar{
+        margin-right: 30px;
+    }
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .producto{
+        flex-direction: row;
+    }
+    .caruselNombre{
+        margin-left: 30px;
+        margin-right: -80px
+    }
+    .nombreDeProducto{
+        margin-right: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .similares{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .productoSimilar{
+        background-color:rgb(245, 239, 240);
+        margin-top: 20px;
+    }
+}
