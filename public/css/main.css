@@ -176,22 +176,11 @@ p {
 }
 
 
-/* product Detail */
 
 .nombreDelProducto{
     text-align: center;
 
     font-size: 1.3em;
-}
-
-.producto{
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px;
-    justify-content: space-around;  
-    box-sizing: border-box;
 }
 
 /*Cart*/
@@ -287,5 +276,7 @@ align-items: center;
     border-color: #eb5e55;
     transition: all 1s;
 }
+
+
 
 
