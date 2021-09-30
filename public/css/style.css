@@ -3,6 +3,11 @@
 @import url('main.css');
 @import url('medias.css');
 @import url('footer.css');
+@import url('wishlist.css');
+@import url('index.css');
+@import url('login.css');
+@import url('productDetail.css');
+@import url('productCart.css');
 
 * {
     padding: 0px;
