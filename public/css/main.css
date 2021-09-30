@@ -388,7 +388,6 @@ footer .linksFooter .contenedorLogo {
     margin-bottom: 10px;
     font-size: 15px;
     box-sizing: border-box;
-    transition: all 0.5s;
 }
 
 .añadirProducto:hover, .añadirProducto2:hover{
@@ -441,17 +440,33 @@ align-items: center;
     align-items: center;
     justify-content: space-around;
 }
+.fa-trash-alt{
+    margin-left: -20px;
+    position: relative;
+}
+.fa-trash-alt:hover{
+    color: red;
+    transition: all 0.2s;
+}
 .cartPImg {
-    width: 96%;
-    height: 6vh;
+    margin-left: 20px;
+    width: 30%;
+    height: 8vh;
     box-sizing: border-box;
     border: 1px #000000 solid;
 
+}.cartPImg:hover{
+    width: 35%;
+    height: 12vh;
+    box-shadow: 10px 10px 10px rgba(153, 14, 100, 0.8);
+    box-shadow: 10px 10px 10px rgba(230, 30, 153, 0.8);
+    transition: all 0.5s;
 }
 .cartContSuma {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 5px;
 }
 .sumaCart {
     border: #000000 solid 2px;
@@ -472,11 +487,28 @@ align-items: center;
     width: 28%;
 }
 .botonComCart  {
-    border: #000000 solid 2px;
-    width: 30%;
-    height: 7vh;
+    width: 20%;
+    height: 8vh;
     display: flex;
-    justify-content: end;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:5px;
+    padding-bottom:15px;
+    padding-left:90px;
+    padding-right:40px;   
+    background-color:#0a0909;
+    border-color: #1d1c1c;
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.botonComCart:hover{
+    color: #688b58;
+    border-color: #eb5e55;
+    transition: all 1s;
 }
 /* carusel */
 .caruselNombre{
@@ -539,6 +571,7 @@ align-items: center;
     justify-content: flex-start;
     margin-bottom: 30px;
     margin-top: 10px;
+    margin-left: 5px;
 }
 .productoSimilar{
     padding: 30px;

@@ -90,7 +90,7 @@
     .similares{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .productoSimilar{
         background-color:rgb(245, 239, 240);
@@ -107,9 +107,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-    }
-    .similares{
-        display: flex;
     }
     .productoSimilar{
     }
