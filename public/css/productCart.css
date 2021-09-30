@@ -17,7 +17,12 @@
     justify-content: space-between;
 }
 
-.contenedorTotalCarrito {
+.contenedorCarrito .contenedorCarritoProducto p,
+.contenedorCarrito .contenedorCarritoDetallesProducto p {
+    margin: 20px 0px;
+}
+
+.contenedorCarrito .contenedorTotalCarrito {
     width: 100%;
     max-width: 300px;
     margin-top: 50px;
@@ -25,6 +30,7 @@
     margin-bottom: 25px;
 }
 
-.contenedorCarritoDetallesProducto {
-    margin-bottom: 20px;
+.inputsCarrito {
+    margin: 20px 0px;
 }
+
