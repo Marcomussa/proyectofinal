@@ -1,6 +1,8 @@
 nav,
 footer {
-    background: white;
+    background: rgb(175,227,192);
+background: radial-gradient(circle, rgba(175,227,192,0.7693452380952381) 0%, rgba(255,255,255,1) 100%);
+box-shadow: 0px 0px 20px rgb(99, 99, 99);
     width: 100%;
     display: flex;
     justify-content:space-between;
@@ -28,7 +30,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav div:nth-child(3){
