@@ -80,6 +80,8 @@ p {
     background-color: rgba(216, 205, 160, 0.945);
     align-items: center;
     margin: 5px;
+    text-decoration-color: #000000;
+    text-decoration: none;
 }
 .imagenProducto {
     width: 100%;
