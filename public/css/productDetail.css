@@ -1,0 +1,168 @@
+/* datos del producto */
+.datosProducto{
+    margin-right: 100px;
+    margin-top: 16px;
+    margin-left: 100px;
+}
+
+.nombreDeProducto{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.añadirProducto, .añadirProducto2{
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#0a0909;
+    border-color: #1d1c1c;
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.añadirProducto:hover, .añadirProducto2:hover{
+    color: #688b58;
+    border-color: #eb5e55;
+    transition: all 1s;
+}
+.ofertaProducto{
+    margin-top: 30px;
+}
+
+.precioProducto{
+    font-size: 45px;
+    border: solid 3px #eb5e55;
+    text-align: center;
+}
+.pagoProducto{
+    font-size: 15px;
+    text-decoration: none;
+    color:#eb5e55;
+}
+.oferta1,.oferta2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.oferta1 i, .oferta2 i{
+    color: midnightblue;
+}
+
+.masArticulos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card{
+    margin-right: 15px;
+    background-color: rgb(254, 254, 246);
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.btnCompra{
+    margin-top: 100px;
+}
+/* carusel */
+.caruselNombre{
+    margin-left: 100px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.contenido{
+    width: 200px;
+    padding-left: 20px;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.carousel{
+    width: 600px;
+    height: 400px;
+    margin-left: -50px;
+    border: 1px rgba(255, 255, 255, 0) solid;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    animation: carouselAnimacion infinite 10000ms ease-in-out;
+}
+
+@keyframes carouselAnimacion{
+     0%{background-image: url('../img/intelbanner.jpg'); }
+     25%{background-image: url('../img/intelbanner.jpg');}
+     26%{background-image: url('../img/amdbanner.jpg');}
+     50%{background-image: url('../img/amdbanner.jpg');}
+     51%{background-image: url('../img/combointel.jpeg');}
+     75%{background-image: url('../img/combointel.jpeg');}
+     76%{background-image: url('../img/comboryzen.jpg');}
+     100%{background-image: url('../img/comboryzen.jpg');}
+ }
+
+.caruselNombre{
+    margin-top: -40px;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* similares */
+.similares{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.productoSimilar{
+    padding: 30px;
+}
+.busquedas{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.imagenSimilar{
+    width: 300px;
+    height: 300px;
+}
+.nombreSimilar{
+    background-color:rgb(236, 229, 219);
+    text-align: center;
+}
+.precioSimilar{
+    font-size: large;
+    margin-bottom: -2px;
+}
+
+/* i */
+.fas.fa-shipping-fast, .fas.fa-percent{
+    color: #7d8cc4;
+}
+
+/* descripcion */
+.descripcionProducto{
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 50%;
+}

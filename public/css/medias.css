@@ -66,6 +66,9 @@
         font-size: 1.4em;
         margin-bottom: 40px;
     }
+    .masArticulos{
+        justify-content: center;
+    }
 }
 
 @media (min-width: 500px) {
@@ -83,6 +86,9 @@
     .precioSimilar{
         font-size: 1.4em;
         margin-bottom: 40px;
+    }
+    .masArticulos{
+        justify-content: flex-start;
     }
 }
 
