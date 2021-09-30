@@ -187,6 +187,8 @@ footer {
     flex-direction: row;
 }
 
+
+
 .contendedorLogo img {
     width: 100%;
 }
@@ -389,7 +391,7 @@ footer .linksFooter .contenedorLogo {
     transition: all 0.5s;
 }
 
-.añadirProducto:hover, .añadirProducto2:hover, .botonComCart:hover{
+.añadirProducto:hover, .añadirProducto2:hover{
     color: #688b58;
     border-color: #eb5e55;
     transition: all 1s;
@@ -420,8 +422,7 @@ footer .linksFooter .contenedorLogo {
 .cart {
     width: 100%;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-content: center;
 }
 .cartBarra{
@@ -440,79 +441,42 @@ align-items: center;
     align-items: center;
     justify-content: space-around;
 }
-
 .cartPImg {
-    width: 30%;
-    height: 8vh;
+    width: 96%;
+    height: 6vh;
     box-sizing: border-box;
     border: 1px #000000 solid;
-    margin-left: 10px;
-}
-.fa-trash-alt{
-}
-.fa-trash-alt:hover{
-    color: red;
-    transition: all 0.3s;
-}
-.cartPImg:hover{
-    width: 35%;
-    height: 12vh;
-    box-shadow: 10px 10px 25px rgb(224, 20, 163);
 
-    transition: all 0.1s;
 }
 .cartContSuma {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    width: 81%;
-    margin-right: -200px;
 }
 .sumaCart {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
-    justify-content: space-between;
 }
 .sumaEnvio {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
-    justify-content: space-between;
 }
 .totCEnv {
     border: #000000 solid 2px;
     display: flex;
     justify-content: end;
     width: 28%;
-    justify-content: space-between;
 }
 .botonComCart  {
-    width: 28%;
-    height: 70px;
+    border: #000000 solid 2px;
+    width: 30%;
+    height: 7vh;
     display: flex;
     justify-content: end;
-    justify-content: space-evenly;
-    font-size: 30px;
-    font-weight: 600;
-    color:#ffffff;
-    padding-top:10px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-    background-color:#0a0909;
-    border-color: #1d1c1c;
-    border-width: 3px;
-    border-style: solid;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    transition: all 0.5s;
-}
-.cartContSuma{
-    margin-top: 20px;
 }
 /* carusel */
 .caruselNombre{
@@ -572,7 +536,7 @@ align-items: center;
 .similares{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 30px;
     margin-top: 10px;
 }
@@ -605,9 +569,47 @@ align-items: center;
 /* descripcion */
 .descripcionProducto{
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 50%;
 }
+
+/* Wishlist */ 
+.contenedorWishlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorWishlist .contenedorTituloWishlist {
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+.contenedorWishlist .contenedorItemsWishlist {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.8);
+    padding: 20px;
+    margin: 10px 0px;
+    background: #fff;
+}
+
+.contenedorWishlist .contenedorItemsWishlist div p,
+.contenedorWishlist .contenedorItemsWishlist div a {
+    font-size: 30px;
+}
+
+.contenedorWishlist .contenedorItemsWishlist div .deleteIcon {
+    color: red;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Mediaqueris */
 @media (max-width: 1429px) {
     .contenedorLogIn .logIn .logInInterno button,
     .contenedorLogIn .logIn .nuevoCliente button {
@@ -651,7 +653,6 @@ align-items: center;
         display: flex;
         justify-content: flex-start;
     }
-    
 }
 
 @media (max-width: 734px) {
@@ -668,7 +669,6 @@ align-items: center;
     .contenedorBanner {
        height: 25vh !important;
     }
-
 }
 
 @media (max-width: 991px) {
@@ -707,16 +707,4 @@ align-items: center;
         width: 100%;
         text-align: center;
     }
-    
 }
-
-@media (min-width: 370px){
-    .contenedorOfertasSeccion{
-    flex-direction: row !important;
-}
-.contenedorVendidoSeccion{
-    flex-direction: row !important;
-} 
-.tarjetaProducto:hover {
-    box-shadow: 0px 0px 25px rgb(100, 100, 100);
-}}
