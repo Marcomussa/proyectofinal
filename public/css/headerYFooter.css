@@ -1,0 +1,91 @@
+nav,
+footer {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 100px;
+    flex-direction: row;
+}
+
+.contendedorLogo img {
+    width: 100%;
+}
+nav div ul li a{
+    color: black;
+}
+nav ul li,
+footer .redesSociales ul li,
+footer .linksFooter ul li{
+    display: inline-block;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .redesSociales {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .redesSociales p {
+    font-size: 26px;
+}
+
+footer .redesSociales ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .redesSociales ul li {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+footer .redesSociales ul li a i {
+    font-size: 45px;
+}
+
+footer .linksFooter {
+    width: 50%;
+}
+
+footer .linksFooter ul{
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .linksFooter .contenedorLogo {
+    width: 25%;
+}
+
+.fa-facebook-square {
+    color: rgb(66,103,178);
+}
+.fa-instagram-square {
+    color: rgb(233, 89, 80);
+}
+.fa-whatsapp-square {
+    color: rgb(37, 211, 102);
+}
+.fa-twitter-square {
+    color: rgb(29, 161, 242)
+}
+/*Header*/
