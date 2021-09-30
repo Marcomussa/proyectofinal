@@ -1,0 +1,30 @@
+.contenedorCarrito {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenedorCarrito h3 {
+    margin-top: 25px;
+}
+
+.contenedorCarrito .contenedorCarritoProducto,
+.contenedorCarrito .contenedorCarritoDetallesProducto{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorTotalCarrito {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50px;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.contenedorCarritoDetallesProducto {
+    margin-bottom: 10px;
+}
