@@ -1,0 +1,102 @@
+/* Log In Formulario */
+.contenedorLogIn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    background: rgba(255,255,255,0.5);
+    margin: 50px 0px;
+}
+
+.contenedorLogIn .aside {
+    width: 40%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.contenedorLogIn .aside div{
+    width: 50%;
+    margin: 20px 0px;
+    text-align: center;
+}
+.contenedorLogIn .aside div p {
+    margin-top: 10px;
+}
+.contenedorLogIn .aside div i {
+    font-size: 50px;
+    padding-right: 10px;
+}
+.contenedorLogIn .logIn {
+    width: 60%;
+    border-left: 3px solid black;
+    text-align: center;
+}
+.contenedorLogIn .logIn .logInExterno,
+.contenedorLogIn .logIn .logInInterno ,
+.contenedorLogIn .logIn .nuevoCliente,
+.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contenedorLogIn .logIn .logInExterno button, 
+.contenedorLogIn .logIn .logInInterno input ,
+.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
+    margin: 10px 0px;
+    width: 40%;
+}
+
+.contenedorLogIn .logIn .logInInterno .botonesLogIn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contenedorLogIn .logIn .logInInterno button,
+.contenedorLogIn .logIn .nuevoCliente button {
+    width: 20%;
+}
+
+.contenedorLogIn .logIn .crearCuenta {
+    margin-top: 30px;
+    display: none;
+}
+
+.displayNone {
+    display: none;
+}
+.displayBlock {
+    display: block;
+}
+
+@media (max-width: 639px){
+    .contenedorLogIn .logIn .logInExterno button, 
+    .contenedorLogIn .logIn .logInInterno input ,
+    .contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
+        width: 60%;
+    }
+    .contenedorLogIn .logIn .logInInterno button,
+    .contenedorLogIn .logIn .nuevoCliente button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedorLogIn {
+        flex-direction: column;
+    }
+    .contenedorLogIn .aside {
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contenedorLogIn .logIn {
+       width: 100%;
+        border: none;
+    }
+}
+
+
+

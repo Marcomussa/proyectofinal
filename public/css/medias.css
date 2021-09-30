@@ -130,3 +130,80 @@
     }
 }
 
+
+@media (max-width: 812px) {
+    footer .redesSociales p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 995px) {
+    nav div:nth-child(3){
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 734px) {
+    .contenedorLogIn .logIn .logInExterno button, 
+    .contenedorLogIn .logIn .logInInterno input ,
+    .contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
+        margin: 10px 0px;
+        width: 80%;
+    }
+    .contenedorLogIn .logIn .logInInterno button,
+    .contenedorLogIn .logIn .nuevoCliente button {
+        width: 30%;
+    }
+    .contenedorBanner {
+       height: 25vh !important;
+    }
+}
+
+@media (max-width: 991px) {
+    nav,
+    footer{
+        padding: 0px 20px;
+    } 
+    nav ul li {
+        margin-left: 0px;
+    } 
+    .contenedorNavItems ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contenedorNavItems ul li {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 655px) {
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer .redesSociales {
+        width: 100%;
+    }
+    footer .redesSociales div ul{
+        justify-content: center;
+    }
+    footer .linksFooter{
+        width: 100%;
+    }
+    footer .contenedorLogo{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1143px) {
+    footer .linksFooter ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .redesSociales ul li a i {
+        font-size: 30px;
+    }
+}
