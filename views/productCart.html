@@ -31,47 +31,44 @@
         <div class="collapse navbar-collapse a" id="navbarSupportedContent">
             <div class="contenedorNavItems">
                 <ul>
-                    <li><a href="./index.html">Menu</a></li>
-                    <li><a href="./productDetail.html">Productos</a></li>
-                    <li><a href="./login.html">Log In</a></li>
-                    <li><a href="./productCart.html">Carrito</a></li>
-                    <li><a href="./wishlist.html">Wishlist</a></li>
+                    <li><a href="/">Menu</a></li>
+                    <li><a href="/product">Productos</a></li>
+                    <li><a href="/login">Log In</a></li>
+                    <li><a href="/cart">Carrito</a></li>
+                    <li><a href="/wishlist">Wishlist</a></li>
                 </ul>
             </div>
       </div>
     </nav>
-    <div class="cart">
-        <div class="cartBarra">
+    
+    <section class="contenedorCarrito">
+        <h3>Carrito</h3>
+        <div class="contenedorCarritoProducto">
             <p>Producto</p>
             <p>Precio</p>
             <p>Cantidad</p>
-            <p>Total</p>           
+            <p>Subtotal</p>
         </div>
-        <div class="cartTarj">
-            <div ><i class="fas fa-trash-alt"></i><img class="cartPImg" src="/img/teclado.jpg" alt=""></div> 
-            <div class="precioCart"><p>Precio</p><span>$999</span></div>
-            <div></i><p>Cant</p><span><i class="fas fa-minus"></i> 999 <i class="fas fa-plus"></i></span></div>
-            <div> <p>PrecioTotal </p><span>$999</span></div>
+        <div class="contenedorCarritoDetallesProducto">
+            <div>
+                <p>XX</p>
+            </div>
+            <p>XX</p>
+            <p>XX</p> 
+            <p>XX</p>
         </div>
-        <div class="cartContSuma">
-            <div class="sumaCart">
-            <div><p>Productos</p></div>
-            <div><p>$$$$$$$</p></div>
-         </div>
-         <div class="sumaEnvio">
-            <div><p>Envio</p></div>
-            <div><p>$$$$$$$</p></div>
-         </div>
-         <div class="totCEnv">
-             <div><p>Total</p></div>
-             <div><p>$$$$$$$</p></div>
-         </div>
-         <div class="botonComCart">
-             <p>Comprar</p>
-         </div>
+        <div class="inputsCarrito">
+            <input type="text" placeholder="Codigo de Cupon">
+            <input type="text" placeholder="Aplicar Descuento">
         </div>
-    </div>
-    
+        <div class="contenedorTotalCarrito">
+            <div class="descripcionTotalCarrito">
+                <p>Total:</p>
+                <span class="precioFinal"></span>
+            </div>
+            <button>Finalizar Compra</button>
+        </div>
+    </section>
 
     <footer>
         <div class="redesSociales">
