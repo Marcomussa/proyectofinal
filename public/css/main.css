@@ -83,6 +83,9 @@ p {
     color: black;
     text-decoration: none;
 }
+.tarjetaProducto div{
+    width: 100%;
+}
 .imagenProducto {
     width: 100%;
     padding: 3px;
