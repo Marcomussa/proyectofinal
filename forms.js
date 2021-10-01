@@ -1,4 +1,3 @@
-
 const btnNuevaCuenta = document.querySelector('#btnNuevaCuenta')
 const btnCrearCuenta = document.querySelector('#btnCrearCuenta')
 const btnLogIn = document.querySelector('#buttonLogIn')

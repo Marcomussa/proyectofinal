@@ -1,36 +1,50 @@
 .contenedorCarrito {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .contenedorCarrito h3 {
     margin-top: 25px;
+    padding: 25px 10px;
+    background: rgba(255,255,255,0.75);
+    text-align: center;
 }
 
 .contenedorCarrito .contenedorCarritoProducto,
 .contenedorCarrito .contenedorCarritoDetallesProducto{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    background: rgba(255,255,255,0.75);
+    padding: 0px 10px;
 }
 
-.contenedorCarrito .contenedorCarritoProducto p,
-.contenedorCarrito .contenedorCarritoDetallesProducto p {
-    margin: 20px 0px;
+.contenedorCarrito .contenedorCarritoDetallesProducto {
+    padding-top: 25px;
 }
 
 .contenedorCarrito .contenedorTotalCarrito {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin-top: 50px;
     float: right;
     margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(255,255,255,0.75);
+}
+
+.contenedorCarrito .contenedorTotalCarrito div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .inputsCarrito {
     margin: 20px 0px;
+    background: rgba(255,255,255,0.75);
 }
 
