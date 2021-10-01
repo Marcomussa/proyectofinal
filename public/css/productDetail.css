@@ -176,6 +176,9 @@
     margin-top: 60px;
     width: 50%;
 }
+.descripcionProducto:hover{
+    box-shadow: 10px 10px 10px 10px black;
+}
 
 
 
