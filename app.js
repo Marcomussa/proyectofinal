@@ -1,5 +1,5 @@
 const express = require ('express')
-const app = express ()
+const app = express()
 const router = express.Router()
 const productController = require('./controllers/productController')
 
@@ -11,39 +11,40 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname +'/views/index.html')
 })
 
-// router.get('/', productController.index)
+// app.get('/', productController.index)
 
 app.get('/login', (req,res) => {
     res.sendFile(__dirname + '/views/login.html')
 })
 
-// router.get('/login', productController.login)
+// app.get('/login', productController.login)
 
 app.get('/cart', (req, res) => { 
     res.sendFile(__dirname +'/views/productCart.html')
 })
 
-// router.get('/cart', productController.cart)
+// app.get('/cart', productController.cart)
 
 app.get('/product', (req, res) => {
     res.sendFile(__dirname + '/views/productDetail.html')
 })
 
-// router.get('/product', productController.product)
+// app.get('/product', productController.product)
 
 
 app.get('/wishlist', (req, res) => {
      res.sendFile(__dirname + '/views/wishlist.html')
 })
 
-// router.get('/wishlist', productController.wishlist)
+// app.get('/wishlist', productController.wishlist)
 
-// '*' indica una ruta default
-app.get('*', (req, res) => {
-    res.send('Ruta Por Default')
-})
+//!!! '*' indica una ruta default
 
-// router.get('*', productController.default)
+// app.get('*', (req, res) => {
+//     res.send('Ruta Por Default')
+// })
+
+app.get('*', productController.default)
 
 /*Server*/
 app.listen (3030, () => console.log('Server On port 3030') )
