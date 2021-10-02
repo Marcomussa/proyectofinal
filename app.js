@@ -38,5 +38,12 @@ app.get('/wishlist', (req, res) => {
 
 // router.get('/wishlist', productController.wishlist)
 
+// '*' indica una ruta default
+app.get('*', (req, res) => {
+    res.send('Ruta Por Default')
+})
+
+// router.get('*', productController.default)
+
 /*Server*/
 app.listen (3030, () => console.log('Server On port 3030') )

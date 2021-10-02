@@ -14,6 +14,9 @@ const controlador = {
     },
     wishlist: function(req, res){
         res.sendFile(__dirname + '/views/wishlist.html')
+    },
+    default: function(req, res){
+        res.send('Ruta Por Default')
     }
 }
 
