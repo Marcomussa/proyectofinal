@@ -2,6 +2,8 @@ const express = require ('express')
 const app = express()
 const router = express.Router()
 const productController = require('./src/controllers/productController')
+const ejs = require('ejs')
+const path = require('path')
 
 /*Config public */
 app.use(express.static('public'));
