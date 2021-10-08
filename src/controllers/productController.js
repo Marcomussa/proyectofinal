@@ -1,22 +1,21 @@
+const express = require ('express')
+const path = require('path')
+
 const controlador = {
     index: function(req, res){
-        res.sendFile(__dirname +'/src/views/index.html')
+        res.sendFile(path.resolve(__dirname, '../views/index.html'))
     },
     login: function(req, res){
-        res.sendFile(__dirname + '/src/views/login.html')
+        res.sendFile(path.resolve(__dirname, '../views/login.html'))
     },
     cart: function(req, res){
-        res.sendFile(__dirname +'/src/views/productCart.html')
+        res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
     },
     product: function(req, res){
-        res.sendFile(__dirname + '/src/views/productDetail.html')
-
+        res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
     },
     wishlist: function(req, res){
-        res.sendFile(__dirname + '/src/views/wishlist.html')
-    },
-    default: function(req, res){
-        res.send('Ruta Por Default')
+        res.sendFile(path.resolve(__dirname, '../views/wishlist.html'))
     }
 }
 
