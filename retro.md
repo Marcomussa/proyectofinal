@@ -14,3 +14,19 @@
   -procrastinar.
 
 - **Dejar de hacer.**
+
+## Sprint 2
+
+- **Que podemos empezar a hacer.**
+* agregar mas funcionalidad y animaciones
+
+- **Hacer más.**
+* hacer dos scrum semanales.
+
+- **Continuar haciendo.**
+* continuar con el buen flow de trabajo
+
+- **Hacer menos.**
+  
+
+- **Dejar de hacer.**

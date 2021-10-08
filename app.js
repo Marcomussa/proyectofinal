@@ -23,4 +23,4 @@ app.get('/product', productController.product)
 app.get('/wishlist', productController.wishlist)
 
 /*Server*/
-app.listen (3030, () => console.log('Server On port 3030') )
+app.listen (3030, () => console.log('Server On \nhttp://localhost:3030') )
