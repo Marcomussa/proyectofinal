@@ -3,7 +3,7 @@ const app = express()
 const productController = require('./src/controllers/productController')
 const ejs = require('ejs')
 const path = require('path')
-const router = express.Router()
+const mainRoutes = require('./src/routes/main')
 
 /*Config public */
 app.use(express.static('public'));
@@ -12,15 +12,15 @@ app.set('view engine', 'ejs')
 app.set('views', path.resolve(__dirname, 'views'))
 
 /*Routes*/
-app.get('/', productController.index)
+app.get('/', mainRoutes)
 
-app.get('/login', productController.login)
+app.get('/login', mainRoutes)
 
-app.get('/cart', productController.cart)
+app.get('/cart', mainRoutes)
 
-app.get('/product', productController.product)
+app.get('/product', mainRoutes)
 
-app.get('/wishlist', productController.wishlist)
+app.get('/wishlist', mainRoutes)
 
 /*Server*/
-app.listen (3030, () => console.log('Server On \nhttp://localhost:3030') )
+app.listen (3030, () => console.log('Server On http://localhost:3030') )
