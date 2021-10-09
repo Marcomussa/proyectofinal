@@ -2,19 +2,28 @@ const path = require('path')
 
 const controlador = {
     index: function(req, res){
-        res.sendFile(path.resolve(__dirname, '../views/index.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/index.html'))
     },
     login: function(req, res){
-        res.sendFile(path.resolve(__dirname, '../views/login.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/login.html'))
     },
     cart: function(req, res){
-        res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
     },
     product: function(req, res){
-        res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
     },
     wishlist: function(req, res){
-        res.sendFile(path.resolve(__dirname, '../views/wishlist.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/wishlist.html'))
+    },
+    head: function(req, res){
+        return res.render('head.ejs')
+    },
+    nav: function(req, res){
+        return res.render('nav.ejs')
+    },
+    footer: function(req, res){
+        return res.render('footer.ejs')
     }
 }
 
