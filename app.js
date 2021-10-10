@@ -22,6 +22,8 @@ app.get('/cart', mainRoutes)
 
 app.get('/product', mainRoutes)
 
+app.get('/create', mainRoutes)
+
 app.get('/wishlist', mainRoutes)
 
 // Server:

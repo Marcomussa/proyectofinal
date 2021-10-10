@@ -7,6 +7,7 @@
 @import url('login.css');
 @import url('productDetail.css');
 @import url('productCart.css');
+@import url('createProduct.css');
 
 * {
     padding: 0px;

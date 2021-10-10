@@ -13,6 +13,9 @@ const controlador = {
     product: function(req, res){
         return res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
     },
+    create: function(req, res){
+        return res.sendFile(path.resolve(__dirname, '../views/createProduct.html'))
+    },
     wishlist: function(req, res){
         return res.sendFile(path.resolve(__dirname, '../views/wishlist.html'))
     },

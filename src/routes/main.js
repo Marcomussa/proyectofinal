@@ -10,6 +10,8 @@ router.get('/cart', productController.cart)
 
 router.get('/product', productController.product)
 
+router.get('/create', productController.create)
+
 router.get('/wishlist', productController.wishlist)
 
 module.exports = router
