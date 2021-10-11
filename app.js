@@ -1,9 +1,8 @@
 const express = require('express')
 const app = express()
-const productController = require('./src/controllers/productController')
-const ejs = require('ejs')
-const path = require('path')
 const mainRoutes = require('./src/routes/main')
+const productsRoutes = require('./src/routes/products')
+const usersRoutes = require('./src/routes/users')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static('public'));
@@ -15,15 +14,9 @@ app.set('view engine', 'ejs')
 // Rutas:
 app.get('/', mainRoutes)
 
-app.get('/login', mainRoutes)
+app.get('/products', productsRoutes)
 
-app.get('/cart', mainRoutes)
-
-app.get('/product', mainRoutes)
-
-app.get('/create', mainRoutes)
-
-app.get('/wishlist', mainRoutes)
+app.get('/users', usersRoutes)
 
 // Server:
 app.listen (3030, () => console.log('Server On http://localhost:3030') )

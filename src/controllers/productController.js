@@ -1,34 +1,13 @@
-const path = require('path')
-
-const controlador = {
-    index: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/index.ejs'))
-    },
-    login: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/login.ejs'))
-    },
+let productController = {
     cart: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/productCart.ejs'))
+        res.render('productCart') 
     },
     product: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/productDetail.ejs'))
+        res.render('productDetail')
     },
     create: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/createProduct.ejs'))
-    },
-    wishlist: function(req, res){
-        return res.render(path.resolve(__dirname, '../views/wishlist.ejs'))
-    },
-    head: function(req, res){
-        return res.render('head.ejs')
-    },
-    nav: function(req, res){
-        return res.render('header.ejs')
-    },
-    footer: function(req, res){
-        return res.render('footer.ejs')
+        res.render('createProduct')
     }
 }
 
-
-module.exports = controlador
+module.exports = productController
