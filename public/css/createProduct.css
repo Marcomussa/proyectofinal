@@ -33,3 +33,10 @@
     bottom: 0;
     cursor: pointer; /* manita de selección al hacer hover */
   }
+
+  .formAgregar{
+    display: flex;
+    flex-direction: row;
+  }
+
+ 

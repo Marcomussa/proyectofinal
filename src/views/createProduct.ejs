@@ -4,13 +4,18 @@
 <body>
     <%- include('./partials/nav.ejs') %> 
 
-   <div class="profile-img">
-  <img src="/img/addPhoto.png" alt="" />
-  <div class="file btn btn-lg btn-primary">
-    <span>Agregar foto</span>
-    <input type="file" name="file" />
-  </div>
-</div>
+  <form action="GET" class="formAgregar">
+    <div class="agregarFoto profile-img">
+      <img src="/img/addPhoto.png" alt="" />
+      <div class="file btn btn-lg btn-primary">
+        <span>Agregar foto</span>
+        <input type="file" name="file" />
+      </div>
+    </div>
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Precio">
+    <textarea name="" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
+  </form>
 
     <%- include('./partials/footer.ejs') %> 
 </body>
