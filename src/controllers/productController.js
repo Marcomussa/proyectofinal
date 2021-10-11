@@ -5,7 +5,7 @@ const controlador = {
         return res.sendFile(path.resolve(__dirname, '../views/index.html'))
     },
     login: function(req, res){
-        return res.sendFile(path.resolve(__dirname, '../views/login.html'))
+        return res.sendFile(path.resolve(__dirname, '../views/login.ejs'))
     },
     cart: function(req, res){
         return res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
