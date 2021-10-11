@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/nav.ejs') %> 
+    <section class="contenedorCarrito">
+        <h3>Carrito</h3>
+        <div class="contenedorCarritoProducto">
+            <p>Producto:</p>
+            <p>Precio:</p>
+            <p>Cantidad:</p>
+            <p>Subtotal:</p>
+        </div>
+        <div class="contenedorCarritoDetallesProducto">
+            <div>
+                <p>XX</p>
+            </div>
+            <p>XX</p>
+            <p>XX</p> 
+            <p>XX</p>
+        </div>
+        <div class="inputsCarrito">
+            <input type="text" placeholder="Codigo de Cupon">
+            <button class='btn btn-primary'>Aplicar Descuento</button>
+        </div>
+        <div class="contenedorTotalCarrito">
+            <div class="descripcionTotalCarrito">
+                <span>Total:</span>
+                <span class="precioFinal">XX</span>
+            </div>
+            <div>
+                <button class="btn btn-success">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./partials/footer.ejs') %> 
+
+</body>
+</html>

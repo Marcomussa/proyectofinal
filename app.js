@@ -11,7 +11,6 @@ app.use(express.static('src'))
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')
-app.set('views', path.resolve(__dirname, 'views'))
 
 // Rutas:
 app.get('/', mainRoutes)
