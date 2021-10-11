@@ -23,7 +23,7 @@ const controlador = {
         return res.render('head.ejs')
     },
     nav: function(req, res){
-        return res.render('nav.ejs')
+        return res.render('header.ejs')
     },
     footer: function(req, res){
         return res.render('footer.ejs')

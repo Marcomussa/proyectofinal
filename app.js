@@ -7,7 +7,7 @@ const mainRoutes = require('./src/routes/main')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static('public'));
-app.use(express.static('src'))
+// app.use(express.static('src'))
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')
