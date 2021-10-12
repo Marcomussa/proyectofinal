@@ -4,7 +4,7 @@ const usersController = require('../controllers/usersController')
 
 router.get('/wishlist', usersController.wishlist)
 
-router.get('/login', usersController.login)
+router.get('/', usersController.login)
 
 
 module.exports = router

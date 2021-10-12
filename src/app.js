@@ -15,11 +15,11 @@ app.set('views', path.resolve(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 // Rutas:
-app.get('/', mainRoutes)
+app.use('/', mainRoutes)
 
-app.get('/users', usersRoutes)
+app.use('/users', usersRoutes)
 
-app.get('/products', productsRoutes)
+app.use('/products', productsRoutes)
 
 
 // Server:
