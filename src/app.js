@@ -17,10 +17,17 @@ app.set('view engine', 'ejs')
 // Rutas:
 app.get('/', mainRoutes)
 
-app.get('/users', usersRoutes)
+app.get('/wishlist', usersRoutes)
+
+app.get('/login', usersRoutes)
+
+app.get('/cart', productsRoutes)
 
 app.get('/products', productsRoutes)
 
+app.get('/cart', productsRoutes)
+
+app.get('/create', productsRoutes)
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
