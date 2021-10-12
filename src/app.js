@@ -15,19 +15,12 @@ app.set('views', path.resolve(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 // Rutas:
-app.get('/', mainRoutes)
+app.use('/', mainRoutes)
 
-app.get('/wishlist', usersRoutes)
+app.use('/users', usersRoutes)
 
-app.get('/login', usersRoutes)
+app.use('/products', productsRoutes)
 
-app.get('/cart', productsRoutes)
-
-app.get('/products', productsRoutes)
-
-app.get('/cart', productsRoutes)
-
-app.get('/create', productsRoutes)
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
