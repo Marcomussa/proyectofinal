@@ -4,6 +4,4 @@ const mainController = require('../controllers/mainController')
 
 router.get('/', mainController.index)
 
-router.get('/wishlist', mainController.wishlist)
-
 module.exports = router

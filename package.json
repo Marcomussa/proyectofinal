@@ -2,7 +2,7 @@
   "name": "proyectofinal",
   "version": "1.0.0",
   "description": "Idea del proyecto: Nuestro E-Commerce ofrecera todo tipo de productos relacionados al mundo de la tecnologia, especialmente al de las computadoras. Se incluiran todo tipo de componentes de pc y a fines.",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pull": "git pull origin master",
