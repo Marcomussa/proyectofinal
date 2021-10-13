@@ -10,4 +10,6 @@ router.get('/create', productController.create)
 
 router.get('/mod', productController.mod)
 
+router.get('/list', productController.list)
+
 module.exports = router

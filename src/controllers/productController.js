@@ -10,6 +10,9 @@ let productController = {
     },
     mod: function(req, res){
         res.render('modProduct')
+    },
+    list: function(req, res){
+        res.render('productList')
     }
 }
 
