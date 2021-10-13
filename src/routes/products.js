@@ -8,4 +8,6 @@ router.get('/cart', productController.cart)
 
 router.get('/create', productController.create)
 
+router.get('/mod', productController.mod)
+
 module.exports = router

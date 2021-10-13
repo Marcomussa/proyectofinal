@@ -41,7 +41,7 @@
     align-items: center;
   }
 
- 
+
 .botonPProd {
   font-family:'Comic Sans MS';
   font-size:20px;
@@ -49,4 +49,14 @@
   color:#17e44a;
   background-color:#5c9165;
   padding:20px;
+}
+
+.productosH2 {
+  display: flex;
+  justify-content: center;
+}
+
+.createPForms {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }

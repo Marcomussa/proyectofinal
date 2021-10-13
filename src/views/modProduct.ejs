@@ -4,13 +4,14 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-    <h2 class='productosH2'>Publicar Producto</h2>
+    <h2 class='productosH2'>Modificar Producto</h2>
 
     <form action="GET" class="formAgregar">
+      <div><input type="text" placeholder="Buscar producto"></div>
       <div class="agregarFoto profile-img">
         <img src="/img/addPhoto.png" alt="" />
         <div class="file btn btn-lg btn-primary">
-          <span>Agregar foto</span>
+          <span>Cambiar foto</span>
           <input type="file" name="file" />
         </div>
       </div>
@@ -18,8 +19,9 @@
       <input class="createPForms" type="text" placeholder="Categoria">
       <input class="createPForms" type="text" placeholder="Precio">
       <textarea class="createPForms" name="" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
-      <button class="botonCProd" type="button">Publicar Producto</button>
+      <button class="botonCProd" type="button">Modificar Producto</button>
     </form>
+  
   
 
     <%- include('./partials/footer.ejs') %> 

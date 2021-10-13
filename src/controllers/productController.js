@@ -7,6 +7,9 @@ let productController = {
     },
     create: function(req, res){
         res.render('createProduct')
+    },
+    mod: function(req, res){
+        res.render('modProduct')
     }
 }
 
