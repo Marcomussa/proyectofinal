@@ -107,7 +107,7 @@
     display: flex;
     background-size: cover;
     background-position: center;
-    animation: carouselAnimacion infinite 10000ms ease-in-out;
+   animation: carouselAnimacion infinite 10000ms ease-in-out;
 }
 
 @keyframes carouselAnimacion{
@@ -120,10 +120,12 @@
      76%{background-image: url('../img/comboryzen.jpg');}
      100%{background-image: url('../img/comboryzen.jpg');}
  }
+ 
 
 .caruselNombre{
     margin-top: -40px;
 }
+
 
 @keyframes rotar{
     from{
@@ -194,20 +196,24 @@
         align-items: center;
         position: relative;
     }
+    
     .caruselNombre{
         text-align: center;
         justify-content: center;
         width: auto;
     }
+    
     .nombreDeProducto{
         font-size: 1.2em;
         justify-content: center;
     }
+    
     .carousel{
         width:350px;
         height: 250px;
         margin-left: 10px;
     }
+   
     .similares{
         display: flex;
         flex-wrap: wrap;
@@ -272,6 +278,7 @@
     .masArticulos{
         justify-content: flex-start;
     }
+   
     .carousel{
         width:600px;
         height: 365px;
@@ -304,10 +311,12 @@
     .producto{
         flex-direction: row;
     }
+    
     .caruselNombre{
         margin-left: 30px;
         margin-right: -80px
     }
+    
     .nombreDeProducto{
         margin-right: 50px;
     }
@@ -325,3 +334,4 @@
         margin-top: 20px;
     }
 }
+
