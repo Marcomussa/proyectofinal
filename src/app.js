@@ -9,10 +9,12 @@ const path = require('path')
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.set('views', path.resolve(__dirname, 'views'))
-// app.use(express.static('src'))
+
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')
+
+
 
 // Rutas:
 app.use('/', mainRoutes)
@@ -20,6 +22,7 @@ app.use('/', mainRoutes)
 app.use('/users', usersRoutes)
 
 app.use('/products', productsRoutes)
+
 
 
 // Server:
