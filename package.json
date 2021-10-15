@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pull": "git pull origin master",
-    "push": "git push origin master"
+    "push": "git push origin master",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
