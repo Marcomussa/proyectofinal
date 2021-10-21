@@ -1,3 +1,8 @@
+const path = require('path')
+const fs = require('fs')
+const productsFilePath = path.join(__dirname, '../../db/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 let productController = {
     cart: function(req, res){
         res.render('productCart') 
@@ -12,7 +17,24 @@ let productController = {
         res.render('modProduct')
     },
     list: function(req, res){
-        res.render('productList')
+        let productList = {
+            id: [],
+            name: [],
+            description: [],
+            price: [],
+            discount: [],
+            category: [],
+            products: products
+        }
+        products.forEach(par => {
+            productList.id.push(par.id)
+            productList.name.push(par.name)
+            productList.description.push(par.description)
+            productList.price.push(par.price)
+            productList.discount.push(par.discount)
+            productList.category.push(par.category)
+        })
+        res.render('productList', {'productsList': productList})
     }
 }
 
