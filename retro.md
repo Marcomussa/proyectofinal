@@ -30,3 +30,26 @@
   
 
 - **Dejar de hacer.**
+
+
+## Sprint 3
+
+- **Que podemos empezar a hacer.**
+* agregar una vista mas.
+* investigar librerias de css 
+  - Motion.ui
+  - Hint.css
+  - Vivify.css
+  - Magic effects css
+
+
+- **Hacer más.**
+* hacer dos scrum semanales.
+
+- **Continuar haciendo.**
+* continuar con el buen flow de trabajo
+
+- **Hacer menos.**
+  
+
+- **Dejar de hacer.**
