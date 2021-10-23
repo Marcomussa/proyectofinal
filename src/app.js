@@ -4,12 +4,12 @@ const mainRoutes = require('./routes/main')
 const productsRoutes = require('./routes/products')
 const usersRoutes = require('./routes/users')
 const path = require('path')
+const multer = require('multer')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.set('views', path.resolve(__dirname, 'views'))
-
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')
@@ -20,8 +20,6 @@ app.use('/', mainRoutes)
 app.use('/users', usersRoutes)
 
 app.use('/products', productsRoutes)
-
-
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )

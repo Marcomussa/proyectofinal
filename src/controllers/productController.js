@@ -51,6 +51,9 @@ let productController = {
             productList.category.push(par.category)
         })
         res.render('productList', {'productsList': productList})
+    },
+    redirect: function(req, res){
+        res.send('redirect')
     }
 }
 
