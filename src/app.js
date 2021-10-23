@@ -4,7 +4,6 @@ const mainRoutes = require('./routes/main')
 const productsRoutes = require('./routes/products')
 const usersRoutes = require('./routes/users')
 const path = require('path')
-const multer = require('multer')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')));
