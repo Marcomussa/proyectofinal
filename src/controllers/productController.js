@@ -7,7 +7,7 @@ let productController = {
     cart: function(req, res){
         res.render('productCart') 
     },
-    product: function(req, res){
+    productDetail: function(req, res){
         let productDetail = []
         function matchID(){
             for(let i = 0; i < products.length; i++){
