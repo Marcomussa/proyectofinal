@@ -18,16 +18,16 @@
     </ul></div>
   </div> -->
   
-    <section>
+    <section class="contenedorProductList">
       <% for(let i = 0; i < productsList.products.length; i++){ %> 
-        <article class="productList">
+        <div class="productList">
           <p> ID: <%= productsList.id[i] %>  </p>
           <p> Name: <%= productsList.name[i] %>  </p>
           <p> Description: <%= productsList.description[i] %>  </p>
           <p> Price: <%= productsList.price[i] %>  </p>
           <p> Discount: <%= productsList.discount[i] %>  </p>
           <p> Category: <%= productsList.category[i] %>  </p>
-        </article>
+        </div>
       <% } %> 
     </section>
   
@@ -35,10 +35,3 @@
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
-
-<style>
-  .productList {
-    background: violet;
-    margin: 30px;
-  }
-</style>

@@ -25,6 +25,6 @@ app.use('/products', productsRoutes)
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
-// app.use((req, res, next) => {
-//     res.status(404).render('not-found');
-// });
+app.use((req, res, next) => {
+    res.status(404).send('Not Found')
+});

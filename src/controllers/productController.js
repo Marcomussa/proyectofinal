@@ -16,11 +16,15 @@ let productController = {
                 }
             }
         }
-        matchID()
-        res.render('productDetail', {
-            'productDetail': productDetail,
-            'params': req.params.id
-        })
+        if(req.params.id > products.length){
+            res.status(404).send('Producto No Definido')
+        } else {
+            matchID()
+            res.render('productDetail', {
+                'productDetail': productDetail,
+                'params': req.params.id
+            })
+        }
     },
     create: function(req, res){
         res.render('createProduct')
