@@ -5,7 +5,7 @@
  
     <%- include('./partials/header.ejs') %> 
 
-    <section class="producto">
+    <!-- <section class="producto">
     
       <article class="caruselNombre">
             
@@ -20,7 +20,7 @@
 
         <article class="datosProducto">
             <h4 class="precioProducto">$999</h4> <!-- en un cuadrado -->
-            <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
+            <!-- <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
             <button class="añadirProducto2"> Comprar</button> <br>
             <a href="#" class="pagoProducto">Metodos de pago</a>
          <article class="ofertaProducto">
@@ -37,8 +37,8 @@
         </p>
     </div>
     <h2 class="busquedas">en base a busquedas similares</h2>
-    <!-- productos similares -->
-    <article class="masArticulos">
+    productos similares -->
+    <!-- <article class="masArticulos">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="/img/mouse.jpg" alt="Card image cap">
             <div class="card-body">
@@ -76,9 +76,18 @@
             </div>
           </div>
           
-    </article>
-    
+    </article> --->
 
+    <section>
+      <div class="productDetail">
+        <p> ID: <%= JSON.stringify(productDetail[0].id) %> </p>
+        <p> Name: <%= JSON.stringify(productDetail[0].name) %> </p>
+        <p> Description: <%= JSON.stringify(productDetail[0].description) %> </p>
+        <p> Price <%= JSON.stringify(productDetail[0].price) %> </p>
+        <p> Category: <%= JSON.stringify(productDetail[0].category) %> </p>
+      </div>
+    </section>
+  
     <%- include('./partials/footer.ejs') %> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

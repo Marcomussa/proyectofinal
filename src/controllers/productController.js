@@ -8,7 +8,19 @@ let productController = {
         res.render('productCart') 
     },
     product: function(req, res){
-        res.render('productDetail')
+        let productDetail = []
+        function matchID(){
+            for(let i = 0; i < products.length; i++){
+                if(products[i].id == req.params.id){
+                    productDetail.push(products[i])
+                }
+            }
+        }
+        matchID()
+        res.render('productDetail', {
+            'productDetail': productDetail,
+            'params': req.params.id
+        })
     },
     create: function(req, res){
         res.render('createProduct')
