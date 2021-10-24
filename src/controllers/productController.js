@@ -53,7 +53,7 @@ let productController = {
         res.render('productList', {'productsList': productList})
     },
     redirect: function(req, res){
-        res.send('redirect')
+        res.render('redirect')
     }
 }
 

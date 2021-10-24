@@ -25,14 +25,16 @@
             </div>
             <span class="separadorLogIn">OR</span>
             <div class="logInInterno">
-                <input type="text" placeholder="email" class="email form-control" id="inputLogInEmail">
-                <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
-                <div id="logInErrores"></div>
-                <p><a href="#">Olvide mi contrasena</a></p>
-                <div class="botonesLogIn">
-                    <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
-                    <button class="btn btn-success" id="btnNuevaCuenta">Nueva Cuenta</button>
-                </div>
+                <form action="/redirect" method="POST" enctype="multipart/form-data">
+                    <input type="text" placeholder="email" class="email form-control" id="inputLogInEmail">
+                    <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
+                    <div id="logInErrores"></div>
+                    <p><a href="#">Olvide mi contrasena</a></p>
+                    <div class="botonesLogIn">
+                        <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
+                        <button class="btn btn-success" id="btnNuevaCuenta">Nueva Cuenta</button>
+                    </div>
+                </form>
             </div>
             <div class="crearCuenta" id="crearCuenta">
                 <div class="contenedorCrearCuenta">
