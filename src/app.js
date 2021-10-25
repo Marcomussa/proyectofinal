@@ -4,6 +4,7 @@ const mainRoutes = require('./routes/main')
 const productsRoutes = require('./routes/products')
 const usersRoutes = require('./routes/users')
 const path = require('path')
+const middlewares = require('./middlewares/middlewares')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
@@ -23,6 +24,9 @@ app.use('/', mainRoutes)
 app.use('/users', usersRoutes)
 
 app.use('/products', productsRoutes)
+
+//Middlewares:
+app.use(middlewares.seguimientoPaginas)
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )

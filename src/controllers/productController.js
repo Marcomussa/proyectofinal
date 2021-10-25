@@ -66,7 +66,7 @@ let productController = {
             image: req.file.filename
             }
         products.push(newProduct)
-        const productsJson = JSON.stringify(products)
+        const productsJson = JSON.stringify(products, null, 4)
         fs.writeFileSync(productsFilePath, productsJson)
         res.redirect('/')
     }
