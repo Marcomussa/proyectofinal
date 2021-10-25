@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
-const productsFilePath = path.join(__dirname, '../../db/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const productsFilePath = path.join(__dirname, '../../db/products.json')
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
 let productController = {
     cart: function(req, res){
@@ -54,6 +54,21 @@ let productController = {
     },
     redirect: function(req, res){
         res.render('redirect')
+    },
+    createProduct: function(req, res){
+        let newProduct = {
+            id: products[products.length - 1].id + 1,
+            name:req.body.nombreProducto,
+            description:req.body.descripcionProducto,
+            price: req.body.precioProducto,
+            discount: req.body.discount || 0,
+            category: req.body.categoria || 'Sui generis',
+            image: req.file.filename
+            }
+        products.push(newProduct)
+        const productsJson = JSON.stringify(products)
+        fs.writeFileSync(productsFilePath, productsJson)
+        res.redirect('/')
     }
 }
 

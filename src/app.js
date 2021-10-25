@@ -6,9 +6,13 @@ const usersRoutes = require('./routes/users')
 const path = require('path')
 
 // Accediendo a recursos estaticos: 
-app.use(express.static(path.resolve(__dirname, '../public')));
-
+app.use(express.static(path.resolve(__dirname, '../public')))
 app.set('views', path.resolve(__dirname, 'views'))
+
+// Captando el body del pedido:
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())
+
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')
@@ -24,4 +28,4 @@ app.use('/products', productsRoutes)
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
 app.use((req, res, next) => {
     res.status(404).send('Not Found')
-});
+})
