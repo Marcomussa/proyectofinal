@@ -348,3 +348,8 @@
     }
 }
 
+.productosH2 {
+    font-size: calc(1.325rem + .9vw);
+    display: flex;
+    justify-content: center;
+}

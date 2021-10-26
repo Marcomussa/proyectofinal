@@ -61,8 +61,8 @@ let productController = {
             name:req.body.nombreProducto,
             description:req.body.descripcionProducto,
             price: req.body.precioProducto,
-            discount: req.body.discount || 0,
-            category: req.body.categoria || 'Sui generis',
+            discount: req.body.discount || 'sin descuento',
+            category: req.body.categoria || 'sin categoria',
             image: req.file.filename
             }
         products.push(newProduct)
