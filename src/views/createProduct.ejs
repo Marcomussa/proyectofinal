@@ -7,13 +7,13 @@
     <h2 class='productosH2'>Publicar Producto</h2>
 
     <form method="POST" class="formAgregar" action="/products/create" enctype="multipart/form-data">
-      <div class="agregarFoto profile-img">
-        <img src="/img/addPhoto.png" alt="" />
-        <div class="file btn btn-lg btn-primary">
-          <span>Agregar foto</span>
-          <input type="file" name="imagenProducto"/>
-        </div>
-      </div>
+    <div>
+      <label for="">Agregar foto</label>
+          <input type="file" name="imagenProducto"/> <br>
+          <textarea class="createPForms" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
+    </div>
+      
+    <div>
       <input name ="nombreProducto" class="createPForms" type="text" placeholder="Nombre">
       <select class="formCategory" aria-label="Default select example">
         <option selected>Categorias</option>
@@ -24,14 +24,16 @@
         <option value="5">Fuentes</option>
         <option value="6">Perifericos</option>
         <option value="7">Accesorios</option>
-        
       </select>      
       <input name="precioProducto"class="createPForms" type="text" placeholder="Precio">
       <input name="Discount"class="createPForms" type="text" placeholder="Descuento">
-      <textarea class="createPForms" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
-     <div> <button type="submit" class="btn btn-primary btn-lg">Crear producto</button> </div>
+    </div>
+      <div> 
+       <button type="submit" class="btn btn-primary btn-lg">Crear producto</button> 
+       <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
+      </div>
     </form>
-  
+
 
     <%- include('./partials/footer.ejs') %> 
 </body>
