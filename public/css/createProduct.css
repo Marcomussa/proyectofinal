@@ -54,3 +54,20 @@
     -moz-appearance: none;
     appearance: none;
   }
+
+  .borrarproducto {
+    color: #fff;
+    background-color: #f50707;
+    border-color: #f50707;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+  }

@@ -16,10 +16,23 @@
         </div>
       </div>
       <input class="createPForms" type="text" placeholder="Nombre">
-      <input class="createPForms" type="text" placeholder="Categoria">
+      <select class="formCategory" aria-label="Default select example">
+        <option selected>Categorias</option>
+        <option value="1">Cpus</option>
+        <option value="2">Motherboards</option>
+        <option value="3">Placas de Video</option>
+        <option value="4">Memorias Ram</option>
+        <option value="5">Fuentes</option>
+        <option value="6">Perifericos</option>
+        <option value="7">Accesorios</option>
+      </select> 
       <input class="createPForms" type="text" placeholder="Precio">
+      <input name="discount"class="createPForms" type="text" placeholder="Descuento">
       <textarea class="createPForms" name="" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
-      <button class="botonCProd" type="button">Modificar Producto</button>
+      <div> 
+        <button type="submit" class="btn btn-primary btn-lg">Modificar producto</button> 
+        <button type="push" class="borrarproducto">Eliminar Producto</button>
+       </div>
     </form>
   
   
