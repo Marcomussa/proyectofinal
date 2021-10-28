@@ -28,7 +28,24 @@
           <p> Discount: <%= productsList.discount[i] %>  </p>
           <p> Category: <%= productsList.category[i] %>  </p>
         </div>
+        </div>
       <% } %> 
+
+      <!--Testeando forma de los products-->
+      <% for(let i = 0; i < 2; i++){ %> 
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/mouse.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%= productsList.name[i] %></h5>
+            <p class="card-text"><%= productsList.description[i] %></p>
+            <h6 class="card-title"><%= productsList.price[i] %></h6>
+            <br>
+            <a href="#" class="añadirProducto btnCompra">Comprar</a>
+          </div>
+        </div>
+        <% } %> 
+
+
     </section>
   
 
