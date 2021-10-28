@@ -40,7 +40,7 @@
 }
 
 .contenedorLogIn .logIn .logInExterno,
-.contenedorLogIn .logIn .logInInterno ,
+.contenedorLogIn .logIn .logInInterno form ,
 .contenedorLogIn .logIn .nuevoCliente,
 .contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta{
     display: flex;
@@ -68,7 +68,6 @@
 
 .contenedorLogIn .logIn .crearCuenta {
     margin-top: 30px;
-    display: none;
 }
 
 .displayNone {
