@@ -5,16 +5,14 @@ const {check} = require('express-validator')
 
 router.get('/', usersController.login)
 
-router.post('/', [
-    check('name').isEmpty(),
-    check('surname').isEmpty(),
-    check('email').isEmpty().isEmail(),
-    check('pass').isEmpty()
-], usersController.login)
+router.get('/redirect', usersController.validacionLogIn)
 
-router.get('/redirect', function(req, res){
-    res.send(req.body)
-})
+router.post('/redirect', [
+    check('name').notEmpty(),
+    check('surname').notEmpty(),
+    check('email').notEmpty().isEmail(),
+    check('pass').notEmpty()
+], usersController.validacionLogIn)
 
 router.get('/wishlist', usersController.wishlist)
 

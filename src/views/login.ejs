@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <%- include('./partials/head.ejs')  %> 
-    <script defer src="../forms.js"></script>
-
 <body>
     <%- include('./partials/header.ejs') %> 
     <section class="contenedorLogIn">
@@ -36,7 +33,7 @@
                     </div>
                 </form>
             </div> -->
-           <form action="/" method="POST">
+           <form action="/users/redirect" method="POST">
             <div class="crearCuenta" id="crearCuenta">
                 <div class="contenedorCrearCuenta">
                     <input type="text" placeholder="Nombre" class="form-control" name="name">
@@ -45,7 +42,17 @@
                     <input type="password" placeholder="Contrasena" class="form-control" name="pass">
                     <button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button>
                 </div>
-            </div></form>
+            </div>
+            </form>
+            <div>
+                <% if(typeof validaciones != 'undefined'){ %>
+                    <% validaciones.forEach( (validacion) => { %>
+                        <p style="color: red;">
+                        <%= validacion.msg %> 
+                        </p>
+                    <% }) %> 
+                <% } %> 
+            </div>
         </article>
     </section>
     <%- include('./partials/footer.ejs') %> 

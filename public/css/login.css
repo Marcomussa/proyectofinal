@@ -50,10 +50,14 @@
     align-items: center;
 }
 .contenedorLogIn .logIn .logInExterno button, 
-.contenedorLogIn .logIn .logInInterno input ,
-.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input{
+.contenedorLogIn .logIn .logInInterno input {
     margin: 10px 0px;
-    width: 40%;
+    width: 50%;
+}
+
+.contenedorLogIn .logIn .crearCuenta .contenedorCrearCuenta input {
+    width: 100%;
+    margin: 10px 0px;
 }
 
 .contenedorLogIn .logIn .logInInterno .botonesLogIn {
@@ -63,7 +67,7 @@
 
 .contenedorLogIn .logIn .logInInterno button,
 .contenedorLogIn .logIn .nuevoCliente button {
-    width: 20%;
+    width: 80%;
 }
 
 .contenedorLogIn .logIn .crearCuenta {
