@@ -19,14 +19,14 @@ let multerDiskStorage = multer.diskStorage({
 })
 let fileUpload = multer({'storage': multerDiskStorage})
 
-
-
 // Rutas:
 router.get('/', productController.list)
 
 router.get('/cart', productController.cart)
 
 router.get('/create', productController.create)
+
+router.get('/post', fileUpload.single('imagenProducto'), productController.create)
 
 router.get('/mod', productController.mod)
 
