@@ -28,9 +28,13 @@ router.get('/create', productController.create)
 
 router.get('/post', fileUpload.single('imagenProducto'), productController.create)
 
-router.get('/mod', productController.mod)
+router.get('/mod/:id', productController.mod)
+
+router.delete('/:id', productController.delete)
 
 router.post('/redirect', productController.redirect)
+
+router.put('/mod/:id', fileUpload.single('imagenProducto'), productController.update)
 
 router.get('/:id', productController.productDetail)
 

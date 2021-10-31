@@ -6,35 +6,39 @@
 
     <h2 class='productosH2'>Modificar Producto</h2>
 
-    <form action="GET" class="formAgregar">
-      <div><input type="text" placeholder="Buscar producto"></div>
+    <form method='POST' action="/products/mod/<%- product.id %>?_method=PUT" class="formAgregar">
       <div class="agregarFoto profile-img">
         <img src="/img/addPhoto.png" alt="" />
         <div class="file btn btn-lg btn-primary">
           <span>Cambiar foto</span>
-          <input type="file" name="file" />
+          <input type="file" name="imagenProducto" />
         </div>
       </div>
-      <input class="createPForms" type="text" placeholder="Nombre">
-      <select class="formCategory" aria-label="Default select example">
-        <option selected>Categorias</option>
-        <option value="1">Cpus</option>
-        <option value="2">Motherboards</option>
-        <option value="3">Placas de Video</option>
-        <option value="4">Memorias Ram</option>
-        <option value="5">Fuentes</option>
-        <option value="6">Perifericos</option>
-        <option value="7">Accesorios</option>
+      <input name='name' class="createPForms" type="text" value="<%- product.name %>"  >
+      <select name= 'category' class="formCategory" aria-label="Default select example">
+        <option selected><%- product.category %></option>
+        <option value="Cpus">Cpus</option>
+        <option value="Motherboards">Motherboards</option>
+        <option value="Placas de Video">Placas de Video</option>
+        <option value="Memorias Ram">Memorias Ram</option>
+        <option value="Fuentes">Fuentes</option>
+        <option value="Perifericos">Perifericos</option>
+        <option value="Accesorios">Accesorios</option>
       </select> 
-      <input class="createPForms" type="text" placeholder="Precio">
-      <input name="discount"class="createPForms" type="text" placeholder="Descuento">
-      <textarea class="createPForms" name="" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
+      <input name='price' class="createPForms" type="number" value="<%- product.price %>">
+      <input name="discount"class="createPForms" type="number" value="<%- product.discount %>">
+      <textarea class="createPForms" name="description" id="" cols="30" rows="4"><%= product.description %></textarea>
       <div> 
-        <button type="submit" class="btn btn-primary btn-lg">Modificar producto</button> 
-        <button type="push" class="borrarproducto">Eliminar Producto</button>
+        <button type="submit" class="btn btn-primary btn-lg">Modificar Producto</button> 
+        
+       
+        <!-- <form action=""></form>
+        <a href="/"><button type="push" class="borrarproducto">Eliminar Producto</button></a> -->
        </div>
     </form>
-  
+  <div><form method="POST" action="/products/<%= product.id %>?_method=delete">
+    <button type="submit" class="btn btn-danger">Eliminar producto</button>
+    </form> </div>
   
 
     <%- include('./partials/footer.ejs') %> 

@@ -16,8 +16,8 @@ let productController = {
                 }
             }
         }
-        if(req.params.id > products.length){
-            res.status(404).send('Producto No Definido')
+        if (req.params.id > products.length || req.params.id === 0){ 
+           res.status(404).send('Producto No Definido')
         } else {
             matchID()
             res.render('productDetail', {
@@ -30,7 +30,29 @@ let productController = {
         res.render('createProduct')
     },
     mod: function(req, res){
-        res.render('modProduct')
+         if (products.length>req.params.id){
+            const pActual = products.filter(p => p.id == req.params.id)
+            res.render('modProduct', { 'product': pActual[0] })
+         } else res.status(404).send('Producto No Definido')
+        
+        
+    },
+    update: function(req, res, next) 
+    {products.forEach(product => {
+        if (product.id == req.params.id) {
+            product.name = req.body.name;
+            product.description = req.body.description;
+            product.price = req.body.price;
+            product.discount = req.body.discount;
+            product.category = req.body.category;
+            product.image = req.file == undefined ? product.image : req.file.filename;
+        }
+    })
+
+    let jsonDeProductos = JSON.stringify(products, null, 4);
+    fs.writeFileSync(productsFilePath, jsonDeProductos);
+
+    res.redirect('/products/mod/' + req.params.id)
     },
     list: function(req, res){
         let productList = {
@@ -61,15 +83,24 @@ let productController = {
             name:req.body.nombreProducto,
             description:req.body.descripcionProducto,
             price: req.body.precioProducto,
-            discount: req.body.discount ,
-            category: req.body.categoria ,
+            discount: req.body.discount,
+            category: req.body.categoria,
             image: req.file.filename
             }
         products.push(newProduct)
         const productsJson = JSON.stringify(products, null, 4)
         fs.writeFileSync(productsFilePath, productsJson)
         res.redirect('/')
-    }
+    },
+    delete: function (req, res) {
+        let productosRestantes = products.filter(product => {
+            return product.id != req.params.id;
+        })
+    
+        let jsonDeProductos = JSON.stringify(productosRestantes, null, 4);
+        fs.writeFileSync(productsFilePath, jsonDeProductos);
+    
+        res.redirect('/products'); }
 }
 
 module.exports = productController

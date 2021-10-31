@@ -10,12 +10,12 @@
     },
     {
         "id": 2,
-        "name": "Secret in Their Eyes, The (El secreto de sus ojos)",
-        "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-        "price": 13060,
-        "discount": 10,
-        "category": "visited",
-        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADGSURBVDjLY/j//z8DJZhh1ADsBhyJkKs44Mv3cI8Ty7+drsyPgLiCaAOOhMuVXyy2+Pl9a+//f9d2/P+6ouj/6WzdP7ucWXKJMmCnC/Pdb0DN/yf5/v9fLvj/f5vi/9ddDv+B4veIMgDk7H9n1/1HBu/rJf6DxIlzgSvz4y9zk///B2r6Ucbw/x0QP8xg/g8Uf0KUAYfDpRpOpqj+flau+P9VJev/uymM//f6svzZ4cpcRXwshMtWAG28D42Fx7g0jyZlCAYAAc7hFvdEsKgAAAAASUVORK5CYII="
+        "price": "1",
+        "discount": "200",
+        "image": "img-default.jpeg",
+        "name": "nombre indefinido",
+        "description": ":sunglasses:",
+        "category": "Motherboards"
     },
     {
         "id": 3,
@@ -55,10 +55,10 @@
     },
     {
         "id": 7,
-        "name": "Crimson Rivers, The (Rivières pourpres, Les)",
-        "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-        "price": 6890,
-        "discount": 4,
+        "name": "heteronormado el que lo lea",
+        "description": "Certe, Toto, sentio nos in Kansate iam adesse.",
+        "price": "6890",
+        "discount": "4",
         "category": "in-sale",
         "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADNSURBVCjPhZBNCsIwFIQnWvAGunHhSrBbQT2Op3EvCJ7JCxTcuhB0YytaW9N0fElbbIs/GZI8eF+GzFPE79X504dXXEq1GyytFYYYoPvh6RkH5raYJqE2GZtKuFljhI61mWlz55URY95FES88CXIsEQEs/xCl7rwx5FmAWKqtIEqAncEe2gWiyOCJRZVh7hVZ/erv0rYKkSNDv4qpELzjSTt3e1yfg1+fgAMMWAeCxghyB02+ORRf5W8HC/mfHdi61XJ162WoS7utXc30BXX/jFnkwiD5AAAAAElFTkSuQmCC"
     },
