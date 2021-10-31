@@ -51,9 +51,9 @@ let productController = {
 
     let jsonDeProductos = JSON.stringify(products, null, 4);
     fs.writeFileSync(productsFilePath, jsonDeProductos);
-
     res.redirect('/products/mod/' + req.params.id)
-    },
+    
+},
     list: function(req, res){
         let productList = {
             id: [],
