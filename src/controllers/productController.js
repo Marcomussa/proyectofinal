@@ -62,6 +62,7 @@ let productController = {
             price: [],
             discount: [],
             category: [],
+            image: [],
             products: products
         }
         products.forEach(par => {
@@ -71,8 +72,9 @@ let productController = {
             productList.price.push(par.price)
             productList.discount.push(par.discount)
             productList.category.push(par.category)
+            productList.image.push(par.image)
         })
-        res.render('productList', {'productsList': productList})
+        res.render('productList', {'productList': productList, "products": products})
     },
     redirect: function(req, res){
         res.render('redirect')

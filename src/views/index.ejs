@@ -23,57 +23,21 @@
          <!-- seccion ofertas -->
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
-            <a href="/product" class='tarjetaProducto'><div >
-                <div><img class='imagenProducto' src="/img/combointel.jpeg" alt= "" ></div>
+            <% for(let i = 1; i <= 4 ; i++){ %> 
+            <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'><div >
+                <div><img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" ></div>
                 <div class='infoProducto'>
                     <div class='nombreProducto'>
-                        Combo Intel I5
+                        <%= productList.name[i] %>
                     </div>
                     <div class='precioProductoHome'>
-                        <p class='precioTotalProducto'>Precio</p>
-                        <p class='precioDescuentoProducto'>15% OFF</p>
+                        <p class='precioTotalProducto'><%= productList.price[i] %></p>
+                        <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
                     </div>
                 </div>
+                <% } %> 
             </div></a>
-            <!-- Articulo Ofertas 2 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto' src="/img/comboryzen.jpg" alt= ""></div>
-                <div class='infoProducto'>
-                    <div class='nombreProducto'>
-                        Combo Ryzen 5
-                    </div>
-                    <div class='precioProductoHome'>
-                        <p class='precioTotalProducto'>Precio</p>
-                        <p class='precioDescuentoProducto'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
-            <!-- Articulo Ofertas 3 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto' src="/img/rtx3060.jpg" alt= ""></div>
-                <div class='infoProducto'>
-                    <div class='nombreProducto'>
-                        RTX 3060
-                    </div>
-                    <div class='precioProductoHome'>
-                        <p class='precioTotalProducto'>Precio</p>
-                        <p class='precioDescuentoProducto'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
-            <!-- Articulo Ofertas 4 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto' src="/img/amdrx6600xt.jpg" alt= ""></div>
-                <div class='infoProducto'>
-                    <div class='nombreProducto'>
-                        RX 6600xt
-                    </div>
-                    <div class='precioProductoHome'>
-                        <p class='precioTotalProducto'>Precio</p>
-                        <p class='precioDescuentoProducto'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
+         
         </div> 
         <!--barra lo mas vendido  boton mas-->
         <div class="contenedorOfertas contenedorVendido">
@@ -83,57 +47,21 @@
 
             <div class="contenedorOfertasSeccion contenedorVendidoSeccion">
                 <!-- Articulo lo + vendido 1 -->
-                <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto imagenVendido' src="/img/mouse.jpg" alt= ""></div>
-                <div class='infoProducto infoVendido'>
-                    <div class='nombreProducto nombreVendido'>
-                        Mouse
-                    </div>
-                    <div class='precioVendidoHome'>
-                        <p class='precioTotalProducto precioTotalVendido'>Precio</p>
-                        <p class='precioDescuentoProducto precioDescuentoVendido'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
-            <!-- Articulo lo + vendido 2 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto imagenVendido' src="/img/teclado.jpg" alt= ""></div>
-                <div class='infoProducto infoVendido'>
-                    <div class='nombreProducto nombreVendido'>
-                        Teclado
-                    </div>
-                    <div class='precioVendidoHome'>
-                        <p class='precioTotalProducto precioTotalVendido'>Precio</p>
-                        <p class='precioDescuentoProducto precioDescuentoVendido'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
-            <!-- Articulo lo + vendido 3 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto imagenVendido' src="/img/joystick.jpg" alt= ""></div>
-                <div class='infoProducto infoVendido'>
-                    <div class='nombreProducto nombreVendido'>
-                        Joystick
-                    </div>
-                    <div class=' precioVendidoHome'>
-                        <p class='precioTotalProducto precioTotalVendido'>Precio</p>
-                        <p class='precioDescuentoProducto precioDescuentoVendido'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
-            <!-- Articulo lo + vendido 4 -->
-            <a href="/product" class='tarjetaProducto'><div>
-                <div><img class='imagenProducto imagenVendido' src="/img/mousepad70*30.jpg" alt= ""></div>
-                <div class='infoProducto infoVendido'>
-                    <div class='nombreProducto nombreVendido'>
-                        Mouse Pad
-                    </div>
-                    <div class='precioVendidoHome'>
-                        <p class='precioTotalProducto precioTotalVendido'>Precio</p>
-                        <p class='precioDescuentoProducto precioDescuentoVendido'>15% OFF</p>
-                    </div>
-                </div>
-            </div></a>
+                <% for(let i = 1; i <= 4 ; i++){ %> 
+                    <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'><div >
+                        <div><img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" ></div>
+                        <div class='infoProducto'>
+                            <div class='nombreProducto'>
+                                <%= productList.name[i] %>
+                            </div>
+                            <div class='precioProductoHome'>
+                                <p class='precioTotalProducto'><%= productList.price[i] %></p>
+                                <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+                            </div>
+                        </div>
+                        <% } %> 
+                    </div></a>
+            
         </div>
     </div>
     <%- include('./partials/footer.ejs') %> 
