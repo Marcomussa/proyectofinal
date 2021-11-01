@@ -18,7 +18,6 @@ app.use(express.json())
 //delete
 app.use(methodOverride("_method"))
 
-
 // Configurar EJS: 
 app.set('view engine', 'ejs')
 
