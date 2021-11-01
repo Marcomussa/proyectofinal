@@ -26,6 +26,8 @@ router.get('/cart', productController.cart)
 
 router.get('/create', productController.create)
 
+router.get('/admin', productController.admin)
+
 router.get('/post', fileUpload.single('imagenProducto'), productController.create)
 
 router.get('/mod/:id', productController.mod)

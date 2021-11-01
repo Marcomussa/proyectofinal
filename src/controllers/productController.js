@@ -51,7 +51,7 @@ let productController = {
 
     let jsonDeProductos = JSON.stringify(products, null, 4);
     fs.writeFileSync(productsFilePath, jsonDeProductos);
-    res.redirect('/products/mod/' + req.params.id)
+    res.redirect('/products/admin/')
     
 },
     list: function(req, res){
@@ -90,7 +90,7 @@ let productController = {
         products.push(newProduct)
         const productsJson = JSON.stringify(products, null, 4)
         fs.writeFileSync(productsFilePath, productsJson)
-        res.redirect('/')
+        res.redirect('/products/admin/')
     },
     delete: function (req, res) {
         let productosRestantes = products.filter(product => {
@@ -100,7 +100,30 @@ let productController = {
         let jsonDeProductos = JSON.stringify(productosRestantes, null, 4);
         fs.writeFileSync(productsFilePath, jsonDeProductos);
     
-        res.redirect('/products'); }
+        res.redirect('/products/admin/'); 
+    },
+        admin : function(req, res){
+            let productList = {
+                id: [],
+                name: [],
+                description: [],
+                price: [],
+                discount: [],
+                category: [],
+                image: [],
+                products: products
+            }
+            products.forEach(par => {
+                productList.id.push(par.id)
+                productList.name.push(par.name)
+                productList.description.push(par.description)
+                productList.price.push(par.price)
+                productList.discount.push(par.discount)
+                productList.category.push(par.category)
+                productList.image.push(par.image)
+            })
+            res.render('admin', {'productsList': productList}) 
+        }
 }
 
 module.exports = productController
