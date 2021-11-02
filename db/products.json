@@ -29,9 +29,9 @@
     {
         "id": 4,
         "name": "Viva María!",
-        "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-        "price": 13015,
-        "discount": 2,
+        "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\r\n\r\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+        "price": "13015",
+        "discount": "2",
         "category": "in-sale",
         "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKMSURBVDjLjZNtSBNxAIcHQt+rL9GnlU2FIigo+lJRQTYGoaFRDd/Y1IL81JhzvVqaiEQZEmn2omtIZdr5Nh2lc04v3ZbOLRVS3NR8g9nci7ebk193Z16uQXjwfPw999z/7gQABIODg+eMZXJ0qsTQZyVAIBAc3SJCdnzQYrH4B0gTrGQ32jPiEQ6HtwQnUalU2wiCyOwoyUVvVS7a0+NBUVQEgUAAfr+fx+v1YnV1dV0QWWCAThoXJdiQbODz+RAKhSILdA9yYarMge5yHILBIIda64JK40I+g7LWCeUbJxQMbAUv4Av61gtaL8aBpmkOdqwxLKKWoaZrES0dDRjTXsIPohhDL8+iMk94jy9ovZ+DnmfZaEkVcXaWzXd9UVeNuc58eIZbAN9P/BquR09pojuqoOmCiDsgVrDxKMtTBJZGCkFPN2HOUIYVewPCThNsr7LpvwV3s2GskKMpeR8/vvHaifK37+B23MbaigkrE9fhHsjDqEYGR81VSE+LUiIL+gwgzsdyAvYMPNN6LNkLsEaRCIxngJqSwjuihqsmCUOmNsTExBzjC5pvydH9VIZGSSw3nh7+iDlz/p9xOijXFSw7bmKiSgLLlw+Yn5+PfgsWpqBBvBczdgKjeiWTbQQ1KUNwKg0epmT8uRgWYztmZ2ejv8TmAhm6HmehLkWI721q2HRPMNOfisCkFO4hFcark5ixjhuzh8wL/i14X3oG8DoxVpWCTvVu9DJ37X2UCMdXPRYWFrD54gsUCsUereQAGtOOoEi+HzRZAbq/HP3Fp1B/TQRrdzPsdjtsNhvMZjOsVitIklwXsCKWTNGOk3cO7SpMPb499DAjIfy5RBz+VHTim+TwzuT//c6/ASolxdSxQ5KqAAAAAElFTkSuQmCC"
     },
