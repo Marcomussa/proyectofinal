@@ -29,7 +29,7 @@ app.use('/users', usersRoutes)
 app.use('/products', productsRoutes)
 
 //Middlewares:
-app.use(middlewares.seguimientoPaginas)
+
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
