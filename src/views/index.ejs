@@ -23,11 +23,11 @@
          <!-- seccion ofertas -->
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
-        <% for(let i = 1; i <= 4 ; i++){ %> 
+        <% for(let i = 0; i <= 3 ; i++){ %> 
             <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
                 <div>
                 
-                    <img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" >
+                    <img class='imagenProducto' src="/img/products/<%= productList.image[i] %>" alt= "" >
                
                     <div class='infoProducto'>
                         <div class='nombreProducto'>
@@ -55,7 +55,7 @@
                 <% for(let i = 1; i <= 4 ; i++){ %> 
                     <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
                         <div>
-                            <img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" >
+                            <img class='imagenProducto' src="/img/products/<%= productList.image[i] %>" alt= "" >
                         </div>
                         <div class='infoProducto'>
                             <div class='nombreProducto'>

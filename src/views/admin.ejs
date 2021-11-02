@@ -9,9 +9,9 @@
 <a href="/products/create" class="btn btn-primary btn-lg"> Crear Producto</a>
  
   <section class="contenedorProductList">
-  <% for(let i = 0; i < 10; i++){ %> 
+  <% for(let i = 0; i < products.length; i++){ %> 
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="<%= productsList.image[i] %>" alt="">
+      <img class="card-img-top" src="/img/products/<%= productsList.image[i] %>" alt="">
       <div class="card-body">
         <h5 class="card-title"><%= productsList.name[i] %></h5>
         <p class="card-text"><%= productsList.description[i] %></p>

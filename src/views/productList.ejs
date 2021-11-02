@@ -24,7 +24,7 @@
       <!--Testeando forma de los products-->
       <% for(let i = 0; i < products.length ; i++){ %> 
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="<%= productList.image[i] %>" alt="">
+          <img class="card-img-top" src="/img/products/<%= productList.image[i] %>" alt="">
           <div class="card-body">
             <h5 class="card-title"><%= productList.name[i] %></h5>
             <p class="card-text"><%= productList.description[i] %></p>

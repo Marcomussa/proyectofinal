@@ -30,7 +30,7 @@ let productController = {
         res.render('createProduct')
     },
     mod: function(req, res){
-         if (products.length>req.params.id){
+         if (products.length>=req.params.id){
             const pActual = products.filter(p => p.id == req.params.id)
             res.render('modProduct', { 'product': pActual[0] })
          } else res.status(404).send('Producto No Definido')
@@ -124,7 +124,7 @@ let productController = {
                 productList.category.push(par.category)
                 productList.image.push(par.image)
             })
-            res.render('admin', {'productsList': productList}) 
+            res.render('admin', {'productsList': productList, "products": products}) 
         }
 }
 
