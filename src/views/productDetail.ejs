@@ -5,11 +5,11 @@
  
     <%- include('./partials/header.ejs') %> 
 
-    <!-- <section class="producto">
+    <section class="producto">
     
       <article class="caruselNombre">
             
-            <h2 class="nombreDeProducto">Nombre producto</h2>
+            <h2 class="nombreDeProducto"><%= JSON.stringify(productDetail[0].name) %></h2> falta arreglar las imagenes
         
             <div class="carousel">
 
@@ -19,26 +19,24 @@
       </article>
 
         <article class="datosProducto">
-            <h4 class="precioProducto">$999</h4> en un cuadrado -->
-            <!-- <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
+            <h4 class="precioProducto">$<%= JSON.stringify(productDetail[0].price) %></h4> 
+            <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
             <button class="añadirProducto2"> Comprar</button> <br>
             <a href="#" class="pagoProducto">Metodos de pago</a>
          <article class="ofertaProducto">
              <p class="oferta1"><i class="fas fa-shipping-fast"></i> envios a todo el pais</p>
-             <p class="oferta2"><i class="fas fa-percent"></i> hasta 12 cuotas sin interes</p>
+             <p class="oferta2"><i class="fas fa-percent"></i> Descuento</p>
          </article>
         </article>
     </section>
     <div class="descripcionProducto">
-        <p class="descripcionDelProducto">Lorem ipsum dolor sit amet consectetur adipisicing <br>
-            -elit. Ex omnis optio soluta repellat suscipit, <br>
-            -culpa maiores, molestias iure  totam  nesciunt dicta saepe  sit tempore doloremque <br>
-            -temporibus quae asperiores voluptatibus itaque dignissimos aperiam! Voluptates, ipsum sapiente!
+        <p class="descripcionDelProducto">
+          <%= JSON.stringify(productDetail[0].description) %> 
         </p>
     </div>
     <h2 class="busquedas">en base a busquedas similares</h2>
-    productos similares -->
-    <!-- <article class="masArticulos">
+
+    <article class="masArticulos">
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="/img/mouse.jpg" alt="Card image cap">
             <div class="card-body">
@@ -49,7 +47,7 @@
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/mouse.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/img/mouse.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Goku UI</h5>
               <h6 class="card-title">$999</h6>
@@ -76,7 +74,7 @@
             </div>
           </div>
           
-    </article> --->
+    </article> 
 
     <section class="contenedorProductDetail">
       <div class="productDetail">

@@ -1,7 +1,8 @@
 /* media */
 @media (min-width: 363px){
     .contenedorOfertasSeccion {
-        flex-direction: row;}
+        flex-direction: row;
+    }
     .contenedorVendidoSeccion  {
         flex-direction: row;
     }

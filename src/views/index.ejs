@@ -23,20 +23,25 @@
          <!-- seccion ofertas -->
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
-            <% for(let i = 1; i <= 4 ; i++){ %> 
-            <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'><div >
-                <div><img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" ></div>
-                <div class='infoProducto'>
-                    <div class='nombreProducto'>
-                        <%= productList.name[i] %>
-                    </div>
-                    <div class='precioProductoHome'>
-                        <p class='precioTotalProducto'><%= productList.price[i] %></p>
-                        <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+        <% for(let i = 1; i <= 4 ; i++){ %> 
+            <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
+                <div>
+                
+                    <img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" >
+               
+                    <div class='infoProducto'>
+                        <div class='nombreProducto'>
+                            <%= productList.name[i] %>
+                        </div>
+                        <div class='precioProductoHome'>
+                            <p class='precioTotalProducto'><%= productList.price[i] %></p>
+                            <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+                        </div>
                     </div>
                 </div>
-                <% } %> 
-            </div></a>
+            </a>
+        <% } %> 
+            
          
         </div> 
         <!--barra lo mas vendido  boton mas-->
@@ -48,19 +53,21 @@
             <div class="contenedorOfertasSeccion contenedorVendidoSeccion">
                 <!-- Articulo lo + vendido 1 -->
                 <% for(let i = 1; i <= 4 ; i++){ %> 
-                    <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'><div >
-                        <div><img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" ></div>
+                    <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
+                        <div>
+                            <img class='imagenProducto' src="<%= productList.image[i] %>" alt= "" >
+                        </div>
                         <div class='infoProducto'>
                             <div class='nombreProducto'>
                                 <%= productList.name[i] %>
-                            </div>
-                            <div class='precioProductoHome'>
-                                <p class='precioTotalProducto'><%= productList.price[i] %></p>
-                                <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
-                            </div>
+                                <div class='precioProductoHome'>
+                                    <p class='precioTotalProducto'><%= productList.price[i] %></p>
+                                    <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+                                </div>
+                            </div>  
                         </div>
-                        <% } %> 
-                    </div></a>
+                    </a>
+                <% } %> 
             
         </div>
     </div>
