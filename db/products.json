@@ -1,10 +1,10 @@
-[ 
+[
     {
         "id": 1,
         "name": "Too Many Cooks",
         "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-        "price": 11758,
-        "discount": 15,
+        "price": "11758",
+        "discount": "15",
         "category": "in-sale",
         "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE3SURBVCjPfZHNSgJhFIa/C3AldD2ugraCF2E2OdX6c0ZtQAj7nUJoUxZtKn+mwE20CoRW4/hTTukg3xUIugmCp8UMYhs5u/M+L+fwvgKxegRCCSWUcOKO1XSb08as4dat+lq4XQBOsjXvEqBQBHg8z2upJcBJvDFmwhgfn28CRtyxvxEBzVhLjQjwGfLBgD59XrEpBoVYCBgeE4YLucste1xSplBACESjHTCKxB5dbthFx8Im/44QiPqv4jPyelTZQSeLRgWTBTCgF8k6OttobHGBEQK19hgfjw7XkVcjg8kxRnji0XAZ0+Fq4c2Q5pwSufDJh9iT+uKFbCRuksamjAxkLArqPlHllAp5NHRy2BxSRK4vRZ1PmrMDTrA544gSciZT/7pQwowbluHmfuRUutKSy2Wtnj+jSVcdCo7izAAAAABJRU5ErkJggg=="
     },
@@ -12,8 +12,8 @@
         "id": 2,
         "name": "Secret in Their Eyes, The (El secreto de sus ojos)",
         "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-        "price": 13060,
-        "discount": 10,
+        "price": "13060",
+        "discount": "10",
         "category": "visited",
         "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADGSURBVDjLY/j//z8DJZhh1ADsBhyJkKs44Mv3cI8Ty7+drsyPgLiCaAOOhMuVXyy2+Pl9a+//f9d2/P+6ouj/6WzdP7ucWXKJMmCnC/Pdb0DN/yf5/v9fLvj/f5vi/9ddDv+B4veIMgDk7H9n1/1HBu/rJf6DxIlzgSvz4y9zk///B2r6Ucbw/x0QP8xg/g8Uf0KUAYfDpRpOpqj+flau+P9VJev/uymM//f6svzZ4cpcRXwshMtWAG28D42Fx7g0jyZlCAYAAc7hFvdEsKgAAAAASUVORK5CYII="
     },

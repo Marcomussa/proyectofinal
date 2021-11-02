@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+
+<h2>Productos</h2>
+
+<a href="/products/create" class="btn btn-primary btn-lg"> Crear Producto</a>
+ 
+  <section class="contenedorProductList">
+  <% for(let i = 0; i < 10; i++){ %> 
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="<%= productsList.image[i] %>" alt="">
+      <div class="card-body">
+        <h5 class="card-title"><%= productsList.name[i] %></h5>
+        <p class="card-text"><%= productsList.description[i] %></p>
+        <h6 class="card-title"><%= productsList.price[i] %></h6>
+        <h6 class="card-title"><%= productsList.discount[i] %></h6>
+        <br>
+        <a href="/products/mod/<%= productsList.id[i] %>" class="añadirProducto btnCompra">Modificar</a>
+      </div>
+    </div>
+    <% } %> 
+
+
+</section>
+
+
+<%- include('./partials/footer.ejs') %> 
+</body>
+</html>
