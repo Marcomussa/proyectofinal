@@ -120,10 +120,10 @@
     display: flex;
     background-size: cover;
     background-position: center;
-   animation: carouselAnimacion infinite 10000ms ease-in-out;
+   /*animation: carouselAnimacion infinite 10000ms ease-in-out;*/
 }
 
-@keyframes carouselAnimacion{
+/*@keyframes carouselAnimacion{
      0%{background-image: url('../img/intelbanner.jpg'); }
      25%{background-image: url('../img/intelbanner.jpg');}
      26%{background-image: url('../img/amdbanner.jpg');}
@@ -132,7 +132,7 @@
      75%{background-image: url('../img/combointel.jpeg');}
      76%{background-image: url('../img/comboryzen.jpg');}
      100%{background-image: url('../img/comboryzen.jpg');}
- }
+ }*/
  
 
 .caruselNombre{
