@@ -29,10 +29,16 @@
          </article>
         </article>
     </section>
-    <div class="descripcionProducto">
-        <p class="descripcionDelProducto">
-          <%= JSON.stringify(productDetail[0].description) %> 
-        </p>
+    <div class="descripcionDiv">
+      <div class="descName">
+        <h3>Descripcion</h3>
+      </div>
+  
+    <div class="hr"></div>
+  
+    <div class="descText">
+        <p><%= JSON.stringify(productDetail[0].description) %> </p>
+    </div>
     </div>
     <h2 class="busquedas">en base a busquedas similares</h2>
 
