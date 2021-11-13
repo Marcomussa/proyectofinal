@@ -4,13 +4,13 @@
         "name": "Too Many Cooks",
         "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
         "price": "11758",
-        "discount": "15",
+        "discount": "18",
         "category": "in-sale",
         "image": "1635889709882.jpg"
     },
     {
         "id": 2,
-        "name": "Secret in Their Eyes, The (El secreto de sus ojos)",
+        "name": "Secret in Their Eyes",
         "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
         "price": "13060",
         "discount": "10",
@@ -37,7 +37,7 @@
     },
     {
         "id": 5,
-        "name": "Love and Sex under Nazi Occupation (Amour et sexe sous l'occupation) ",
+        "name": "Love and Sex under Nazi ",
         "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\r\n\r\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\r\n\r\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "price": "11975",
         "discount": "8",
