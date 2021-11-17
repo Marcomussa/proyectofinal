@@ -111,6 +111,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
 
@@ -338,6 +339,11 @@
         background-color:rgb(245, 239, 240);
         margin-top: 20px;
         margin: 5px;
+    }
+    .carousel{
+         width:700px;
+        height: 415px;
+        margin-left: 10px;
     }
 }
 

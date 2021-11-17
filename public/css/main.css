@@ -102,6 +102,12 @@ p {
 .nombreProducto {
     font-size: 1.3rem;
 }
+.tarjetaProducto:hover .nombreProducto{
+    color: red;
+}
+.tarjetaProducto:hover .precioTotalProducto{
+    color: black;
+}
 .precioProductoHome {
     display: flex;
     flex-direction: row;
