@@ -9,7 +9,7 @@
     
       <article class="caruselNombre">
             
-            <h2 class="nombreDeProducto"><%= JSON.stringify(productDetail[0].name) %></h2>
+            <h2 class="nombreDeProducto"><%= JSON.stringify(productDetail[0].name).replace(/\"/g, "") %></h2>
           <!--
             <div class="carousel">
               <img src="<%= productDetail[0].image %>" class="carousel" alt="">
@@ -46,7 +46,7 @@
       </article>
 
         <article class="datosProducto">
-            <h4 class="precioProducto">$<%= JSON.stringify(productDetail[0].price) %></h4> 
+            <h4 class="precioProducto">$<%= JSON.stringify(productDetail[0].price).replace(/\"/g, "") %></h4> 
             <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
             <button class="añadirProducto2"> Comprar</button> <br>
             <a href="#" class="pagoProducto">Metodos de pago</a>

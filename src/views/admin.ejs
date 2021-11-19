@@ -8,22 +8,22 @@
 
 <a href="/products/create" class="btn btn-primary btn-lg"> Crear Producto</a>
  
-  <section class="contenedorProductList">
-  <% for(let i = 0; i < products.length; i++){ %> 
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/img/products/<%= productsList.image[i] %>" alt="">
+
+<section class="products">
+  <!--Testeando forma de los products-->
+  <% for(let i = 0; i < products.length ; i++){ %> 
+    <div class="card">
+      <img src="/img/products/<%= productsList.image[i] %>" class="img-thumbnail image" alt="...">        
       <div class="card-body">
-        <h5 class="card-title"><%= productsList.name[i] %></h5>
-        <p class="card-text"><%= productsList.description[i] %></p>
-        <h6 class="card-title"><%= productsList.price[i] %></h6>
-        <h6 class="card-title"><%= productsList.discount[i] %></h6>
+        <h5 class="card-title title"><%= productsList.name[i] %></h5>
+        <h6 class="card-title">$<%= productsList.price[i] %></h6>
+        <h6 class="card-title"><%= productsList.discount[i] %>%</h6>
+        <p class="card-text title"><%= productsList.description[i] %></p>
         <br>
-        <a href="/products/mod/<%= productsList.id[i] %>" class="añadirProducto btnCompra">Modificar</a>
+        <a href="/products/mod/<%= productsList.id[i] %>" class="añadirProducto btnDetail btnDetail btnCompra">Modificar</a>
       </div>
     </div>
-    <% } %> 
-
-
+  <% } %> 
 </section>
 
 

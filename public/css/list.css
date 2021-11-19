@@ -1,4 +1,4 @@
-.contenedorProductList {
+/*.contenedorProductList {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -42,4 +42,47 @@
 .segundoDiv {
     align-self: center;
     margin-left: 15%;
+}*/
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+
+.name{
+    text-overflow: Ellipsis; /* will make [...] at the end */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+}
+
+.title{
+    text-overflow: Ellipsis; /* will make [...] at the end */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+}
+
+.name:hover{
+    overflow: visible;
+    white-space: pre-wrap;
+}
+
+.title:hover{
+    overflow: visible;
+    white-space: pre-wrap;
+}
+
+.image{
+    height: 10rem;
+    max-width: 18rem;
+    max-height: 10rem;
+}
+
+.card{
+    width: 18rem;
+    margin: 10px;
+}
+
+.btnDetail{
+    margin-left: -15px;
 }

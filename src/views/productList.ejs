@@ -19,22 +19,20 @@
   </div> -->
   <h2>Listado de productos</h2>
   <a href="/products/admin" class="btn btn-primary btn-lg"> Administrador</a>
-    <section class="contenedorProductList">
+    <section class="products">
   
       <!--Testeando forma de los products-->
       <% for(let i = 0; i < products.length ; i++){ %> 
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/products/<%= productList.image[i] %>" alt="">
+        <div class="card">
+          <img src="/img/products/<%= productList.image[i] %>" class="img-thumbnail image" alt="...">        
           <div class="card-body">
-            <h5 class="card-title"><%= productList.name[i] %></h5>
-            <h6 class="card-title"><%= productList.price[i] %></h6>
+            <h5 class="card-title title"><%= productList.name[i] %></h5>
+            <h6 class="card-title">$<%= productList.price[i] %></h6>
             <br>
-            <a href="/products/<%= productList.id[i] %>" class="añadirProducto btnCompra">Ir al Producto</a>
+            <a href="/products/<%= productList.id[i] %>" class="añadirProducto btnDetail btnCompra">Ir al Producto</a>
           </div>
         </div>
-        <% } %> 
-
-  
+      <% } %> 
     </section>
   
 
