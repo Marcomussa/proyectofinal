@@ -21,8 +21,10 @@ p {
 }
 @keyframes banner{
     0%{background-image: url('../img/intelbanner.jpg'); }
-    50%{background-image: url('../img/intelbanner.jpg');}
-   51%{background-image: url('../img/amdbanner.jpg');}
+    33%{background-image: url('../img/intelbanner.jpg');}
+    34%{background-image: url('../img/hyperxbanner.png');}
+    77%{background-image: url('../img/hyperxbanner.png');}
+    78%{background-image: url('../img/amdbanner.jpg');}
     100%{background-image: url('../img/amdbanner.jpg');}
  }
 .contenedorBotonesHome {
