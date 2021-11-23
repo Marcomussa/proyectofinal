@@ -8,6 +8,7 @@
 .adminList{
     width: 90%;
     display: flex;
+    padding-top: 3%;
 
 }
 .adminImg {
@@ -26,19 +27,30 @@
 .adminProductName {
     align-self: center;
     text-align: center;
+    width: 30%;
+    padding-left: 5%;
+    
 }
 
 .adminProductPrice{
     align-self: center;
     text-align: center;
+    width: 12%;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 .adminProductDiscount{
     align-self: center;
     text-align: center;
+    width: 12%;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 .adminButtons{
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 10%;
 }
