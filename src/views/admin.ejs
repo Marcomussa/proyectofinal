@@ -9,7 +9,7 @@
 <a href="/products/create" class="btn btn-primary btn-lg"> Crear Producto</a>
  
 
-<section class="products">
+<section class="productsAdmin">
   <!--Testeando forma de los products-->
   <% for(let i = 0; i < products.length ; i++){ %> 
     <div class="adminList">
@@ -24,7 +24,7 @@
        <div class="adminButtons"> 
         <div> <a href="/products/mod/<%= productsList.id[i] %>" class="btn btn-success">Modificar</a></div>
        
-        <div><form method="POST" action="/products/<%= products.id %>?_method=delete">
+        <div><form method="POST" action="/products/<%= productsList.id[i] %>?_method=delete">
           <button type="submit" class="btn btn-danger">Eliminar</button>
         </form></div>
       </div>
