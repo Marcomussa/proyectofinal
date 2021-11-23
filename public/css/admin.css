@@ -1,0 +1,36 @@
+.adminList{
+    width: 90%;
+    display: flex;
+
+}
+.adminImg {
+    width: 12%;
+    height: 50%;
+    align-self: center;
+}
+.listCard {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.adminProductName {
+    align-self: center;
+    text-align: center;
+}
+
+.adminProductPrice{
+    align-self: center;
+    text-align: center;
+}
+
+.adminProductDiscount{
+    align-self: center;
+    text-align: center;
+}
+
+.adminButtons{
+    display: flex;
+}

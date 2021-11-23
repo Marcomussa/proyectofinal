@@ -12,15 +12,23 @@
 <section class="products">
   <!--Testeando forma de los products-->
   <% for(let i = 0; i < products.length ; i++){ %> 
-    <div class="card">
-      <img src="/img/products/<%= productsList.image[i] %>" class="img-thumbnail image" alt="...">        
-      <div class="card-body">
-        <h5 class="card-title title"><%= productsList.name[i] %></h5>
-        <h6 class="card-title">$<%= productsList.price[i] %></h6>
-        <h6 class="card-title"><%= productsList.discount[i] %>%</h6>
-        <p class="card-text title"><%= productsList.description[i] %></p>
+    <div class="adminList">
+              
+      <div class="listCard">
+        <img src="/img/products/<%= productsList.image[i] %>" class="adminImg" alt="...">
+        <h5 class="adminProductName"><%= productsList.name[i] %></h5>
+        <div class="adminProductPrice"><h6>Precio</h6><h6>$<%= productsList.price[i] %></h6></div>
+        <div class="adminProductDiscount"><h6>Descuento</h6><h6 ><%= productsList.discount[i] %>%</h6></div>
+        <!--<p class="card-text title"><%= productsList.description[i] %></p>-->
         <br>
-        <a href="/products/mod/<%= productsList.id[i] %>" class="añadirProducto btnDetail btnDetail btnCompra">Modificar</a>
+       <div class="adminButtons"> 
+        <div> <a href="/products/mod/<%= productsList.id[i] %>" class="btn btn-success">Modificar</a></div>
+       
+        <div><form method="POST" action="/products/<%= products.id %>?_method=delete">
+          <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form></div>
+      </div>
+      
       </div>
     </div>
   <% } %> 

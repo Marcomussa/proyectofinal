@@ -15,32 +15,36 @@
             </div>
         </article>   
         <article class="logIn">
-            <h3>Iniciar Sesion</h3>
+            <h3>Inicia Sesion</h3>
             <div class="logInExterno">
-                <button class='btn btn-primary'>Iniciar con Google</button>
-                <button class='btn btn-primary'>Iniciar con Facebook</button>
+               <!-- <button class='btn btn-primary'>Iniciar con Google</button>
+                <button class='btn btn-primary'>Iniciar con Facebook</button>-->
             </div>
-            <span class="separadorLogIn">OR</span>
-            <!-- <div class="logInInterno">
+        <!-- <span class="separadorLogIn">OR</span>-->
+             <div class="contenedorCrearCuenta">
                 <form action="/redirect" method="POST" enctype="multipart/form-data">
                     <input type="text" placeholder="email" class="email form-control" id="inputLogInEmail">
                     <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
                     <div id="logInErrores"></div>
-                    <p><a href="#">Olvide mi contrasena</a></p>
+                    <p><a href="#">Olvide mi contraseña</a></p>
                     <div class="botonesLogIn">
                         <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
-                        <button class="btn btn-success" id="btnNuevaCuenta">Nueva Cuenta</button>
-                    </div>
+                       <!-- <button class="btn btn-success" id="btnNuevaCuenta">Nueva Cuenta</button>
+                    </div>-->
                 </form>
-            </div> -->
+
+               
+            </div> 
+            
            <form action="/users/redirect" method="POST">
+            <div> <h4><span class="separadorLogIn">O Crea tu cuenta</span></h4></div>
             <div class="crearCuenta" id="crearCuenta">
                 <div class="contenedorCrearCuenta">
                     <input type="text" placeholder="Nombre" class="form-control" name="name">
                     <input type="text" placeholder="Apellido" class="form-control" name="surname">
                     <input type="text" placeholder="Email" class="form-control" name="email">
                     <input type="password" placeholder="Contrasena" class="form-control" name="pass">
-                    <button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button>
+                  <div><button class="btn btn-success" id="btnCrearCuenta">Crear Cuenta</button> </div>
                 </div>
             </div>
             </form>
