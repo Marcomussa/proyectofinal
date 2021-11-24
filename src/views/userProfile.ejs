@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {'title': 'Log in'})  %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+    
+    <h1>Hi <%= user.fullName %> </h2>
+
+    <img src="<%= user.avatar %>">
+    <%- include('./partials/footer.ejs') %> 
+    <div class="alert alert-success"><%= user.email %> </div>
+</body>
+</html>

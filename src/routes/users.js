@@ -16,4 +16,6 @@ router.post('/redirect', [
 
 router.get('/wishlist', usersController.wishlist)
 
+router.get('/profile/', authMiddleware, usersController.profile);
+
 module.exports = router
