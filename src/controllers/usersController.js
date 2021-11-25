@@ -1,4 +1,8 @@
 const {validationResult} = require('express-validator')
+const bcryptjs = require('bcryptjs')
+const fs = require('fs')
+const path = require('path')
+
 
 const usersController = {
     login: function(req, res){
@@ -15,7 +19,15 @@ const usersController = {
             console.log(errors.array())
         } 
         else {
-        res.send(req.body)
+         let newUser = {
+                nombre: req.body.name,
+                apellido: req.body.surname,
+                email: req.body.email,
+                pass: bcryptjs.hashSync(req.body.pass, 10),
+                avatar: req.file
+            }
+   
+        res.send(newUser)
         }
     },
     wishlist: function(req, res){
