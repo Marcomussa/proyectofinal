@@ -3,6 +3,10 @@ const bcryptjs = require('bcryptjs')
 const fs = require('fs')
 const path = require('path')
 
+const json_users = fs.readFileSync(path.join(__dirname, '../db/usersLogIn.json'), 'utf-8')
+let users = JSON.parse(json_users)
+
+
 
 const usersController = {
     login: function(req, res){
@@ -26,7 +30,11 @@ const usersController = {
                 pass: bcryptjs.hashSync(req.body.pass, 10),
                 avatar: req.file
             }
-   
+            users.unshift(newUser)
+      
+            const JSONUsers = JSON.stringify(users)
+            fs.writeFileSync(path.join(__dirname, '../db/usersLogIn.json'), JSONUsers, 'utf-8')
+
         res.send(newUser)
         }
     },
