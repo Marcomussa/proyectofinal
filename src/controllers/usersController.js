@@ -30,6 +30,9 @@ const usersController = {
                 pass: bcryptjs.hashSync(req.body.pass, 10),
                 avatar: req.file
             }
+            req.session.newUser = newUser
+            //console.log(req.session.newUser);
+
            // users.unshift(newUser)
       
            // const JSONUsers = JSON.stringify(users)

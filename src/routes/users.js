@@ -36,6 +36,6 @@ router.post('/redirect', upload.single('imagenUsuario')
 
 router.get('/wishlist', usersController.wishlist)
 
-router.get('/profile/', /*authMiddleware, */ usersController.profile);
+router.get('/profile/:id', /*authMiddleware, */ usersController.profile);
 
 module.exports = router

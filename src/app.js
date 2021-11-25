@@ -6,7 +6,7 @@ const usersRoutes = require('./routes/users')
 const path = require('path')
 const middlewares = require('./middlewares/middlewares')
 const methodOverride = require('method-override') 
-
+const session = require('express-session')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
@@ -15,6 +15,11 @@ app.set('views', path.resolve(__dirname, 'views'))
 // Captando el body del pedido:
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
+app.use(session({
+    secret: 'Hola',
+    resave: true,
+    saveUninitialized: true
+}))
 
 //delete
 app.use(methodOverride("_method"))
