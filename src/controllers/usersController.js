@@ -22,10 +22,7 @@ const usersController = {
         res.render('wishlist')
     },
     profile: function(req, res){
-        console.log(req.cookies.userEmail);
-		return res.render('userProfile', {
-			user: req.session.userlogued
-		});
+		return res.render('userProfile', );
     }
 }
 

@@ -7,6 +7,7 @@ const path = require('path')
 const middlewares = require('./middlewares/middlewares')
 const methodOverride = require('method-override') 
 
+
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
 app.set('views', path.resolve(__dirname, 'views'))
