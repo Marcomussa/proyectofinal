@@ -4,7 +4,7 @@ const mainRoutes = require('./routes/main')
 const productsRoutes = require('./routes/products')
 const usersRoutes = require('./routes/users')
 const path = require('path')
-const middlewares = require('./middlewares/middlewares')
+
 const methodOverride = require('method-override') 
 const session = require('express-session')
 
