@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs', {'title': 'Log in'})  %> 
+    <%- include('./partials/head.ejs', {'title': 'Perfil'})  %> 
 <body>
-    <%- include('./partials/header.ejs') %> 
+    <%- include('./partials/header.ejs') %>   
+    <section class="perfilUsuario">
+        <div class="img">
+            <img class="imgPerfil" src="/img/2.png"/>
+        </div>
     
-    <h1>Hola usuario</h2>
-    <img src="/img/2.png">
-    <div class="alert alert-success">
-        <h2>email@gmail.com</h2>
-    </div>
+        <div class="infoPerfil">
+            <h1>Nombre usuario</h2>
+            <h4>email@gmail.com</h4>
+        </div>
+    </section>
     <%- include('./partials/footer.ejs') %> 
-    
 </body>
 </html>
