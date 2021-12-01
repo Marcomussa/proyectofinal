@@ -9,3 +9,7 @@
     flex-direction: row;
     margin: 20px;
 }
+
+.img{
+  flex-direction: column;
+}

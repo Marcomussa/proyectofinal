@@ -151,6 +151,7 @@
     display: flex;
     background-size: cover;
     background-position: center;
+    border: 2px solid black;
    /*animation: carouselAnimacion infinite 10000ms ease-in-out;*/
 }
 
@@ -231,6 +232,34 @@
 
 
 /* medias del product detail */
+@media (max-width: 360px){
+    .carousel{
+        width:300px;
+        height: 200px;
+        margin-left: 5px;
+    }
+    .nombreDeProducto{
+        font-size: 1.6rem;
+    }
+    .precioProducto{
+        font-size: 1.6rem;
+    }
+    .añadirProducto{
+        width: 150px;
+        font-size: 0.1rem;
+        height: 55px;
+    }
+    .añadirProducto>i{
+        width: 10px;
+    }
+    .añadirProducto2{
+        width: 150px;
+        height: 55px;
+    }
+    .oferta1, .oferta2{
+        font-size: 0.8rem;
+    }
+}
 @media (min-width: 361px) and (max-width:767px){
     *{
         box-sizing: border-box;
@@ -248,7 +277,7 @@
     }
     
     .nombreDeProducto{
-        font-size: 1.2em;
+        font-size: 1.8em;
         justify-content: center;
     }
     
