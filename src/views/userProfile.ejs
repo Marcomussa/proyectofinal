@@ -9,11 +9,29 @@
             <button>Cambiar avatar</button>
         </sdiv>
     
+<<<<<<< HEAD
         <div class="infoPerfil">
             <h1>Nombre usuario</h2>
             <h4>email@gmail.com</h4>
         </div>
     </section>
+=======
+    <% newUser.forEach((par) => { %> 
+        <h3>
+            Hola <%= par.name %> 
+        </h3>
+    <% }) %> 
+
+    <img src="/img/2.png">
+    <div class="alert alert-success">
+        <% newUser.forEach((par) => { %> 
+            <h3>
+                <%= par.mail %> 
+            </h3>
+        <% }) %> 
+    </div>
+
+>>>>>>> a9e9fad (se agrego session y cookies)
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>

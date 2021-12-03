@@ -27,12 +27,12 @@ router.get('/', usersController.login)
 router.get('/redirect', usersController.validacionLogIn)
 
 router.post('/redirect', upload.single('imagenUsuario')
-, [
-    check('name').notEmpty(),
-    check('surname').notEmpty(),
-    check('email').notEmpty().isEmail(),
-    check('pass').notEmpty()
-], usersController.validacionLogIn)
+// , [
+//     check('name').notEmpty(),
+//     check('surname').notEmpty(),
+//     check('email').notEmpty().isEmail(),
+//     check('pass').notEmpty()], 
+,usersController.validacionLogIn)
 
 router.get('/wishlist', usersController.wishlist)
 

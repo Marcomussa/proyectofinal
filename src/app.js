@@ -7,19 +7,26 @@ const path = require('path')
 
 const methodOverride = require('method-override') 
 const session = require('express-session')
+const cookieParser = require('cookie-parser')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
 app.set('views', path.resolve(__dirname, 'views'))
 
 // Captando el body del pedido:
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({
+    extended: false
+}))
+
 app.use(express.json())
+
 app.use(session({
     secret: 'Hola',
     resave: true,
     saveUninitialized: true
 }))
+
+app.use(cookieParser())
 
 //delete
 app.use(methodOverride("_method"))
@@ -33,9 +40,6 @@ app.use('/', mainRoutes)
 app.use('/users', usersRoutes)
 
 app.use('/products', productsRoutes)
-
-//Middlewares:
-
 
 // Server:
 app.listen (3000, () => console.log('Server On http://localhost:3000') )
