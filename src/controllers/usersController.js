@@ -45,12 +45,10 @@ const usersController = {
             const JSONUsers = JSON.stringify(users)
             fs.writeFileSync(path.join(__dirname, '../db/users.json'), JSONUsers, 'utf-8')
 
-            res.render('/users')
-
-            // res.render('userProfile', {			
-            //     newUser,
-            //     users
-            // })
+            res.render('userProfile', {			
+                newUser,
+                users
+            })
         }
     },
     wishlist: function(req, res){
