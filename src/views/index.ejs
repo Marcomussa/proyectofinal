@@ -10,15 +10,15 @@
              <div class="contenedorBanner">
          
             </div>
-        <!-- botonesHome -->
+        <!-- botonesHome 
         <div class="contenedorBotonesHome">
             <a class="botonesHome" href="#">Arma tu PC</a>
             <a class="botonesHome" href="#">Categorias</a>
             <a class="botonesHome" href="#">Ayuda</a>
-        </div>
+        </div>-->
         <!-- barra ofertas con boton mas -->
         <div class="contenedorOfertas">
-        <p>Ofertas</p> <a href="#">más</a>
+        <p>Ofertas</p> 
             </div>
          <!-- seccion ofertas -->
          <div class="contenedorOfertasSeccion">
@@ -41,13 +41,13 @@
                 </div>
             </a>
         <% } %> 
-            
+            <a href="#">más</a>
          
         </div> 
         <!--barra lo mas vendido  boton mas-->
         <div class="contenedorOfertas contenedorVendido">
                <!-- seccion lo mas vendido -->
-               <p>Lo mas vendido</p> <a href="#">más</a>
+               <p>Lo más vendido</p> 
         </div>
 
             <div class="contenedorOfertasSeccion contenedorVendidoSeccion">
@@ -61,14 +61,14 @@
                             <div class='nombreProducto'>
                                 <%= productList.name[i] %>
                                 <div class='precioProductoHome'>
-                                    <p class='precioTotalProducto'><%= productList.price[i] %></p>
+                                    <p class='precioTotalProducto'>$<%= productList.price[i] %></p>
                                     <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
                                 </div>
                             </div>  
                         </div>
                     </a>
                 <% } %> 
-            
+            <a href="#">más</a>
         </div>
     </div>
     <%- include('./partials/footer.ejs') %> 
