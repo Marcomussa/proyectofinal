@@ -38,4 +38,6 @@ router.get('/wishlist', usersController.wishlist)
 
 router.get('/profile/:id', /*authMiddleware, */ usersController.profile);
 
+router.post('/logged', usersController.processLogIn)
+
 module.exports = router

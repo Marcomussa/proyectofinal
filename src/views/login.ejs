@@ -21,20 +21,12 @@
                 <button class='btn btn-primary'>Iniciar con Facebook</button>-->
             </div>
         <!-- <span class="separadorLogIn">OR</span>-->
-             <div class="contenedorCrearCuenta">
-                <form action="/redirect" method="POST" enctype="multipart/form-data">
-                    <input type="text" placeholder="email" class="email form-control" id="inputLogInEmail">
-                    <input type="password" placeholder="contrasena" class="contrasena form-control" id="inputLogInContrasena">
-                    <div id="logInErrores"></div>
-                    <p><a href="#">Olvide mi contraseña</a></p>
-                    <div class="botonesLogIn">
-                        <button class="btn btn-success" id="buttonLogIn">Ingresar</button>
-                       <!-- <button class="btn btn-success" id="btnNuevaCuenta">Nueva Cuenta</button>
-                    </div>-->
-                </form>
 
-               
-            </div> 
+        <form action="/users/logged" method="POST">
+            <input type="text" name="emailLogIn" class="form-control" placeholder="Email">
+            <input type="password" name="passLogIn" class="form-control" placeholder="Password">
+            <input type="submit" value="Enviar">
+        </form>
             
            <form action="/users/redirect" method="POST" enctype="multipart/form-data">
             <div> <h4><span class="separadorLogIn">O Crea tu cuenta</span></h4></div>

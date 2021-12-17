@@ -3,7 +3,7 @@ const bcryptjs = require('bcryptjs')
 const fs = require('fs')
 const path = require('path')
 const uuid = require('uuid')
-
+const User = require('../models/User')
 const json_users = fs.readFileSync(path.join(__dirname, '../db/users.json'), 'utf-8')
 let users = JSON.parse(json_users)
 
@@ -50,6 +50,15 @@ const usersController = {
                 users
             })
         }
+    },
+    processLogIn: function(req, res){
+        let userToLogin = User.findByField('mail', req.body.emailLogIn)
+
+        console.log(userToLogin)
+
+        console.log(req.body.emailLogIn)
+
+        res.send('ok')
     },
     wishlist: function(req, res){
         res.render('wishlist')
