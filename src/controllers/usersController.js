@@ -52,13 +52,42 @@ const usersController = {
         }
     },
     processLogIn: function(req, res){
+        let errors = validationResult(req)
+        const validaciones = errors.array()
+
+        if(!errors.isEmpty()){
+            res.render('login', {
+                data: req.body,
+                validacionesLogIn: validaciones
+            })
+            console.log(errors.array())
+        } else {
         let userToLogin = User.findByField('mail', req.body.emailLogIn)
 
+        if(userToLogin){
+            let isPassOk = bcryptjs.compareSync(req.body.passLogIn, userToLogin.password)
+
+            if(isPassOk){
+                delete userToLogin.password
+                req.session.userLogged = userToLogin
+
+                if(req.body.recordarUser) {
+                    res.cookie('userEmail', req.body.email, {
+                        maxAge: (1000 * 60) * 2
+                    })
+                } 
+
+                res.render('userProfile', {
+                    userLogged: userToLogin
+                })
+            } else {
+                res.render('login')
+            }
+        }
+
         console.log(userToLogin)
+        }
 
-        console.log(req.body.emailLogIn)
-
-        res.send('ok')
     },
     wishlist: function(req, res){
         res.render('wishlist')

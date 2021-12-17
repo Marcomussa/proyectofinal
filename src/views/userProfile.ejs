@@ -2,27 +2,12 @@
 <html lang="en">
     <%- include('./partials/head.ejs', {'title': 'Perfil'})  %> 
 <body>
-    <%- include('./partials/header.ejs') %>   
-    <section class="perfilUsuario">
-        <sdiv class="img">
-            <img class="imgPerfil" src="/img/2.png"/>
-            <button>Cambiar avatar</button>
-        </sdiv>
-    
-    <% newUser.forEach((par) => { %> 
-        <h3>
-            Hola <%= par.name %> 
-        </h3>
-    <% }) %> 
+   
+    <h3> Bienvenido
+        <%= userLogged.mail %> 
+    </h3>
 
-    <img src="/img/2.png">
-    <div class="alert alert-success">
-        <% newUser.forEach((par) => { %> 
-            <h3>
-                <%= par.mail %> 
-            </h3>
-        <% }) %> 
-    </div>
+   
 
     <%- include('./partials/footer.ejs') %> 
 </body>

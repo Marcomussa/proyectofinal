@@ -27,6 +27,16 @@
             <input type="password" name="passLogIn" class="form-control" placeholder="Password">
             <input type="submit" value="Enviar">
         </form>
+
+        <div>
+            <% if(typeof validacionesLogIn != 'undefined'){ %>
+                <% validacionesLogIn.forEach( (validacion) => { %>
+                    <p style="color: red;">
+                    <%= validacion.msg %> 
+                    </p>
+                <% }) %> 
+            <% } %> 
+        </div>
             
            <form action="/users/redirect" method="POST" enctype="multipart/form-data">
             <div> <h4><span class="separadorLogIn">O Crea tu cuenta</span></h4></div>
