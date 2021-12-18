@@ -21,27 +21,24 @@ const upload = multer({
     storage: storage
 })
 
+router.get('/', (req, res) => res.send('Vista user en proceso'))
 
-router.get('/', usersController.login)
+router.get('/login', usersController.login)
 
-router.get('/redirect', usersController.validacionLogIn)
+router.get('/register', usersController.register)
 
-router.post('/redirect', upload.single('imagenUsuario')
-// , [
-//     check('name').notEmpty(),
-//     check('surname').notEmpty(),
-//     check('email').notEmpty().isEmail(),
-//     check('pass').notEmpty()], 
-,usersController.validacionLogIn)
+router.post('/register', upload.single('imagenUsuario')
+, [
+    check('name').notEmpty().withMessage('Ingrese un Nombre'),
+    check('surname').notEmpty().withMessage('Ingrese un Apellido'),
+    check('email').notEmpty().withMessage('Ingrese un Email'),
+    check('pass').notEmpty().withMessage('Ingrese una Password')], 
+usersController.validacionLogIn)
 
 router.get('/wishlist', usersController.wishlist)
 
 router.get('/profile/:id', /*authMiddleware, */ usersController.profile);
 
-router.post('/logged', 
-    [
-        check('emailLogIn').notEmpty()
-    ]
-,usersController.processLogIn)
+router.post('/logged', usersController.processLogIn)
 
 module.exports = router

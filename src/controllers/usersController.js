@@ -11,13 +11,16 @@ const usersController = {
     login: function(req, res){
         res.render('login')
     },
+    register: function(req, res){
+        res.render('register')
+    },
     validacionLogIn: function(req, res){
 
         let errors = validationResult(req)
         const validaciones = errors.array()
 
         if(!errors.isEmpty()){
-            res.render('login', {
+            res.render('register', {
                 data: req.body,
                 validaciones: validaciones
             })
@@ -45,7 +48,7 @@ const usersController = {
             const JSONUsers = JSON.stringify(users)
             fs.writeFileSync(path.join(__dirname, '../db/users.json'), JSONUsers, 'utf-8')
 
-            res.render('login')
+            res.redirect('/users/login')
         }
     },
     processLogIn: function(req, res){
@@ -77,10 +80,23 @@ const usersController = {
                 res.render('userProfile', {
                     userLogged: userToLogin
                 })
-            } else {
-                res.render('login')
-            }
+            } 
+            return res.render('login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son invalidas'
+                    }
+                }
+            })
         }
+
+        return res.render('login', {
+            errors: {
+                email: {
+                    msg: 'Email no encontrado'
+                }
+            }
+        })
 
         console.log(userToLogin)
         }
