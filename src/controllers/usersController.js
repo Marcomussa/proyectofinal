@@ -3,7 +3,7 @@ const bcryptjs = require('bcryptjs')
 const fs = require('fs')
 const path = require('path')
 const uuid = require('uuid')
-const User = require('../models/User')
+const User = require('./logInRegisterController')
 const json_users = fs.readFileSync(path.join(__dirname, '../db/users.json'), 'utf-8')
 let users = JSON.parse(json_users)
 
@@ -45,10 +45,7 @@ const usersController = {
             const JSONUsers = JSON.stringify(users)
             fs.writeFileSync(path.join(__dirname, '../db/users.json'), JSONUsers, 'utf-8')
 
-            res.render('userProfile', {			
-                newUser,
-                users
-            })
+            res.render('login')
         }
     },
     processLogIn: function(req, res){
