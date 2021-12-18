@@ -15,16 +15,16 @@
     <div class="adminList">
               
       <div class="listCard">
-        <img src="/img/products/<%= productsList.image[i] %>" class="adminImg" alt="...">
-        <h5 class="adminProductName"><%= productsList.name[i] %></h5>
-        <div class="adminProductPrice"><h6>Precio</h6><h6>$<%= productsList.price[i] %></h6></div>
-        <div class="adminProductDiscount"><h6>Descuento</h6><h6 ><%= productsList.discount[i] %>%</h6></div>
-        <!--<p class="card-text title"><%= productsList.description[i] %></p>-->
+        <img src="/img/products/<%= products[i].image %>" class="adminImg" alt="...">
+        <h5 class="adminProductName"><%= products[i].name %></h5>
+        <div class="adminProductPrice"><h6>Precio</h6><h6>$<%= products[i].price %></h6></div>
+        <div class="adminProductDiscount"><h6>Descuento</h6><h6 ><%= products[i].discount %>%</h6></div>
+        <!--<p class="card-text title"><%= products[i].description %></p>-->
         <br>
        <div class="adminButtons"> 
-        <div> <a href="/products/mod/<%= productsList.id[i] %>" class="btn btn-success">Modificar</a></div>
+        <div> <a href="/products/mod/<%= products[i].id %>" class="btn btn-success">Modificar</a></div>
        
-        <div><form method="POST" action="/products/<%= productsList.id[i] %>?_method=delete">
+        <div><form method="POST" action="/products/<%= products[i].id %>?_method=delete">
           <button type="submit" class="btn btn-danger">Eliminar</button>
         </form></div>
       </div>
