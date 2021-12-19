@@ -71,3 +71,37 @@
   
 
 - **Dejar de hacer.**
+
+## Sprint 5
+
+- **Que podemos empezar a hacer.**
+* Scrums
+
+
+- **Hacer más.**
+* hacer dos scrum semanales.
+
+- **Continuar haciendo.**
+* continuar con el buen flow de trabajo
+
+- **Hacer menos.**
+  
+
+- **Dejar de hacer.**
+
+## Sprint 6
+
+- **Que podemos empezar a hacer.**
+* Scrums
+
+
+- **Hacer más.**
+* hacer dos scrum semanales.
+
+- **Continuar haciendo.**
+* continuar con el buen flow de trabajo
+
+- **Hacer menos.**
+  
+
+- **Dejar de hacer.**
