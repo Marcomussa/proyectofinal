@@ -1,4 +1,4 @@
-const db = require("../database/models/User");
+const {Users} = require("../database/models");
 const bcryptjs = require("bcryptjs");
 const { check, validationResult, body } = require("express-validator");
 
@@ -40,7 +40,7 @@ const usersController = {
 
             res.cookie('newUserCookie', newUser)
       
-            const createdUser = await db.Users.create(newUser)
+            const createdUser = await Users.create(newUser)
 
             res.redirect('/users/login')
         }
@@ -58,7 +58,7 @@ const usersController = {
             })
             console.log(errors.array())
         } else {
-        let userToLogin = await db.Users.findOne({where: {email: req.body.emailLogIn}})
+        let userToLogin = await Users.findOne({where: {email: req.body.emailLogIn}})
 
         if(userToLogin){
             let isPassOk = bcryptjs.compareSync(req.body.passLogIn, userToLogin.password)
@@ -106,9 +106,12 @@ const usersController = {
     },
 
     profile: function (req, res){
-      res.render('userProfile', );
+      res.render('userProfile' );
 
     },
+    logout: function(req, res){
+        res.render("login")
+    }
 
 }
 module.exports = usersController

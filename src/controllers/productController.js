@@ -10,11 +10,12 @@ const productController = {
             description: req.body.descripcionProducto,
             price: req.body.precioProducto,
             discount: req.body.discount,
-            category_id: req.body.categoria,
-            image: req.file.filename,
+            category_id: req.body.categoria || 1,
+            image: req.file.filename || "",
         }
         const createdProduct = await Products.create(newProduct)  
-        res.redirect('/products/'+ createdProduct.id) 
+        
+        res.redirect('/products/'+ createdProduct.null) 
     },
     list: async function (req, res, next){
   
