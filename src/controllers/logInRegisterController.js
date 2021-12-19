@@ -5,7 +5,7 @@ const User = {
     filename: './users.json',
 
     getData: function(){
-        return JSON.parse(fs.readFileSync(path.resolve(__dirname, `../db/${this.filename}`), 'utf-8')) //de este archivo, el fileName, con encoding utf-8
+        return JSON.parse(fs.readFileSync(path.resolve(__dirname, `../database/${this.filename}`), 'utf-8')) //de este archivo, el fileName, con encoding utf-8
     }, 
 
     generateId: function () {
