@@ -2,6 +2,10 @@ module.exports = (sequelize, dataTypes) => {
     let alias = 'Products'
 
     let cols = {
+        id : {
+            type: dataTypes.INTEGER,
+            primaryKey: true
+        },
         name: {
             type: dataTypes.STRING(100)
         }, 
@@ -9,22 +13,22 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(500)
         }, 
         price: {
-            type: dataTypes.DECIMAL
+            type: dataTypes.INTEGER
         }, 
         category_id: {
-            type: dataTypes.DECIMAL
+            type: dataTypes.INTEGER
         }, 
-        updateAt: {
-            type: dataTypes.DATEONLY
+        image: {
+            type: dataTypes.STRING(500)
         }
     }
 
     let config = {
-        tableName: 'products',
+        tableName: 'Products',
         timestamps: false
     }
 
     const Product = sequelize.define(alias,cols,config)
-
+    
     return Product
 }

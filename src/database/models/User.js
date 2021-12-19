@@ -20,11 +20,14 @@ module.exports = (sequelize, dataTypes) => {
         },
         gender: {
             type: dataTypes.STRING(100)
+        },
+        avatar:{
+            type: dataTypes.STRING(255)
         }
     }
 
     let config = {
-        tableName = 'users',
+        tableName : 'users',
         timestamps: false
     }
 
