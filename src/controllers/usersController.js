@@ -32,6 +32,7 @@ const usersController = {
                 password: bcryptjs.hashSync(req.body.pass, 10),
                 gender: req.body.gender || "",
                 avatar: req.file.filename || 'null'
+                
             }
             
             console.log(newUser)
