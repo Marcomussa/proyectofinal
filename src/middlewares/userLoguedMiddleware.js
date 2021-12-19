@@ -1,24 +1,21 @@
-const User = require('../models/User')
+const User = require('../controllers/logInRegisterController')
 
-function userLoguedMiddleware(req, res, next) {
-    res.locals.isLogued = false;
+function userLoggedMiddleware(req, res, next){
+    res.locals.isLogged = false;
 
-    let emailInCookie = req.cookies.Email;
-    let userFromCookie = User.findByField('email', emailInCookie);
+	let emailInCookie = req.cookies;
+	let userFromCookie = User.findByField('mail', emailInCookie);
 
-    console.log(userFromCookie);
+	if (userFromCookie) {
+		req.session.userLogged = userFromCookie;
+	}
 
-    if( userFromCookie) {
-        req.session.userLogued = userFromCookie; 
-    }
+	if (req.session.userLogged) {
+		res.locals.isLogged = true;
+		res.locals.userLogged = req.session.userLogged;
+	}
 
-    if(req.session.userLogued) {
-        res.locals.isLogued = true;
-        res.locals.userLogued = req.session.userLogued;
-    }
-
-
-    next();
+	next();
 }
 
-module.exports = userLoguedMiddleware;
+module.exports = userLoggedMiddleware

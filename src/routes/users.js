@@ -37,8 +37,10 @@ usersController.validacionLogIn)
 
 router.get('/wishlist', usersController.wishlist)
 
-router.get('/profile/:id', /*authMiddleware, */ usersController.profile);
+router.get('/profile/', /*authMiddleware, */ usersController.profile);
 
-router.post('/logged', usersController.processLogIn)
+router.post('/profile', usersController.processLogIn)
+
+router.get('/logout', usersController.logout)
 
 module.exports = router

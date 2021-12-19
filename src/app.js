@@ -7,6 +7,7 @@ const path = require('path')
 const methodOverride = require('method-override') 
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
+const isLoggedMiddleware = require('./middlewares/userLoguedMiddleware')
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
@@ -29,6 +30,8 @@ app.use(cookieParser())
 
 //delete
 app.use(methodOverride("_method"))
+
+app.use(isLoggedMiddleware)
 
 // Configurar EJS: 
 app.set('view engine', 'ejs')

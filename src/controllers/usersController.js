@@ -77,9 +77,7 @@ const usersController = {
                     })
                 } 
 
-                res.render('userProfile', {
-                    userLogged: userToLogin
-                })
+                res.redirect('/users/profile')
             } 
             return res.render('login', {
                 errors: {
@@ -97,16 +95,21 @@ const usersController = {
                 }
             }
         })
-
-        console.log(userToLogin)
         }
-
     },
     wishlist: function(req, res){
         res.render('wishlist')
     },
     profile: function(req, res){
-		res.render('userProfile', );
+        console.log(req.session.userLogged)
+		res.render('userProfile', {
+            userLogged: req.session.userLogged
+        });
+    },
+    logout: function(req,res){
+        res.clearCookie('userEmail');
+        req.session.destroy()
+        res.redirect('/')
     }
 }
 
