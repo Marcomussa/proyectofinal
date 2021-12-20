@@ -24,24 +24,24 @@
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
         <% for(let i = 0; i <= 3 ; i++){ %> 
-            <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
+            <a href="/products/<%= productList[i].id %>" class='tarjetaProducto'>
                 <div>
                 
-                    <img class='imagenProducto' src="/img/products/<%= productList.image[i] %>" alt= "" >
+                    <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" alt= "" >
                
                     <div class='infoProducto'>
                         <div class='nombreProducto'>
-                            <%= productList.name[i] %>
+                            <%= productList[i].name %>
                         </div>
                         <div class='precioProductoHome'>
-                            <p class='precioTotalProducto'>$<%= productList.price[i] %></p>
-                            <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+                            <p class='precioTotalProducto'>$<%= productList[i].price %></p>
+                            <p class='precioDescuentoProducto'><%= productList[i].discount %>% OFF</p>
                         </div>
                     </div>
                 </div>
             </a>
         <% } %> 
-            <a href="#">más</a>
+            <a href="/products">más</a>
          
         </div> 
         <!--barra lo mas vendido  boton mas-->
@@ -53,22 +53,22 @@
             <div class="contenedorOfertasSeccion contenedorVendidoSeccion">
                 <!-- Articulo lo + vendido 1 -->
                 <% for(let i = 1; i <= 4 ; i++){ %> 
-                    <a href="/products/<%= productList.id[i] %>" class='tarjetaProducto'>
+                    <a href="/products/<%= productList[i].id %>" class='tarjetaProducto'>
                         <div>
-                            <img class='imagenProducto' src="/img/products/<%= productList.image[i] %>" alt= "" >
+                            <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" alt= "" >
                         </div>
                         <div class='infoProducto'>
                             <div class='nombreProducto'>
-                                <%= productList.name[i] %>
+                                <%= productList[i].name %>
                                 <div class='precioProductoHome'>
-                                    <p class='precioTotalProducto'>$<%= productList.price[i] %></p>
-                                    <p class='precioDescuentoProducto'><%= productList.discount[i] %>% OFF</p>
+                                    <p class='precioTotalProducto'>$<%= productList[i].price %></p>
+                                    <p class='precioDescuentoProducto'><%= productList[i].discount %>% OFF</p>
                                 </div>
                             </div>  
                         </div>
                     </a>
                 <% } %> 
-            <a href="#">más</a>
+            <a href="/products">más</a>
         </div>
     </div>
     <%- include('./partials/footer.ejs') %> 
