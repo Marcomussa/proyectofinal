@@ -149,7 +149,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (7,'Combo Intel','Combo Intel',40000.00,0,'1639956344301.jpeg',1),(8,'Combo Ryzen','Combo Ryzen',30000.00,0,'1639956385348.jpg',1),(9,'Amd Rx 6600xt','Amd Rx 6600xt',200000.00,0,'1639956461432.jpg',1),(10,'Rtx 3060','Rtx 3060',200000.00,0,'1639956517651.jpg',1),(11,'Memoria Ram','Memoria Ram 8 gb x2',6000.00,0,'1639956616899.jpeg',1),(12,'Fuente','Fuente',7000.00,0,'1639956672928.jpeg',1);
+INSERT INTO `products` VALUES (7,'Combo Intel','Combo Intel',40000.00,10,'1639956344301.jpeg',1),(8,'Combo Ryzen','Combo Ryzen',30000.00,10,'1639956385348.jpg',1),(9,'Amd Rx 6600xt','Amd Rx 6600xt',200000.00,5,'1639956461432.jpg',1),(10,'Rtx 3060','Rtx 3060',200000.00,5,'1639956517651.jpg',1),(11,'Memoria Ram','Memoria Ram 8 gb x2',6000.00,15,'1639956616899.jpeg',1),(12,'Fuente','Fuente',7000.00,20,'1639956672928.jpeg',1);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -219,4 +219,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-19 20:52:22
+-- Dump completed on 2021-12-20 17:33:28
