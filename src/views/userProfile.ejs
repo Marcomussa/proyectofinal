@@ -6,9 +6,9 @@
     <%- include('./partials/header.ejs') %> 
    
     <h3> Bienvenido
-        <%= userLogged.mail %> 
+        <%= userLogged.name %> 
     </h3>
-
+    <div><img src="/img/avatars/<%= userLogged.avatar %> " alt=""></div>
     <a href="/users/logout">Log Out</a>
     
     <%- include('./partials/footer.ejs') %> 

@@ -111,7 +111,8 @@ const usersController = {
 
     },
     logout: function(req, res){
-        res.render("login")
+        req.session.userLogged = null
+        res.redirect("login")
     }
 
 }
