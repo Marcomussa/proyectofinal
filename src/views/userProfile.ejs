@@ -4,13 +4,30 @@
 <body>
 
     <%- include('./partials/header.ejs') %> 
-   
+   <!--
     <h3> Bienvenido
         <%= userLogged.name %> 
     </h3>
     <div><img src="/img/avatars/<%= userLogged.avatar %> " alt=""></div>
-    <a href="/users/logout">Log Out</a>
+    <a href="/users/logout">Log Out</a>-->
     
+    <div class="container">
+        <div class="main-body">
+              <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center text-center">
+                        <img src="/img/avatars/<%= userLogged.avatar %> " alt="Admin" class="rounded-circle" width="150">        
+                        <h2> <%= userLogged.name %> <%= userLogged.surname %> </h2>
+                        <h6 class="text-secondary"> <%= userLogged.email %> </h6>    
+                      </div>
+                    </div>
+                  </div>
+                </div>          
+        </div>
+    </div>
+
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
