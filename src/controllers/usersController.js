@@ -1,7 +1,7 @@
 const {Users} = require("../database/models");
 const bcryptjs = require("bcryptjs");
 const { check, validationResult, body } = require("express-validator");
-
+const loginRegisterController = require('./logInRegisterController')
 
 const usersController = {
     login:function (req, res){
@@ -12,26 +12,40 @@ const usersController = {
         res.render('register')
     },
 
-    validacionLogIn: async function (req, res){
+    processRegister: async function (req, res){
       
-      let errors = validationResult(req)
+        let errors = validationResult(req)
         const validaciones = errors.array()
 
         if(!errors.isEmpty()){
             res.render('register', {
                 data: req.body,
-                validaciones: validaciones
+                validaciones
             })
             console.log(errors.array())
         } 
         else {
+            let userInDb = loginRegisterController.findByField('mail', req.body.email)
+
+            console.log(userInDb)
+
+            if (userInDb) {
+                return res.render('register', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya esta registrado'
+                        }
+                    }
+                })
+            }
+
             let newUser = {
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
                 password: bcryptjs.hashSync(req.body.pass, 10),
                 gender: req.body.gender || "",
-                avatar: req.file.filename || 'null'
+                avatar: req.file ? req.file.filename : 'null'
                 
             }
             
@@ -74,9 +88,7 @@ const usersController = {
                     })
                 } 
 
-                res.render('userProfile', {
-                    userLogged: userToLogin
-                })
+                res.redirect('/users/profile')
                 return 
             } 
             return res.render('login', {

@@ -35,12 +35,18 @@
             </div>
             </form>
             <div>
+                
                 <% if(typeof validaciones != 'undefined'){ %>
                     <% validaciones.forEach( (validacion) => { %>
                         <p style="color: red;">
                         <%= validacion.msg %> 
-                        </p>
+                    </p>
                     <% }) %> 
+                <% } %> 
+                <% if(locals.errors && errors.email){ %>
+                    <p>
+                        <%= errors.email.msg %> 
+                    </p>
                 <% } %> 
             </div>
         </article>

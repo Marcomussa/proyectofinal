@@ -3,6 +3,7 @@ const router = express.Router()
 const usersController = require('../controllers/usersController')
 const {check} = require('express-validator')
 const authMiddleware = require('../middlewares/authMiddleware')
+const guestMiddleware = require('../middlewares/guestMiddleware')
 
 const multer = require('multer')
 const path = require('path')
@@ -23,9 +24,9 @@ const upload = multer({
 
 router.get('/', (req, res) => res.send('Vista user en proceso'))
 
-router.get('/login', usersController.login)
+router.get('/login', guestMiddleware, usersController.login)
 
-router.get('/register', usersController.register)
+router.get('/register', guestMiddleware ,usersController.register)
 
 router.post('/register', upload.single('imagenUsuario')
 , [
@@ -33,11 +34,11 @@ router.post('/register', upload.single('imagenUsuario')
     check('surname').notEmpty().withMessage('Ingrese un Apellido'),
     check('email').notEmpty().withMessage('Ingrese un Email'),
     check('pass').notEmpty().withMessage('Ingrese una Password')], 
-usersController.validacionLogIn)
+usersController.processRegister)
 
 router.get('/wishlist', usersController.wishlist)
 
-router.get('/profile/', /*authMiddleware, */ usersController.profile);
+router.get('/profile/', authMiddleware,  usersController.profile);
 
 router.post('/profile', usersController.processLogIn)
 
