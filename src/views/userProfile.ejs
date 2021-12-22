@@ -11,7 +11,7 @@
     <div><img src="/img/avatars/<%= userLogged.avatar %> " alt=""></div>
     <a href="/users/logout">Log Out</a>-->
     
-    <div class="container">
+    <!--<div class="container">
         <div class="main-body">
               <div class="row gutters-sm">
                 <div class="col-md-4 mb-3">
@@ -27,7 +27,21 @@
                 </div>          
               </div>
       </div>
+    </div>-->
+
+  <div class="profileinfo">
+    <div id="gradient"></div>
+    <div id="cardProfileLogued">
+      <img src="/img/avatars/<%= userLogged.avatar %>"/>
+      <h2>Lena Mantler</h2>
+      <p>Email : ena@gmail.com</p>
+      <p>Adress : </p>
+      <p>Payment method : </p>
+      <form action="index2.html">
+        <button class="editButton">Edit profile</button>
+      </form>
     </div>
+  </div>
 
     <%- include('./partials/footer.ejs') %> 
 </body>
