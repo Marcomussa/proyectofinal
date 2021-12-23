@@ -16,8 +16,8 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'categories',
         timestamps: false
     }
-      alias.associate = function (models) {
-        alias.hasMany(models.Product, {
+      alias.associate = function () {
+        alias.hasMany(Product, {
             as: "Product",
             foreignKey: "category_id",
         })}

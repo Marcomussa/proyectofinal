@@ -30,13 +30,13 @@ module.exports = (sequelize, dataTypes) => {
         tableName : 'users',
         timestamps: false
     }
-    alias.associate = function (models) {
-        alias.belogsTo(models.Orders, {
+    alias.associate = function () {
+        alias.belogsTo(Orders, {
             as: "orders",
             foreignKey: "user_id",
         })}
-    alias.associate = function (models) {
-        alias.belogsTo(models.Wishlist, {
+    alias.associate = function () {
+        alias.belogsTo(Wishlist, {
             as: "wishlist",
             foreignKey: "user_id",
         })}

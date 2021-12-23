@@ -22,13 +22,13 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'orders',
         timestamps: false
     }
-    alias.associate = function (models) {
-        alias.hasMany(models.OrderDetail, {
+    alias.associate = function () {
+        alias.hasMany(OrderDetail, {
             as: "orderDetail",
             foreignKey: "order_id"
         })}
-    alias.associate = function (models) {
-        alias.belongTo(models.User, {
+    alias.associate = function () {
+        alias.belongTo(User, {
             as: "user",
             foreignKey: "user_id"
         })}

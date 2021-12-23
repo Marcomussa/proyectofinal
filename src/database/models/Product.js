@@ -31,18 +31,18 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'Products',
         timestamps: false
     }
-    alias.associate = function (models) {
-        alias.belongsTo(models.Category, {
+    alias.associate = function () {
+        alias.belongsTo(Category, {
             as: "categories",
             foreignKey: "category_id"
         })}
-    alias.associate = function (models) {
-        alias.hasMany(models.Wishlist, {
+    alias.associate = function () {
+        alias.hasMany(Wishlist, {
             as: "Wishlist",
             foreignKey: "product_id",
         })}
-    alias.associate = function (models) {
-        alias.hasMany(models.OrderDetail, {
+    alias.associate = function () {
+        alias.hasMany(OrderDetail, {
             as: "order_details",
             foreignKey: "product_id",
         })}
