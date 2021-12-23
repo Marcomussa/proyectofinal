@@ -23,12 +23,12 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     }
     alias.associate = function (models) {
-        alias.belongsTo(models.product, {
+        alias.belongsTo(models.Product, {
             as: "product",
             foreignKey: "product_id"
         })}
     alias.associate = function (models) {
-        alias.belongsTo(models.order, {
+        alias.belongsTo(models.Order, {
             as: "order",
             foreignKey: "order_id"
         })}

@@ -126,6 +126,29 @@ const usersController = {
         req.session.userLogged = null
         res.redirect("login")
     },
+        update: async function (req, res, next){
+        let user = await Users.findOne({where: {email: req.cookie.userEmail}})
+        
+        if (!user) res.status(418).send('El usuario No Existe')
+        else {
+            user.name = req.body.name || user.name;
+            user.surname = req.body.surname || user.surname ;
+            user.email = req.body.email || user.email ;
+            user.avatar = req.file == undefined ? user.avatar : req.file.filename;
+            await user.save()
+
+            res.redirect('/users/profile')
+        } 
+    },
+        delete: async function (req, res, next){
+        let user = await Users.findOne({where: {email: req.cookie.userEmail}})
+
+         if (!user) res.status(418).send('El Usuario No Existe')
+         else {
+            await user.destroy()
+            res.redirect('/')
+         }
+    }
 
 
 }
