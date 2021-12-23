@@ -1,4 +1,4 @@
-const  { Products }  = require("../database/models");
+const  { Products, Category }  = require("../database/models");
 
 const productController = {
     create: function(req, res){

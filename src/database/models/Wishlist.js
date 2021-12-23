@@ -19,6 +19,16 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'wishlist',
         timestamps: false
     }
+     alias.associate = function (models) {
+        alias.belongsTo(models.Product, {
+            as: "product",
+            foreignKey: "pruduct_id"
+        })}
+     alias.associate = function (models) {
+        alias.belongsTo(models.User, {
+            as: "user",
+            foreignKey: "user_id"
+        })}
 
     const Wishlist = sequelize.define(alias,cols,config)
     

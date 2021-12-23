@@ -22,7 +22,16 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'orders',
         timestamps: false
     }
-
+    alias.associate = function (models) {
+        alias.hasMany(models.OrderDetail, {
+            as: "orderDetail",
+            foreignKey: "order_id"
+        })}
+    alias.associate = function (models) {
+        alias.belongTo(models.User, {
+            as: "user",
+            foreignKey: "user_id"
+        })}
     const Orders = sequelize.define(alias,cols,config)
     
     return Orders

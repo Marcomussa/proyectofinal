@@ -26,7 +26,7 @@ CREATE TABLE `categories` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'Cpus');
+INSERT INTO `categories` VALUES (1,'Cpus'),(2,'Motherboards'),(3,'Placas de Video'),(4,'Memorias Ram'),(5,'Fuentes'),(6,'Perifericos'),(7,'Accesorios');
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,7 +149,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (7,'Combo Intel','Combo Intel',40000.00,10,'1639956344301.jpeg',1),(8,'Combo Ryzen','Combo Ryzen',30000.00,10,'1639956385348.jpg',1),(9,'Amd Rx 6600xt','Amd Rx 6600xt',200000.00,5,'1639956461432.jpg',1),(10,'Rtx 3060','Rtx 3060',200000.00,5,'1639956517651.jpg',1),(11,'Memoria Ram','Memoria Ram 8 gb x2',6000.00,15,'1639956616899.jpeg',1),(12,'Fuente','Fuente',7000.00,20,'1639956672928.jpeg',1);
+INSERT INTO `products` VALUES (7,'Combo Intel','Combo Intel',40000.00,10,'1639956344301.jpeg',2),(8,'Combo Ryzen','Combo Ryzen',30000.00,10,'1639956385348.jpg',2),(9,'Amd Rx 6600xt','Amd Rx 6600xt',200000.00,5,'1639956461432.jpg',3),(10,'Rtx 3060','Rtx 3060',200000.00,5,'1639956517651.jpg',3),(11,'Memoria Ram','Memoria Ram 8 gb x2',6000.00,15,'1639956616899.jpeg',4),(12,'Fuente','Fuente',7000.00,20,'1639956672928.jpeg',5);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -219,4 +219,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-20 17:33:28
+-- Dump completed on 2021-12-23  0:17:07

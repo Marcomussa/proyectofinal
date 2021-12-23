@@ -125,7 +125,8 @@ const usersController = {
     logout: function(req, res){
         req.session.userLogged = null
         res.redirect("login")
-    }
+    },
+
 
 }
 module.exports = usersController

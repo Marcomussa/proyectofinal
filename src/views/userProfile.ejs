@@ -33,14 +33,16 @@
     <div id="gradient"></div>
     <div id="cardProfileLogued">
       <img src="/img/avatars/<%= userLogged.avatar %>"/>
-      <h2>Lena Mantler</h2>
-      <p>Email : ena@gmail.com</p>
-      <p>Adress : </p>
-      <p>Payment method : </p>
+      <h2><%= userLogged.name %> <%= userLogged.surname %> </h2>
+      <p>Email : <%= userLogged.email %></p>
+      <p>Direccion : </p>
+      <p>Metodo de pago : </p>
       <form action="index2.html">
-        <button class="editButton">Edit profile</button>
-      </form>
+        <div><button class="editButton">Editar Info</button></div>
+        </form>
+    <form action=""><div><button class="editButton"><a href="/users/logout">Salir</a></button></div></form>
     </div>
+    
   </div>
 
     <%- include('./partials/footer.ejs') %> 

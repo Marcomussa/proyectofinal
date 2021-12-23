@@ -22,6 +22,11 @@ module.exports = (sequelize, dataTypes) => {
         tableName: 'payment_methods',
         timestamps: false
     }
+    alias.associate = function (models) {
+        alias.belongsTo(models.User, {
+            as: "payment_methods",
+            foreignKey: "user_id"
+        })}
 
     const PaymentMethod = sequelize.define(alias,cols,config)
     

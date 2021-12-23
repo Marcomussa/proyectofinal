@@ -30,6 +30,16 @@ module.exports = (sequelize, dataTypes) => {
         tableName : 'users',
         timestamps: false
     }
+    alias.associate = function (models) {
+        alias.belogsTo(models.Orders, {
+            as: "orders",
+            foreignKey: "user_id",
+        })}
+    alias.associate = function (models) {
+        alias.belogsTo(models.Wishlist, {
+            as: "wishlist",
+            foreignKey: "user_id",
+        })}
 
     const User = sequelize.define(alias, cols, config)
 

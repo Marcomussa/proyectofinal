@@ -16,14 +16,14 @@
       </div>
       <input name='name' class="createPForms" type="text" value="<%- product.name %>"  >
       <select name= 'category' class="formCategory" aria-label="Default select example">
-        <option selected><%- product.category %></option>
-        <option value="Cpus">Cpus</option>
-        <option value="Motherboards">Motherboards</option>
-        <option value="Placas de Video">Placas de Video</option>
-        <option value="Memorias Ram">Memorias Ram</option>
-        <option value="Fuentes">Fuentes</option>
-        <option value="Perifericos">Perifericos</option>
-        <option value="Accesorios">Accesorios</option>
+        <option selected><%- product.category_id.name %></option>
+        <option value="<%- product.category_id = 1 %>">Cpus</option>
+        <option value="<%- product.category_id = 2 %>">Motherboards</option>
+        <option value="<%- product.category_id = 3 %>">Placas de Video</option>
+        <option value="<%- product.category_id = 4 %>">Memorias Ram</option>
+        <option value="<%- product.category_id = 5 %>">Fuentes</option>
+        <option value="<%- product.category_id = 6 %>">Perifericos</option>
+        <option value="<%- product.category_id = 7 %>">Accesorios</option>
       </select> 
       <input name='price' class="createPForms" type="number" value="<%- product.price %>">
       <input name="discount"class="createPForms" type="number" value="<%- product.discount %>">

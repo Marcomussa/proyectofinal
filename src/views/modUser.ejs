@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {'title': 'Actualizar informacion'}) %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+
+    <h2 class='productosH2'>Informacion de <%- user.name %> <%- user.surname %> </h2>
+
+    <form method='POST' action="/users/profile/modUser/<%- user.id %>?_method=PUT" class="formAgregar" enctype="multipart/form-data">
+      <div class="agregarFoto profile-img">
+        <img src="/img/addPhoto.png" alt="" />
+        <div class="file btn btn-lg btn-primary">
+          <span>Cambiar foto</span>
+          <input type="file" name="avatar" />
+        </div>
+      </div>
+      <input name='name' class="createPForms" type="text" value="<%- user.name %>"  >
+      <input name='surname' class="createPForms" type="text" value="<%- user.surname %>">
+      <input name="email"class="createPForms" type="text" value="<%- user.email %>">
+      
+      <!--div><form action="index2.html">
+        <div><button class="editButton">Cambiar Contraseña</button></div>
+      </form></div-->
+      
+      <div> 
+        <button type="submit" class="btn btn-primary btn-lg">Actualizar Informacion</button> 
+        
+       
+        <!-- <form action=""></form>
+        <a href="/"><button type="push" class="borrarproducto">Eliminar Producto</button></a> -->
+       </div>
+    </form>
+ <div><form method="POST" action="/users/profile/modUser/<%= user.id %>?_method=delete">
+    <button type="submit" class="btn btn-danger">Eliminar Cuenta</button>
+    </form> </div>
+  
+
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
