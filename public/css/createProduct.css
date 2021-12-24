@@ -196,3 +196,14 @@
   .buttonEdit{
     display: block;
   }
+
+  .actualImg{
+    display: block;
+  }
+
+  .currentImg{
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
