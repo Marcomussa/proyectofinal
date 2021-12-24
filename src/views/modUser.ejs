@@ -4,9 +4,9 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-    <h2 class='productosH2'>Informacion de <%- user.name %> <%- user.surname %> </h2>
+    <h2 class='productosH2'>Informacion de <%- user.email %> <%- user.surname %> </h2>
 
-    <form method='POST' action="/users/profile/modUser/<%- user.id %>?_method=PUT" class="formAgregar" enctype="multipart/form-data">
+    <form method='POST' action="/users/modUser/?_method=PUT" class="formAgregar" enctype="multipart/form-data">
       <div class="agregarFoto profile-img">
         <img src="/img/addPhoto.png" alt="" />
         <div class="file btn btn-lg btn-primary">

@@ -63,7 +63,7 @@ const usersController = {
     },
 
     processLogIn:  async function (req, res){
-     let errors = validationResult(req)
+        let errors = validationResult(req)
         const validaciones = errors.array()
 
         if(!errors.isEmpty()){
@@ -82,10 +82,22 @@ const usersController = {
                 delete userToLogin.password
                 req.session.userLogged = userToLogin
 
-                if(req.body.recordarUser || true )  {
-                    res.cookie('userEmail', req.body.emailLogIn, {
+                let userCookie = {
+                    id: req.session.userLogged.id,
+                    email: req.session.userLogged.email,
+                    name: req.session.userLogged.name,
+                    surname: req.session.userLogged.surname,
+                    gender: req.session.userLogged.gender || "",
+                    avatar: req.file ? req.file.filename : 'null'
+                }
+
+                res.cookie('test', userCookie)
+
+                if(req.body.recordarUser)  {
+                    res.cookie('user', userCookie, {
                         maxAge: (1000 * 60) * 60 * 24
                     })
+                    // Acceder a la cookie: console.log(req.cookies.user) 
                 } 
 
                 res.redirect('/users/profile')
@@ -114,34 +126,41 @@ const usersController = {
     },
 
     wishlist:  function (req, res){
-    res.render('wishlist')
-
+        res.render('wishlist')
     },
-
     profile: function (req, res){
       res.render('userProfile' );
-
     },
     logout: function(req, res){
         req.session.userLogged = null
+        res.clearCookie("user");
         res.redirect("login")
     },
-        update: async function (req, res, next){
-        let user = await Users.findOne({where: {email: req.cookie.userEmail}})
+    moduser: function(req, res){
+        let user = Users.findOne({where: {email: req.cookies.test.email}})
+
+        user
+        .then((user) => {
+            res.render('modUser', {user})            
+        })
+        .catch((err) => console.log(err))
+    },
+    update: async function (req, res, next){
+        let user = await Users.findOne({where: {email: req.cookies.test.email}})
         
         if (!user) res.status(418).send('El usuario No Existe')
         else {
             user.name = req.body.name || user.name;
             user.surname = req.body.surname || user.surname ;
-            user.email = req.body.email || user.email ;
             user.avatar = req.file == undefined ? user.avatar : req.file.filename;
             await user.save()
 
             res.redirect('/users/profile')
         } 
     },
-        delete: async function (req, res, next){
-        let user = await Users.findOne({where: {email: req.cookie.userEmail}})
+    
+    delete: async function (req, res, next){
+        let user = await Users.findOne({where: {id: req.session.userLogged.id}})
 
          if (!user) res.status(418).send('El Usuario No Existe')
          else {

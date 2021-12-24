@@ -4,7 +4,6 @@ const usersController = require('../controllers/usersController')
 const {check} = require('express-validator')
 const authMiddleware = require('../middlewares/authMiddleware')
 const guestMiddleware = require('../middlewares/guestMiddleware')
-
 const multer = require('multer')
 const path = require('path')
 
@@ -43,5 +42,9 @@ router.get('/profile/', authMiddleware,  usersController.profile);
 router.post('/profile', usersController.processLogIn)
 
 router.get('/logout', usersController.logout)
+
+router.get('/modUser', usersController.moduser)
+
+// router.put('/moduser', upload.single('avatar'), usersController.update)
 
 module.exports = router
