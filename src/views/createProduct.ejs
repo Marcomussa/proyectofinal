@@ -4,36 +4,54 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-    <h2 class='productosH2'>Publicar Producto</h2>
-
-    <form method="POST" class="formAgregar" action="/products/create" enctype="multipart/form-data">
-    <div>
-      <label for="">Agregar foto</label>
-          <input type="file" name="imagenProducto"/> <br>
-          <textarea class="createPForms" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>
-    </div>
-      
-    <div>
-      <input name ="nombreProducto" class="createPForms" type="text" placeholder="Nombre">
-      <select class="formCategory" aria-label="Default select example">
-        <option selected>Categorias</option>
-        <option value="1">Cpus</option>
-        <option value="2">Motherboards</option>
-        <option value="3">Placas de Video</option>
-        <option value="4">Memorias Ram</option>
-        <option value="5">Fuentes</option>
-        <option value="6">Perifericos</option>
-        <option value="7">Accesorios</option>
-      </select>      
-      <input name="precioProducto"class="createPForms" type="text" placeholder="Precio">
-      <input name="discount"class="createPForms" type="text" placeholder="Descuento">
-    </div>
-      <div> 
-       <button type="submit" class="btn btn-primary btn-lg">Crear producto</button> 
-       <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
+    <section class="contenedorLogIn">
+      <article class="aside editProductView">
+          <div class="logoEnvios">
+              <img src="/img/logo.svg" alt="">
+              <p>Crea un publicación y personalizalo a tu gusto!</p>
+          </div>
+          <div class="logoListaDeseos">
+          </div>
+      </article>   
+      <article class="logIn">
+          <div class="logInExterno">
+            <!-- <button class='btn btn-primary'>Iniciar con Google</button>
+              <button class='btn btn-primary'>Iniciar con Facebook</button>-->
+          </div>
+      <!-- <span class="separadorLogIn">OR</span>-->
+  
+      <form method="POST" class="formAgregar" action="/products/create" enctype="multipart/form-data">
+  
+          <!--name-->
+          <input type="text" name="nombreProducto" class="form-control" placeholder="Nombre">
+          <!--price-->
+          <input type="text" name="precioProducto" class="form-control" placeholder="Precio">
+          <!--discount-->
+          <input name="discount"class="form-control" type="text" placeholder="Descuento">
+          <!--Description-->
+          <textarea class="form-control" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>     
+          <!--Category-->
+          <select class=" formCategory form-control" aria-label="Default select example">
+              <option selected>Categorias</option>
+              <option value="1">Cpus</option>
+              <option value="2">Motherboards</option>
+              <option value="3">Placas de Video</option>
+              <option value="4">Memorias Ram</option>
+              <option value="5">Fuentes</option>
+              <option value="6">Perifericos</option>
+              <option value="7">Accesorios</option>
+          </select>      
+          <!--image-->
+          <input class="file-upload" type='file' name="imagenProducto"/>
+      <!--Create and delete-->
+      <div class="buttonEdit">
+          <button type="submit" class="btn btn-primary btn-lg">Crear producto</button> 
+          <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
       </div>
     </form>
-
+  
+      </article>
+    </section>
 
     <%- include('./partials/footer.ejs') %> 
 </body>
