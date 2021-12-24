@@ -145,18 +145,29 @@ const usersController = {
         })
         .catch((err) => console.log(err))
     },
-    update: async function (req, res, next){
-        let user = await Users.findOne({where: {email: req.cookies.test.email}})
-        
-        if (!user) res.status(418).send('El usuario No Existe')
-        else {
-            user.name = req.body.name || user.name;
-            user.surname = req.body.surname || user.surname ;
-            user.avatar = req.file == undefined ? user.avatar : req.file.filename;
-            await user.save()
+    update: function (req, res, next){
+        let user = Users.findOne({where: {email: req.cookies.test.email}})
 
-            res.redirect('/users/profile')
-        } 
+        user
+        .then((user) => {
+            if (!user) res.status(418).send('El usuario No Existe')
+            else {
+                console.log(req.body.name + ' ' + req.body.surname)
+                console.log(req.cookies.test.id)
+                Users.update({
+                    name: req.body.name || user.name,
+                    surname: req.body.surname || user.surname,
+                }, {
+                    where: {
+                        id: req.cookies.test.id
+                    }
+                })
+    
+                res.redirect('/users/profile')
+            } 
+        })
+        .catch((err) => console.log(err))
+        
     },
     
     delete: async function (req, res, next){

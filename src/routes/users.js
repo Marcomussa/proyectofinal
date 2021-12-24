@@ -45,6 +45,8 @@ router.get('/logout', usersController.logout)
 
 router.get('/modUser', usersController.moduser)
 
+router.post('/modUser', usersController.update)
+
 // router.put('/moduser', upload.single('avatar'), usersController.update)
 
 module.exports = router
