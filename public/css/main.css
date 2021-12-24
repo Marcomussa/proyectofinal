@@ -291,6 +291,12 @@ align-items: center;
     transition: all 1s;
 }
 
+.fa-arrow-right{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: rgb(212, 14, 14);
+}
 
-
-
+.fa-arrow-right:hover{
+    color: rgb(255, 0, 0);
+}
