@@ -9,36 +9,13 @@
     
       <article class="caruselNombre">
             
-            <h2 class="nombreDeProducto"><%= JSON.stringify(productDetail.name).replace(/\"/g, "") %></h2>
+        <!--product name-->
+          <h2 class="nombreDeProducto"><%= JSON.stringify(productDetail.name).replace(/\"/g, "") %></h2>
           
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carrusel carousel-inner">
-              <div class="elemento carousel-item active">
-                <img src="/img/products/<%= productDetail.image %>" class="d-block w-100">
-              </div>
-              <div class="elemento carousel-item ">
-                <img src="/img/products/<%= productDetail.image %>" class="d-block w-100">
-              </div>
-              <div class="elemento carousel-item">
-                <img src="/img/products/<%= productDetail.image %>" class="d-block w-100">
-              </div>
-            </div>
-
-            <button class="boton carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="boton carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="boton carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="boton carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>  
+        <!--product image-->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> 
+            <img src="/img/products/<%= productDetail.image %>" class="d-block w-100">
+          </div>
 
       </article>
 
