@@ -43,9 +43,9 @@ router.post('/profile', usersController.processLogIn)
 
 router.get('/logout', usersController.logout)
 
-router.get('/modUser', usersController.moduser)
+router.get('/moduser', usersController.moduser)
 
-router.post('/modUser', usersController.update)
+router.post('/moduser', usersController.update)
 
 // router.put('/moduser', upload.single('avatar'), usersController.update)
 

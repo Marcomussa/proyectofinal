@@ -146,24 +146,25 @@ const usersController = {
         .catch((err) => console.log(err))
     },
     update: function (req, res, next){
-        let user = Users.findOne({where: {email: req.cookies.test.email}})
+        let user = Users.findOne({where: {email: req.session.userLogged.email}})
 
         user
         .then((user) => {
             if (!user) res.status(418).send('El usuario No Existe')
             else {
-                console.log(req.body.name + ' ' + req.body.surname)
-                console.log(req.cookies.test.id)
+                console.log(req.session.userLogged.name)
                 Users.update({
-                    name: req.body.name || user.name,
-                    surname: req.body.surname || user.surname,
+                    name: req.session.userLogged.name,
+                    surname: req.session.userLogged.surname,
                 }, {
                     where: {
-                        id: req.cookies.test.id
+                        id: req.session.userLogged.id
                     }
                 })
-    
-                res.redirect('/users/profile')
+                res.json({
+                    name: req.session.userLogged.name
+                })
+                // res.redirect('/users/profile')
             } 
         })
         .catch((err) => console.log(err))

@@ -23,11 +23,11 @@
         <!-- <span class="separadorLogIn">OR</span>-->
 
         <form action="/users/profile" method="POST">
-            <input type="text" name="emailLogIn" class="form-control" placeholder="Email">
-            <input type="password" name="passLogIn" class="form-control" placeholder="Password">
+            <input type="text" name="emailLogIn" class="form-control" placeholder="Email" id="emailLogIn">
+            <input type="password" name="passLogIn" class="form-control" placeholder="Password" id="passwordLogIn">
             <label for="recordarUser">Recordar Usuario</label>
             <input type="checkbox" name="recordarUser" id="recordarUser">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id='submit'>
         </form>
 
         <div>
@@ -38,11 +38,15 @@
                     </p>
                 <% }) %> 
             <% } %> 
+
+            <p class="displayNone emailMsg">Ingrese un Email</p>
+            <p class="displayNone passMsg">Ingrese una Password</p>
+
         </div>
 
         <div>
             <% if(locals.errors && errors.email){ %>
-                <span>
+                <span class="valBackLogIn">
                     <%= errors.email.msg %> 
                 </span>
             <% } %> 
@@ -52,3 +56,39 @@
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
+
+<script>
+    
+    let qs = (par) => {
+        return document.querySelector(par)
+    }
+
+    let email = qs('#emailLogIn')
+    let password = qs('#passwordLogIn')
+    let submit = qs('#submit')
+    let emailMsg = qs('.emailMsg')
+    let passMsg = qs('.passMsg')
+    let valBackendLogIn = qs('.valBackLogIn')
+
+    function validacionesLogIn(e) {
+        if(email.value === ''){
+            e.preventDefault()
+            emailMsg.className = 'displayBlock'
+            valBackendLogIn.className = 'displayNone'
+        }
+        if(password.value === ''){
+            e.preventDefault()
+            passMsg.className = 'displayBlock'
+            valBackendLogIn.className = 'displayNone'
+        }
+        if(email.value != ''){
+            emailMsg.className = 'displayNone'  
+        }
+        if(password.value != ''){
+            passMsg.className = 'displayNone'
+        }
+    }
+
+    submit.addEventListener('click', validacionesLogIn)
+
+</script>
