@@ -13,6 +13,9 @@ const isLoggedMiddleware = require('./middlewares/userLoguedMiddleware')
 app.use(express.static(path.resolve(__dirname, '../public')))
 app.set('views', path.resolve(__dirname, 'views'))
 
+app.use(express.static(path.resolve(__dirname, '../src')))
+app.set('scripts', path.resolve(__dirname, 'scripts'))
+
 // Captando el body del pedido:
 app.use(express.urlencoded({
     extended: false

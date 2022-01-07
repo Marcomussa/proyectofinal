@@ -43,7 +43,7 @@ router.post('/profile', usersController.processLogIn)
 
 router.get('/logout', usersController.logout)
 
-router.get('/moduser', usersController.moduser)
+router.get('/moduser', authMiddleware, usersController.moduser)
 
 router.post('/moduser', usersController.update)
 

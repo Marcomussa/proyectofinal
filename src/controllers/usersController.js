@@ -12,8 +12,7 @@ const usersController = {
         res.render('register')
     },
 
-    processRegister: async function (req, res){
-      
+    processRegister: async function (req, res){      
         let errors = validationResult(req)
         const validaciones = errors.array()
 
@@ -137,40 +136,31 @@ const usersController = {
         res.redirect("login")
     },
     moduser: function(req, res){
-        let user = Users.findOne({where: {email: req.cookies.test.email}})
-
-        user
+        Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
             res.render('modUser', {user})            
         })
         .catch((err) => console.log(err))
     },
     update: function (req, res, next){
-        let user = Users.findOne({where: {email: req.session.userLogged.email}})
-
-        user
+        Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
             if (!user) res.status(418).send('El usuario No Existe')
             else {
-                console.log(req.session.userLogged.name)
+                console.log(req.body.name)
                 Users.update({
-                    name: req.session.userLogged.name,
-                    surname: req.session.userLogged.surname,
+                    name: req.body.name
                 }, {
                     where: {
-                        id: req.session.userLogged.id
+                        email: req.session.userLogged.email
                     }
                 })
-                res.json({
-                    name: req.session.userLogged.name
-                })
-                // res.redirect('/users/profile')
             } 
+            res.redirect('/users/profile')
         })
         .catch((err) => console.log(err))
         
-    },
-    
+    },     
     delete: async function (req, res, next){
         let user = await Users.findOne({where: {id: req.session.userLogged.id}})
 

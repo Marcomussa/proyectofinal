@@ -6,7 +6,7 @@
 
     <h2 class='productosH2'>Informacion de <%- user.email %> <%- user.surname %> </h2>
 
-    <form method='POST' action="/users/moduser" class="formAgregar" enctype="multipart/form-data">
+    <form method='POST' action="/users/moduser " class="formAgregar" enctype="multipart/form-data">
       <div class="agregarFoto profile-img">
         <img src="/img/addPhoto.png" alt="" />
         <div class="file btn btn-lg btn-primary">
@@ -30,7 +30,7 @@
         <a href="/"><button type="push" class="borrarproducto">Eliminar Producto</button></a> -->
        </div>
     </form>
- <div><form method="POST" action="/users/profile/modUser/<%= user.id %>?_method=delete">
+    <div><form method="POST" action="/users/profile/modUser/<%= user.id %>?_method=delete">
     <button type="submit" class="btn btn-danger">Eliminar Cuenta</button>
     </form> </div>
   
