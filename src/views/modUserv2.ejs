@@ -4,14 +4,57 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-    
-    <form action="/users/update" method="POST">
-        <label for="nameUpdate">Nombre</label>
-        <input type="text" name='name' value='<%= user.name %>' id="nameUpdate">
-        <label for="surnameUpdate">Apellido</label>
-        <input type="text" name='surname' value='<%= user.surname %>' id="surnameUpdate">
-        <input type="submit" value="Actualizar">
-    </form>
+    <section class="contenedorLogIn">
+        <article class="aside">
+            <div class="logoEnvios">
+                <i class="fas fa-user-astronaut"></i>                
+                <p>Edita tu usuario!</p>
+            </div>
+        </article>   
+        <article class="logIn">
+            <h3>Edicion de perfil de usuario</h3>
+            <div class="logInExterno">
+               <!-- <button class='btn btn-primary'>Iniciar con Google</button>
+                <button class='btn btn-primary'>Iniciar con Facebook</button>-->
+            </div>
+        <!-- <span class="separadorLogIn">OR</span>-->
+
+        <form action="/users/update" method="POST">
+
+            <!--Name-->
+            <label for="nameUpdate" class="userUpdateInfo">Nombre</label>
+            <input type="text" name="name" class="form-control nameUpdateInfo" value='<%= user.name %>' id="nameUpdate">
+
+            <!--Surname-->
+            <label for="surnameUpdate" class="userUpdateInfo">Apellido</label>
+            <input type="text" name="surname" class="form-control nameUpdateInfo" value='<%= user.surname %>' placeholder="Password" id="surnameUpdate">
+
+            <input type="submit" value="Actualizar" class="btn btn-primary btn-lg">
+        </form>
+
+        <div>
+            <% if(typeof validacionesLogIn != 'undefined'){ %>
+                <% validacionesLogIn.forEach( (validacion) => { %>
+                    <p style="color: red;">
+                    <%= validacion.msg %> 
+                    </p>
+                <% }) %> 
+            <% } %> 
+        </div>
+
+        <p class="displayNone emailMsg">Ingrese un Email</p>
+        <p class="displayNone passMsg">Ingrese una Password</p>
+
+
+        <div>
+            <% if(locals.errors && errors.email){ %>
+                <span class="valBackLogIn">
+                    <%= errors.email.msg %> 
+                </span>
+            <% } %> 
+        </div>
+        </article>
+    </section>
 
     <%- include('./partials/footer.ejs') %> 
 </body>

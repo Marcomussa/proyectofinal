@@ -141,11 +141,25 @@
   border-radius: 2px;
   font-size: 20px;
   margin-left: 40px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .editButton:hover{
   background-color: rgb(172, 165, 157);
   transition: all 0.2s;
   border: 2px solid rgb(136, 121, 121);
+}
+
+.userUpdateInfo{
+  flex-direction: column;
+  margin-left: -33.5rem;
+}
+
+.nameUpdateInfo{
+  margin-bottom: 15px;
+}
+
+.buttonSubmitInfo{
+  border: 1px solid black;
+  background-color: #eee
+  ;
 }
