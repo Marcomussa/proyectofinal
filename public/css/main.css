@@ -21,8 +21,8 @@ p {
     animation: banner infinite 10000ms ease-in-out;
 }
 @keyframes banner{
-    0%{background-image: url('../img/intelbanner.jpg'); }
-    33%{background-image: url('../img/intelbanner.jpg');}
+    0%{background-image: url('../img/intelBanner.png'); }
+    33%{background-image: url('../img/intelBanner.png');}
     34%{background-image: url('../img/hyperxbanner.png');}
     77%{background-image: url('../img/hyperxbanner.png');}
     78%{background-image: url('../img/amdbanner.jpg');}
