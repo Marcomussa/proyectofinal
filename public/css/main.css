@@ -82,7 +82,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.945); 
-    border: 1px solid rgb(255, 0, 157);
+    border: 1px solid rgb(233, 229, 232);
     align-items: center;
     margin: 5px;
     color: black;
@@ -107,7 +107,7 @@ p {
     font-size: 1.3rem;
 }
 .tarjetaProducto:hover .nombreProducto{
-    color: red;
+    color: rgb(75, 75, 75);
 }
 .tarjetaProducto:hover .precioTotalProducto{
     color: black;
