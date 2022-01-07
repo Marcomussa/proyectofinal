@@ -128,38 +128,40 @@ const usersController = {
         res.render('wishlist')
     },
     profile: function (req, res){
-      res.render('userProfile' );
+        res.render('userProfile');
     },
     logout: function(req, res){
         req.session.userLogged = null
         res.clearCookie("user");
         res.redirect("login")
     },
-    moduser: function(req, res){
+    findUserUpdate: function(req, res){
         Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
-            res.render('modUser', {user})            
+            res.render('modUserv2', {user})            
         })
         .catch((err) => console.log(err))
     },
     update: function (req, res, next){
         Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
-            if (!user) res.status(418).send('El usuario No Existe')
-            else {
-                console.log(req.body.name)
-                Users.update({
-                    name: req.body.name
-                }, {
-                    where: {
-                        email: req.session.userLogged.email
-                    }
-                })
-            } 
+            const {name, surname} = req.body
+            Users.update({
+                name: name,
+                surname: surname
+            }, {
+                where: {
+                    email: req.session.userLogged.email
+                }
+            })
+            req.session.userLogged = {
+                email: req.session.userLogged.email,
+                name: name,
+                surname: surname
+            }
             res.redirect('/users/profile')
         })
         .catch((err) => console.log(err))
-        
     },     
     delete: async function (req, res, next){
         let user = await Users.findOne({where: {id: req.session.userLogged.id}})
@@ -170,7 +172,5 @@ const usersController = {
             res.redirect('/')
          }
     }
-
-
 }
 module.exports = usersController

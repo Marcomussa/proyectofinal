@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {'title': 'Menu de inicio'}) %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+
+    
+    <form action="/users/update" method="POST">
+        <label for="nameUpdate">Nombre</label>
+        <input type="text" name='name' value='<%= user.name %>' id="nameUpdate">
+        <label for="surnameUpdate">Apellido</label>
+        <input type="text" name='surname' value='<%= user.surname %>' id="surnameUpdate">
+        <input type="submit" value="Actualizar">
+    </form>
+
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
