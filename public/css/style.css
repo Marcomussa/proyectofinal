@@ -12,6 +12,8 @@
 @import url('form.css');
 @import url('admin.css');
 @import url('userProfile.css');
+@import url('paymentMethods.css');
+
 
 * {
     padding: 0px;

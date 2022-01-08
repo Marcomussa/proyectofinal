@@ -7,7 +7,10 @@ let mainController = {
         let pList = await Products.findAll()
        
         res.render('index', { productList: pList })
-    }
+    },
+    payment: function(req, res){
+        res.render('paymentMethods')
+    },
 }
 
 module.exports = mainController

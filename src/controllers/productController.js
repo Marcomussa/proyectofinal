@@ -72,6 +72,6 @@ const productController = {
         let pList = await Products.findAll()
        
         res.render('admin', { products: pList })
-    }    
+    }
 }
 module.exports = productController

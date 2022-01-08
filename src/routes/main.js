@@ -4,4 +4,6 @@ const mainController = require('../controllers/mainController')
 
 router.get('/', mainController.index)
 
+router.get('/payment', mainController.payment)
+
 module.exports = router

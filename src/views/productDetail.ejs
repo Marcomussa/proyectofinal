@@ -23,7 +23,7 @@
             <h4 class="precioProducto">$<%= JSON.stringify(productDetail.price).replace(/\"/g, "") %></h4> 
             <button class="añadirProducto"><i class="far fa-cart-plus"></i> Añadir al carrito</button> <br>
             <button class="añadirProducto2"> Comprar</button> <br>
-            <a href="#" class="pagoProducto">Metodos de pago</a>
+            <a href="/payment" class="pagoProducto">Metodos de pago</a>
          <article class="ofertaProducto">
              <p class="oferta1"><i class="fas fa-shipping-fast"></i> envios a todo el pais</p>
              <p class="oferta2"><i class="fas fa-percent"></i> <%= JSON.stringify(productDetail.discount).replace(/\"/g, "" ) %> Descuento</p>
