@@ -1,3 +1,51 @@
-.paymentMethods{
-    background-color: #eee;
+.cardPay, .cashPay, .criptoPay{
+    border:  1px solid black;
+    width: 55%;
+    height: 200x;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aliceblue;
+}
+
+.imgPayCard{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.cardMethods{
+    display: inline;
+}
+
+.paymentIcons{
+    margin-right: 6px;
+    margin-bottom: 0.3rem;
+}
+
+.imgPay{
+    width: 90px;
+    margin-right: 10px;
+}
+
+.criptoMethods{
+    width: 40px;
+}
+
+.cardMethodImg{
+    width: 40px;
+}
+
+.visaCard{
+    width: 80px;
+}
+
+.titleCardPayment{
+    font-weight: bolder;
+}
+
+.cardPayTitle{
+    width: 55%;
+    height: 200x;
+    margin: 10px;
+    padding: auto;
 }

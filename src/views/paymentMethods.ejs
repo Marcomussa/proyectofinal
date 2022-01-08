@@ -4,18 +4,58 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-    <main class="paymentMethods">
-        <h1>Metodos de pago</h1>
-        <i class="fas fa-credit-card iconsBanner"></i><p class="pOffer">  Tarjeta de crédito</p>
-        <br>
-        <i class="fas fa-id-card iconsBanner"></i><p class="pOffer">  Tarjeta de débito</p>
-        <br>
-        <i class="fas fa-money-bill iconsBanner"></i><p class="pOffer">  Efectivo</p>
-        <br>
-        <i class="fas fa-money-bill iconsBanner"></i><p class="pOffer">  Billetera digital</p>
-        <br>
-        <i class="fab fa-btc btcIcon"></i><p class="pOffer criptoP">  Criptomonedas</p>
-    </main>
+
+    <section class="paymentMethodsCards">
+        <h4 class="cardPayTitle">¿Qué métodos de pago se aceptan?</h4>
+        <h4 class="cardPayTitle">OPCIONES DE PAGO EN LÍNEA Y EFECTIVO PARA TUS COMPRAS:</h4>
+        <div class="cardPay">
+            <p class="titleCardPayment">PAGO ONLINE</p class="titleCardPayment">
+            <hr>
+            <p>
+                Podrás pagar con tu tarjeta bancaria Visa, MasterCard y American Express.
+                 <br>
+                 <br>
+                Si pagas directamente con Visa, MasterCard o AMEX podrás pagar <b>hasta 3 cuotas sin asumir el interés bancario</b>.
+            </p>
+            <br>
+            <div class="cardMethods">
+                <img src="/img/paymentImg/visa.jpeg" alt="" class="imgPayCard visaCard">
+                <img src="/img/paymentImg/Mastercard-logo.png" alt="" class="imgPayCard">
+                <img src="/img/paymentImg/american-express.png" alt="" class="imgPayCard cardMethodImg">
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    
+        <div class="cashPay">
+            <p class="titleCardPayment">PAGO EN EFECTIVO</p class="titleCardPayment">
+            <hr>
+            <p>Podrás acudir a los servicios Rapipago y Pago Fácil más cercanos para poder realizar el pago de tu orden.</p>
+            <br>
+                <img src="/img/paymentImg/rapipago.png" alt="" class="pagofacil imgPay">
+            <img src="/img/paymentImg/Logo-Pago-Facil.png" alt="" class="pagofacil imgPay">
+            <br>
+            <br>
+            <p>Recuerda que tu línea de pago cuenta con una <b>vigencia de hasta 5 días</b>. 
+                <br>
+                <br>
+                Para evitar complicaciones, <b>te sugerimos hacer tu pago lo antes posible</b> y no esperar a la fecha de vencimiento.</p>
+        </div>
+    
+        <div class="criptoPay">
+            <p class="titleCardPayment">PAGO CON CRIPTOMONEDAS</p class="titleCardPayment">
+            <hr>
+            <p>El pago se realiza a la wallet indicada al momento de la compra via BTC, ETH o USDT.</p>
+            <br>
+            <img src="/img/paymentImg/bitcoin.png" alt="" class="imgPayCard criptoMethods">
+            <img src="/img/paymentImg/eth.png" alt="" class="imgPayCard criptoMethods">
+            <img src="/img/paymentImg/usdt.png" alt="" class="imgPayCard criptoMethods">
+            <p>Es esencial transferir el dinero a <b>la cuenta mostrada</b>.</p>
+            <br>
+            <br>
+        </div>
+    </section> 
 
     <%- include('./partials/footer.ejs') %> 
 </body>
