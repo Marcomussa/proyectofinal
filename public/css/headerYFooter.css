@@ -1,98 +1,4 @@
-/*nav,
-footer {
-    background: rgb(175,227,192);
-background: radial-gradient(circle, rgba(175,227,192,0.7693452380952381) 0%, rgba(255,255,255,1) 100%);
-box-shadow: 0px 0px 20px rgb(99, 99, 99);
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 0px 100px;
-    flex-direction: row;
-}
-
-.contendedorLogo img {
-    width: 100%;
-}
-nav div ul li a{
-    color: black;
-}
-nav ul li,
-footer .redesSociales ul li,
-footer .linksFooter ul li{
-    display: inline-block;
-}
-
-nav ul li {
-    margin-left: 50px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-nav div:nth-child(3){
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer .redesSociales {
-    width: 25%;
-    padding: 10px;
-    text-align: center;
-}
-
-footer .redesSociales p {
-    font-size: 26px;
-}
-
-footer .redesSociales ul {
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .redesSociales ul li {
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-footer .redesSociales ul li a i {
-    font-size: 45px;
-}
-
-footer .linksFooter {
-    width: 50%;
-}
-
-footer .linksFooter ul{
-    padding: 0px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .linksFooter .contenedorLogo {
-    width: 25%;
-}
-
-.fa-facebook-square {
-    color: rgb(66,103,178);
-}
-.fa-instagram-square {
-    color: rgb(233, 89, 80);
-}
-.fa-whatsapp-square {
-    color: rgb(37, 211, 102);
-}
-.fa-twitter-square {
-    color: rgb(29, 161, 242)
-}
-Header*/
-
-nav {
+/*nav {
     background: rgb(175,227,192);
     background: radial-gradient(circle, rgba(175,227,192,0.7693452380952381) 0%, rgba(255,255,255,1) 100%);
     box-shadow: 0px 0px 20px rgb(99, 99, 99);
@@ -131,6 +37,84 @@ nav div:nth-child(3){
 
 .nav{
     background-color: red;
+}*/
+
+nav {
+    /* background: radial-gradient(circle, rgb(66, 65, 65), rgb(66, 65, 65)); */
+    background: radial-gradient(circle, rgb(45, 65, 65), rgb(66, 65, 65));
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 100px;
+    flex-direction: row;
+}
+
+.contendedorLogo img {
+    width: 100%;
+}
+nav div ul li a{
+    color: white;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.linkNavHover:hover{
+    color: white;
+}
+
+nav div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonNav{
+  background-color: #535051;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonNav:hover,
+.buttonNav:focus {
+    border: 1px solid white;
+    background: radial-gradient(circle, rgb(45, 65, 65), rgb(66, 65, 65));
+  color: white;
+}
+
+.nav{
+    background-color: rgb(68, 66, 66);
 }
 
 /* footer */
