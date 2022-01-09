@@ -86,6 +86,7 @@ nav div:nth-child(3){
   border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
+  border: 1px solid white;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -110,7 +111,7 @@ nav div:nth-child(3){
 .buttonNav:focus {
     border: 1px solid white;
     background: radial-gradient(circle, rgb(45, 65, 65), rgb(66, 65, 65));
-  color: white;
+    color: white;
 }
 
 .nav{
