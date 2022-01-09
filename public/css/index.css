@@ -37,6 +37,48 @@
     margin-right: 4px;
 }
 
+/* bannerBrands */
+.bannerBrands{
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(235, 237, 238);}
+
+.titleBrands{
+    padding: 6px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.imgBrandsBanner{
+    text-align: center;
+}
+
+.imgBrands{
+    margin-top: -15px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.alienware{
+    margin-bottom: 10px;
+    width: 70px;
+}
+
+@media (max-width: 564px){
+    .imgBrands{
+        margin-top: -20px;
+        width: 35px;
+        margin-right: 5px;
+    }
+    
+    .alienware{
+        margin-top: -50px;
+        margin-bottom: 8px;
+        width: 60px;
+    }
+}
+
 /* media */
 @media (min-width: 300px){
     .pOffer{
