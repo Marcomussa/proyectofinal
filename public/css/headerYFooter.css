@@ -198,6 +198,10 @@ nav div:nth-child(3){
     color: white;
 }
 
+.ubicacionLink:hover{
+    color: white;
+}
+
 .link{
     margin-left: 8px;
     color: wheat;
@@ -205,6 +209,7 @@ nav div:nth-child(3){
 }
 
 .link:hover{
+    color: wheat;
     text-decoration:underline;
 }
 
@@ -249,7 +254,7 @@ nav div:nth-child(3){
 @media (max-width: 764px){
     .cardPromos{
         width: 85%;
-        height: 150px;
+        height: 180px;
         margin: 10px;
         border-radius: 8px;
         background-color: #636363;    
