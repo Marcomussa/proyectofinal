@@ -50,6 +50,23 @@
     flex-wrap: wrap;
 } 
 
+.precioDescuentoProductoList{
+    color: rgb(8, 180, 8);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.precioProductoList{
+    text-align: center;
+    border: 1px solid rgb(1, 1, 1);
+    width: 100%;
+}
+
+.precioTotalProductoList{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 .name{
     text-overflow: Ellipsis; /* will make [...] at the end */
     white-space: nowrap; /* paragraph to one line */

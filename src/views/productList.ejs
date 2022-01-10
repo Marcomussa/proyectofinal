@@ -23,16 +23,21 @@
   
       <!--Testeando forma de los products-->
       <% for(let i = 0; i < products.length ; i++){ %> 
-        <div class="card">
-          <img src="/img/products/<%= products[i].image %>" class="img-thumbnail image" alt="...">        
-          <div class="card-body">
-            <h5 class="card-title title"><%= products[i].name %></h5>
-            <h6 class="card-title">$<%= products[i].price %></h6>
-            <br>
-            <a href="/products/<%= products[i].id %>" class="añadirProducto btnDetail btnCompra">Ir al Producto</a>
-          </div>
-        </div>
-      <% } %> 
+        <a href="/products/<%= products[i].id %>" class='tarjetaProducto'>
+            <div>
+                <img class='imagenProducto' src="/img/products/<%= products[i].image %>" alt= "" >
+            </div>
+            <div class='infoProducto'>
+                <div class='nombreProducto'>
+                    <%= products[i].name %>
+                    <div class='precioProductoList'>
+                        <p class='precioTotalProductoList'>$<%= products[i].price %></p>
+                        <p class='precioDescuentoProductoList'><%= products[i].discount %>% OFF</p>
+                    </div>
+                </div>  
+            </div>
+        </a>
+    <% } %> 
     </section>
   
 
