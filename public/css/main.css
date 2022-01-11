@@ -119,12 +119,13 @@ p {
     align-items: center;
 }
 .precioTotalProducto {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1rem;
 }
 .precioDescuentoProducto {
     color: green;
     font-size: 0.9rem;
+    font-weight: lig;
 }
 /* lo + vendido */
 .contenedorVendido {
@@ -300,5 +301,5 @@ align-items: center;
 }
 
 .fa-arrow-right:hover{
-    color: rgb(255, 0, 0);
+    color: rgb(212, 14, 14);
 }

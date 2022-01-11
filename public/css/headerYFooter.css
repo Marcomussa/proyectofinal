@@ -125,8 +125,8 @@ nav div:nth-child(3){
     height: 250px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #636363;    
-    border: 1px  black;
+    background-color: transparent;    
+    border: 1px solid white;
     margin: 20px;
 }
 
@@ -152,10 +152,11 @@ nav div:nth-child(3){
 .textCard{
     width: 89%;
     margin-left: 18px;
+    color: white;
 }
 
 .footer{
-    background-color: rgb(46, 45, 45);
+    background: radial-gradient(circle, rgb(45, 65, 65), rgb(66, 65, 65));
     width: 100%;
 }
 
