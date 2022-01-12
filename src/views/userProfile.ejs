@@ -4,32 +4,8 @@
 <body>
 
     <%- include('./partials/header.ejs') %> 
-   <!--
-    <h3> Bienvenido
-        <%= userLogged.name %> 
-    </h3>
-    <div><img src="/img/avatars/<%= userLogged.avatar %> " alt=""></div>
-    <a href="/users/logout">Log Out</a>-->
-    
-    <!--<div class="container">
-        <div class="main-body">
-              <div class="row gutters-sm">
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/img/avatars/<%= userLogged.avatar %> " alt="Admin" class="rounded-circle" width="150">        
-                        <h2> <%= userLogged.name %> <%= userLogged.surname %> </h2>
-                        <h6 class="text-secondary"> <%= userLogged.email %> </h6>    
-                      </div>
-                    </div>
-                  </div>
-                </div>          
-              </div>
-      </div>
-    </div>-->
 
-  <div class="profileinfo">
+  <!--<div class="profileinfo">
     <div id="gradient"></div>
     <div id="cardProfileLogued">
       <img src="/img/avatars/<%= userLogged.avatar %>"/>
@@ -38,10 +14,44 @@
       
       <a href="/users/update">Editar</a>
     <form action=""><div><button class="editButton"><a href="/users/logout">Salir</a></button></div></form>
-    </div>
-    
-  </div>
+    </div>  
+  </div> -->
 
+  <div class="containerProfile">
+    <div>
+        <div class="cardProfile">
+            <div class="card-header" 
+            style="background-image: url('/img/world.jpeg')">
+                <div class="card-photo">
+                    <img src="/img/avatars/<%= userLogged.avatar %>" class="imgProfileView" alt="">
+                </div>
+            </div>
+            <div class="card-body">
+                <h3 class="cardName"><%= userLogged.name %> <%= userLogged.surname %></h3>
+                <p class="card-description"><%= userLogged.email %></p>
+                <div class="card-button">
+                    <a href="/users/update" class="btn btn-primary btnFormEdit">Editar</a>
+                    <form action="">
+                      <div>
+                       
+                        <a href="/users/logout" class="btn btn-primary btnFormEdit">Salir</a>
+                      </div>
+                    </form>
+                </div>
+                <ul class="card-social">
+                    <li><i class="fas fa-user-tie"></i></li>
+                    <li><i class="fas fa-user-astronaut"></i></li>
+                    <li><i class="fas fa-user-secret"></i></li>
+                    <li><i class="fas fa-user-ninja"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  <br>
+<section class="sectionProfile">
+  <p>profile</p>
+</section>
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
