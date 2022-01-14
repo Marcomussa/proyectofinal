@@ -12,6 +12,7 @@
 
 }
 .adminImg {
+    border: 1px solid black;
     width: 12%;
     height: 50%;
     align-self: center;
