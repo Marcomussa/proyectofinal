@@ -71,7 +71,6 @@ p {
     margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     flex-direction: column;
     align-items: center;
 }
@@ -148,7 +147,6 @@ p {
     margin-bottom: 5px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     flex-direction: column;
     align-items: center;
 }
@@ -297,9 +295,9 @@ align-items: center;
 .fa-arrow-right{
     font-size: 1.8rem;
     text-decoration: none;
-    color: rgb(212, 14, 14);
+    color: #24a7e4;
 }
 
 .fa-arrow-right:hover{
-    color: rgb(212, 14, 14);
+    color: #23dbbc;
 }

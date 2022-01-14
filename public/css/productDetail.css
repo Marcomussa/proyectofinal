@@ -50,7 +50,7 @@
 }
 
 .añadirProducto:hover, .añadirProducto2:hover{
-    color: #688b58;
+    color: #408fb4;
     border-color: #eb5e55;
     transition: all 1s;
 }
@@ -68,13 +68,16 @@
     text-decoration: none;
     color:#eb5e55;
 }
+.pagoProducto:hover{
+    color: #408fb4;
+}
 .oferta1,.oferta2{
     margin-top: 10px;
     font-size: 20px;
     font-weight: lighter;
 }
 .oferta1 i, .oferta2 i{
-    color: midnightblue;
+    color: #408fb4;
 }
 
 .descriptionPart{
