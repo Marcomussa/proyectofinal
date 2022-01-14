@@ -14,12 +14,14 @@
 @import url('userProfile.css');
 @import url('paymentMethods.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto+Mono:wght@200&display=swap');
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    /* font-family: url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto+Mono:wght@200&display=swap'); */
 }
 
 body {

@@ -113,13 +113,14 @@
 
 .sectionProfile{
   margin-top: -150px;
-  background-color: rgb(255, 255, 255);
+  background-image: url("/img/bgEEE.png");
   height: 100px;
   color: rgb(255, 255, 255);
+  display: none;
 }
 
 .containerProfile{
-  background-color: rgb(255, 255, 255);
+  background-image: url("/img/bgEEE.png");
 }
 
 .containerProfile{
@@ -156,10 +157,10 @@
 .card-photo{
   height: 120px;
   width:120px;
-  border-radius: 50%;
+  border-radius: 0%;
   border: 1px solid #1f1a32;
   padding: 7px;
-  background-color: #292343;
+  background-color: #7b7b7e;
   overflow: hidden;
   transform: translateY(calc(50% + 40px));
   border: 1px solid white;
@@ -170,7 +171,7 @@
   display: inline-block;
   max-width: 100%;
   height: auto;
-  border-radius: 30%;
+  /*border-radius: 30%;*/
 }
 
 .card-body{
@@ -187,9 +188,10 @@
 
 .card-description{
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 21px;
-  margin-top: 60px;
+  font-weight: lighter;
+  margin-top: 80px;
 }
 
 .card-button{

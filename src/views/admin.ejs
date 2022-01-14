@@ -4,9 +4,10 @@
 <body>
     <%- include('./partials/header.ejs') %> 
 
-<h2>Productos</h2>
-<a href="/products/create" class="btnMain"> Crear Producto</a>
- 
+<div class="titleButtonEdit">
+  <h2 class="titleAdminProducts">Productos</h2>
+  <a href="/products/create" class="btnCreateProduct btnMain"> Crear Producto</a>
+</div>
 
 <section class="productsAdmin">
   <!--Testeando forma de los products-->
@@ -21,7 +22,7 @@
         <!--<p class="card-text title"><%= products[i].description %></p>-->
         <br>
        <div class="adminButtons"> 
-        <div> <a href="/products/mod/<%= products[i].id %>" class="btn btn-success">Modificar</a></div>
+        <div> <a href="/products/mod/<%= products[i].id %>" class="btn btn-success modifyProduct">Modificar</a></div>
        
         <div><form method="POST" action="/products/<%= products[i].id %>?_method=delete">
           <button type="submit" class="btn btn-danger">Eliminar</button>

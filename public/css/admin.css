@@ -55,3 +55,22 @@
     padding-left: 5%;
     padding-right: 10%;
 }
+
+.modifyProduct{
+    margin-right: 10px;
+}
+
+.productsAdmin{
+    margin-left: 20px;
+}
+
+.titleButtonEdit{
+    margin-left: 20px;
+}
+
+
+@media (max-width: 724px){
+    .adminProductDiscount, .adminProductPrice{
+        display: none;
+    }
+}
