@@ -1,7 +1,7 @@
 ## Sprint 1
 
 - **Que podemos empezar a hacer.**
-  -averiguar otras funcionalidades externas al curso (bootstrao-carusel, etc)
+  -averiguar otras funcionalidades externas al curso (bootstrao-carusel, etc).
   -definir una metodologia de trabajo interno en cuanto a escritura de codigo (acamelCaes, en español).
 
 - **Hacer más.**
@@ -18,13 +18,13 @@
 ## Sprint 2
 
 - **Que podemos empezar a hacer.**
-* agregar mas funcionalidad y animaciones
+* agregar mas funcionalidad y animaciones.
 
 - **Hacer más.**
 * hacer dos scrum semanales.
 
 - **Continuar haciendo.**
-* continuar con el buen flow de trabajo
+* continuar con el buen flow de trabajo.
 
 - **Hacer menos.**
   
@@ -47,7 +47,7 @@
 * hacer dos scrum semanales.
 
 - **Continuar haciendo.**
-* continuar con el buen flow de trabajo
+* continuar con el buen flow de trabajo.
 
 - **Hacer menos.**
   
@@ -58,14 +58,14 @@
 ## Sprint 4
 
 - **Que podemos empezar a hacer.**
-* Scrums
+* Scrums.
 
 
 - **Hacer más.**
 * hacer dos scrum semanales.
 
 - **Continuar haciendo.**
-* continuar con el buen flow de trabajo
+* continuar con el buen flow de trabajo.
 
 - **Hacer menos.**
   
@@ -75,14 +75,14 @@
 ## Sprint 5
 
 - **Que podemos empezar a hacer.**
-* Scrums
+* Scrums.
 
 
 - **Hacer más.**
 * hacer dos scrum semanales.
 
 - **Continuar haciendo.**
-* continuar con el buen flow de trabajo
+* continuar con el buen flow de trabajo.
 
 - **Hacer menos.**
   
@@ -92,16 +92,34 @@
 ## Sprint 6
 
 - **Que podemos empezar a hacer.**
-* Scrums
+* Scrums.
 
 
 - **Hacer más.**
 * hacer dos scrum semanales.
 
 - **Continuar haciendo.**
-* continuar con el buen flow de trabajo
+* continuar con el buen flow de trabajo.
 
 - **Hacer menos.**
   
 
 - **Dejar de hacer.**
+
+## Sprint 7
+
+- **Que podemos empezar a hacer.**
+* Scrums.
+
+
+- **Hacer más.**
+* hacer 1 scrum semanal.
+
+- **Continuar haciendo.**
+
+
+- **Hacer menos.**
+  
+
+- **Dejar de hacer.**
+procrastinar.

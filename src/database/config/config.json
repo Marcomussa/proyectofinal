@@ -7,7 +7,7 @@
   },
   "development": {
           "username": "root",
-          "password": "root",
+          "password": "",
           "database": "geekware",
           "host": "127.0.0.1",
           "dialect": "mysql"
