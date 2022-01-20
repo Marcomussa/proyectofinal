@@ -132,7 +132,8 @@ const usersController = {
     },
     logout: function(req, res){
         req.session.userLogged = null
-        res.clearCookie("user");
+        res.clearCookie("user")
+        res.clearCookie("test")
         res.redirect("login")
     },
     findUserUpdate: function(req, res){
