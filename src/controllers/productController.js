@@ -72,13 +72,6 @@ const productController = {
         let pList = await Products.findAll()
        
         res.render('admin', { products: pList })
-    },
-    api: (req, res) => {
-        Products.findAll()
-        .then((par) => {
-            res.json(par)
-        })
-        .catch(err => console.log(err))
     }
 }
 module.exports = productController

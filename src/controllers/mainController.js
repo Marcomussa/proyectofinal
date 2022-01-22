@@ -11,6 +11,14 @@ let mainController = {
     payment: function(req, res){
         res.render('paymentMethods')
     },
+    api: (req, res) => {
+        console.log('api')
+        Products.findAll()
+        .then((par) => {
+            res.json(par)
+        })
+        .catch(err => console.log(err))
+    }
 }
 
 module.exports = mainController

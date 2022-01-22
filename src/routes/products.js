@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const productController = require('../controllers/productController')
-
 const multer = require('multer')
 const path = require('path')
 
@@ -41,7 +40,5 @@ router.put('/mod/:id', fileUpload.single('imagenProducto'), productController.up
 router.get('/:id', productController.productDetail)
 
 router.post('/create', fileUpload.single('imagenProducto'), productController.createProduct)
-
-router.get('/api', productController.api)
 
 module.exports = router
