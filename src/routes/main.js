@@ -14,4 +14,6 @@ router.get('/apiUsers', mainController.apiUsers)
 
 router.get('/apiUsers/:id', mainController.apiUsersDetail)
 
+router.get('/apiCategories', mainController.apiCategories)
+
 module.exports = router

@@ -11,7 +11,7 @@ const productController = {
             price: req.body.precioProducto,
             discount: req.body.discount,
             category_id: req.body.categoria || 1,
-            image: req.file.filename || "",
+            image: req.file ? req.file.filename : 'default.jpeg'
         }
         const createdProduct = await Products.create(newProduct)  
         

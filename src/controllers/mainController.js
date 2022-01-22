@@ -1,5 +1,5 @@
 
-const  { Products, Users }  = require("../database/models");
+const  { Products, Users, Categories }  = require("../database/models");
 
 let mainController = {
     index: async function (req, res, next){
@@ -53,6 +53,16 @@ let mainController = {
         })
         .catch(err => console.log(err))
     },
+    apiCategories: (req, res) => {
+        Categories.findAll()
+        .then( (par) => {
+            res.json({
+                count: par.length,
+                categories: par
+            })           
+        })
+        .catch(err => console.log(err))
+    }
 }
 
 module.exports = mainController
