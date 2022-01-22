@@ -42,4 +42,6 @@ router.get('/:id', productController.productDetail)
 
 router.post('/create', fileUpload.single('imagenProducto'), productController.createProduct)
 
+router.get('/api', productController.api)
+
 module.exports = router
