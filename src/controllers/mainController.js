@@ -1,5 +1,5 @@
 
-const  { Products }  = require("../database/models");
+const  { Products, Users }  = require("../database/models");
 
 let mainController = {
     index: async function (req, res, next){
@@ -11,14 +11,26 @@ let mainController = {
     payment: function(req, res){
         res.render('paymentMethods')
     },
-    api: (req, res) => {
-        console.log('api')
+    apiProducts: (req, res) => {
         Products.findAll()
         .then((par) => {
-            res.json(par)
+            res.json({
+                count: par.length,
+                products: par
+            })
         })
         .catch(err => console.log(err))
-    }
+    },
+    apiUsers: (req, res) => {
+        Users.findAll()
+        .then((par) => {
+            res.json({
+                count: par.length,
+                users: par
+            })
+        })
+        .catch(err => console.log(err))
+    },
 }
 
 module.exports = mainController
