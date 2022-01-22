@@ -21,6 +21,17 @@ let mainController = {
         })
         .catch(err => console.log(err))
     },
+    apiProductsDetail: (req, res) => {
+        Products.findOne({
+            where: {
+                id: req.params.id
+            }
+        })
+        .then((par) => {
+            res.json(par)
+        })
+        .catch(err => console.log(err))
+    },
     apiUsers: (req, res) => {
         Users.findAll()
         .then((par) => {
@@ -28,6 +39,17 @@ let mainController = {
                 count: par.length,
                 users: par
             })
+        })
+        .catch(err => console.log(err))
+    },
+    apiUsersDetail: (req, res) => {
+        Users.findOne({
+            where: {
+                id: req.params.id
+            }
+        })
+        .then((par) => {
+            res.json(par)
         })
         .catch(err => console.log(err))
     },

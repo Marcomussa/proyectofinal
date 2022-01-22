@@ -8,6 +8,10 @@ router.get('/payment', mainController.payment)
 
 router.get('/apiProducts', mainController.apiProducts)
 
+router.get('/apiProducts/:id', mainController.apiProductsDetail)
+
 router.get('/apiUsers', mainController.apiUsers)
+
+router.get('/apiUsers/:id', mainController.apiUsersDetail)
 
 module.exports = router
