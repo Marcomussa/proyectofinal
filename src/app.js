@@ -8,6 +8,7 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const isLoggedMiddleware = require('./middlewares/userLoguedMiddleware')
+const PORT = 4000
 
 // Accediendo a recursos estaticos: 
 app.use(express.static(path.resolve(__dirname, '../public')))
@@ -47,7 +48,7 @@ app.use('/users', usersRoutes)
 app.use('/products', productsRoutes)
 
 // Server:
-app.listen (3000, () => console.log('Server On http://localhost:3000') )
+app.listen (PORT, () => console.log('Server On http://localhost:3000') )
 app.use((req, res, next) => {
     res.status(404).send('Not Found')
 })
