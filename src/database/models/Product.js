@@ -31,7 +31,7 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     let config = {
-        tableName: 'Products',
+        tableName: 'products',
         timestamps: false
     }
     alias.associate = function () {

@@ -2,11 +2,13 @@
 const  { Products, Users, Categories }  = require("../database/models");
 
 let mainController = {
-    index: async function (req, res, next){
-  
-        let pList = await Products.findAll()
-       
-        res.render('index', { productList: pList })
+    index: function (req, res, next){
+        Products.findAll()
+        .then((par) => {
+            console.log('no funca')
+            res.render('index', { productList: par }
+        )})
+        .catch(err => console.log(err))
     },
     payment: function(req, res){
         res.render('paymentMethods')
