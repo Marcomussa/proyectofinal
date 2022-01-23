@@ -5,8 +5,7 @@ let mainController = {
     index: function (req, res, next){
         Products.findAll()
         .then((par) => {
-            console.log('no funca')
-            res.render('index', { productList: par }
+            res.render('index', { productList: par}
         )})
         .catch(err => console.log(err))
     },

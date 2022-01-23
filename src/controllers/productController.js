@@ -11,7 +11,8 @@ const productController = {
             price: req.body.precioProducto,
             discount: req.body.discount,
             category_id: req.body.categoria || 1,
-            image: req.file ? req.file.filename : 'default.jpeg'
+            image: req.file ? req.file.filename : 'default.jpeg',
+            apiProduct: `http://localhost:4000/apiUser/${req.body.nombreProducto}`
         }
         const createdProduct = await Products.create(newProduct)  
         
