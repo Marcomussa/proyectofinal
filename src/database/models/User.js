@@ -23,7 +23,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         avatar:{
             type: dataTypes.STRING(255)
-        }
+        },
+         apiUser:{
+            type: dataTypes.STRING(255)}
     }
 
     let config = {

@@ -2,7 +2,7 @@ const  { Products, Category }  = require("../database/models");
 
 const productController = {
     create: function(req, res){
-        res.render('createProduct')
+        res.render('products/createProduct')
     },
     createProduct: async function (req, res, next) {
         let newProduct = {
@@ -21,19 +21,19 @@ const productController = {
   
         let pList = await Products.findAll()
        
-        res.render('productList', { products: pList })
+        res.render('products/productList', { products: pList })
     },
     productDetail: async function (req, res, next){
         let product = await Products.findOne({ where: { id: req.params.id } })
        
         if (!product) res.status(418).send('Producto No Definido')
-        else res.render('productDetail', { productDetail: product })
+        else res.render('products/productDetail', { productDetail: product })
     }, 
     mod: async function (req, res, next){
         let product = await Products.findOne({ where: { id: req.params.id } })
        
         if (!product) res.status(418).send('Producto No Definido')
-        else res.render('modProduct', { product })
+        else res.render('products/modProduct', { product })
     }, 
     update: async function (req, res, next){
         let product = await Products.findOne({where: {id: req.params.id}})
@@ -65,13 +65,13 @@ const productController = {
         res.render('redirect')
     },
     cart: function(req, res){
-        res.render('productCart') 
+        res.render('products/productCart') 
     },
     admin: async function (req, res, next){
   
         let pList = await Products.findAll()
        
-        res.render('admin', { products: pList })
+        res.render('products/admin', { products: pList })
     }
 }
 module.exports = productController

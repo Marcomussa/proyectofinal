@@ -5,11 +5,11 @@ const loginRegisterController = require('./logInRegisterController')
 
 const usersController = {
     login:function (req, res){
-        res.render('login')
+        res.render('users/login')
     },
 
     register: function(req, res){
-        res.render('register')
+        res.render('users/register')
     },
 
     processRegister: async function (req, res){      
@@ -125,10 +125,10 @@ const usersController = {
     },
 
     wishlist:  function (req, res){
-        res.render('wishlist')
+        res.render('users/wishlist')
     },
     profile: function (req, res){
-        res.render('userProfile');
+        res.render('users/userProfile');
     },
     logout: function(req, res){
         req.session.userLogged = null
@@ -139,7 +139,7 @@ const usersController = {
     findUserUpdate: function(req, res){
         Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
-            res.render('modUserv2', {user})            
+            res.render('users/modUserv2', {user})            
         })
         .catch((err) => console.log(err))
     },

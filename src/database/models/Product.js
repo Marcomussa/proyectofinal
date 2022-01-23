@@ -24,6 +24,9 @@ module.exports = (sequelize, dataTypes) => {
         }, 
         image: {
             type: dataTypes.STRING(500)
+        },
+        apiProduct: {
+            type: dataTypes.STRING(500)
         }
     }
 

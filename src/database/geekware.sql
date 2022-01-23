@@ -137,6 +137,7 @@ CREATE TABLE `products` (
   `discount` int(2) unsigned NOT NULL,
   `image` char(255) NOT NULL,
   `category_id` int(10) unsigned NOT NULL,
+  `apiProduct` char(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `products_id_category_foreign` (`category_id`),
   CONSTRAINT `products_id_category_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
@@ -168,6 +169,7 @@ CREATE TABLE `users` (
   `gender` varchar(50) NOT NULL,
   `avatar` char(255) NOT NULL,
   `password` char(255) NOT NULL,
+  `apiUser` char(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
