@@ -5,7 +5,7 @@ const loginRegisterController = require('./logInRegisterController')
 
 const usersController = {
     login:function (req, res){
-        res.render('users/login')
+        res.render('login')
     },
 
     register: function(req, res){
@@ -45,7 +45,7 @@ const usersController = {
                 password: bcryptjs.hashSync(req.body.pass, 10),
                 gender: req.body.gender || "",
                 avatar: req.file ? req.file.filename : 'null',
-                apiUser: `http://localhost:4000/apiUsers/${req.body.email}`
+                apiUser: `http://localhost:4000/apiUsers/${id}`
             }
             
             console.log(newUser)
@@ -125,21 +125,21 @@ const usersController = {
     },
 
     wishlist:  function (req, res){
-        res.render('users/wishlist')
+        res.render('wishlist')
     },
     profile: function (req, res){
-        res.render('users/userProfile');
+        res.render('userProfile');
     },
     logout: function(req, res){
         req.session.userLogged = null
         res.clearCookie("user")
         res.clearCookie("test")
-        res.redirect("login")
+        res.redirect("/login")
     },
     findUserUpdate: function(req, res){
         Users.findOne({where: {email: req.session.userLogged.email}})
         .then((user) => {
-            res.render('users/modUserv2', {user})            
+            res.render('modUserv2', {user})            
         })
         .catch((err) => console.log(err))
     },

@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head.ejs', {'title': 'Log in'})  %> 
+    <%- include('./partials/head.ejs', {'title': 'Menu de inicio'}) %> 
 <body>
-    <%- include('../partials/header.ejs') %> 
+    <%- include('./partials/header.ejs') %> 
+
     <section class="contenedorLogIn">
         <article class="aside">
             <div class="logoEnvios">
-                <i class="fas fa-truck"></i>
-                <p>Envios gratis a toda Argentina en compras superiores a $5000</p>
-            </div>
-            <div class="logoListaDeseos">
-                <i class="fas fa-thumbtack"></i>
-                <p>Utiliza la Lista de Deseos para guardar tus productos favoritos</p>
+                <i class="fas fa-user-astronaut"></i>                
+                <p>Edita tu usuario!</p>
             </div>
         </article>   
         <article class="logIn">
-            <h3>Inicia Sesion</h3>
+            <h3>Edicion de perfil de usuario</h3>
             <div class="logInExterno">
                <!-- <button class='btn btn-primary'>Iniciar con Google</button>
                 <button class='btn btn-primary'>Iniciar con Facebook</button>-->
             </div>
         <!-- <span class="separadorLogIn">OR</span>-->
 
-        <form action="/users/profile" method="POST">
-            <input type="text" name="emailLogIn" class="form-control" placeholder="Email" id="emailLogIn">
-            <input type="password" name="passLogIn" class="form-control" placeholder="Password" id="passwordLogIn">
-            <label for="recordarUser" class="">Recordar Usuario</label>
-            <input type="checkbox" name="recordarUser" id="recordarUser" class="btnMain">
-            <input type="submit" value="Enviar" id='submit' class="btnMain">
+        <form action="/users/update" method="POST">
+
+            <!--Name-->
+            <label for="nameUpdate" class="userUpdateInfo">Nombre</label>
+            <input type="text" name="name" class="form-control nameUpdateInfo" value='<%= user.name %>' id="nameUpdate">
+
+            <!--Surname-->
+            <label for="surnameUpdate" class="userUpdateInfo">Apellido</label>
+            <input type="text" name="surname" class="form-control nameUpdateInfo" value='<%= user.surname %>' placeholder="Password" id="surnameUpdate">
+
+            <input type="submit" value="Actualizar" class="btn btn-primary btn-lg">
         </form>
 
         <div>
@@ -53,8 +55,7 @@
         </div>
         </article>
     </section>
-    <%- include('../partials/footer.ejs') %> 
+
+    <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
-
-<script defer src="../../scripts/validacionesLogIn.js"></script>
