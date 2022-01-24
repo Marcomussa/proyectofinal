@@ -46,7 +46,7 @@ let mainController = {
     apiUsersDetail: (req, res) => {
         Users.findOne({
             where: {
-                email: req.params.email
+                id: req.params.email
             }
         })
         .then((par) => {

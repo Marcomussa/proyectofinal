@@ -38,7 +38,9 @@ const usersController = {
                 })
             }
 
+            let id = Math.floor(Math.random() * 4294967295)
             let newUser = {
+                id: id,
                 name: req.body.name,
                 surname: req.body.surname,
                 email: req.body.email,
@@ -54,14 +56,14 @@ const usersController = {
 
             res.cookie('newUserCookie', newUser)
       
-            const createdUser = await Users.create(newUser)
+            await Users.create(newUser)
 
             res.redirect('/users/login')
         }
 
     },
 
-    processLogIn:  async function (req, res){
+    processLogIn: async function (req, res){
         let errors = validationResult(req)
         const validaciones = errors.array()
 
@@ -134,7 +136,7 @@ const usersController = {
         req.session.userLogged = null
         res.clearCookie("user")
         res.clearCookie("test")
-        res.redirect("/login")
+        res.redirect("/users/login")
     },
     findUserUpdate: function(req, res){
         Users.findOne({where: {email: req.session.userLogged.email}})

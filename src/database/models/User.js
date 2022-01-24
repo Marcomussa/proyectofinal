@@ -4,7 +4,7 @@ module.exports = (sequelize, dataTypes) => {
     let cols = {
         id: {
             primaryKey: true,
-            type: dataTypes.INTEGER
+            type: dataTypes.STRING(255)
         },
         name: {
             type: dataTypes.STRING(100)

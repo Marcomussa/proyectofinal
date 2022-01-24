@@ -130,7 +130,7 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL,
   `name` char(50) NOT NULL,
   `description` longtext NOT NULL,
   `price` double(8,2) NOT NULL,
@@ -150,7 +150,6 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (7,'Combo Intel','Combo Intel',40000.00,10,'1639956344301.jpeg',2),(8,'Combo Ryzen','Combo Ryzen',30000.00,10,'1639956385348.jpg',2),(9,'Amd Rx 6600xt','Amd Rx 6600xt',200000.00,5,'1639956461432.jpg',3),(10,'Rtx 3060','Rtx 3060',200000.00,5,'1639956517651.jpg',3),(11,'Memoria Ram','Memoria Ram 8 gb x2',6000.00,15,'1639956616899.jpeg',4),(12,'Fuente','Fuente',7000.00,20,'1639956672928.jpeg',5);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -162,7 +161,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) unsigned NOT NULL,
   `name` varchar(50) NOT NULL,
   `surname` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
@@ -180,7 +179,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'geza','matray','araelgz@hotmail.com','','1639953845841.jfif','$2a$10$3yAqh1hwUhis9m865LpqIuDmuzY29wyC/U/VNlPpZFkpCEI6H9wpi'),(2,'admin','admin','admin@admin.com','','1639957118846.png','$2a$10$ZOCJ7IE00trU09xh3HsqFuF68vqEnv61C3JFQyIeKZZhzkIzkSP/G');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 

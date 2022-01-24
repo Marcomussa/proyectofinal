@@ -5,18 +5,21 @@ const productController = {
         res.render('createProduct')
     },
     createProduct: async function (req, res, next) {
+        let id = Math.floor(Math.random() * 4294967295)
         let newProduct = {
+            id: id,
             name: req.body.nombreProducto,
             description: req.body.descripcionProducto,
             price: req.body.precioProducto,
             discount: req.body.discount,
             category_id: req.body.categoria || 1,
             image: req.file ? req.file.filename : 'default.jpeg',
-            apiProduct: `http://localhost:4000/apiUser/${req.body.nombreProducto}`
+            apiProduct: `http://localhost:4000/apiProducts/${id}`
         }
+        console.log(newProduct)
         const createdProduct = await Products.create(newProduct)  
         
-        res.redirect('/products/'+ createdProduct.null) 
+        res.redirect('/products/'+ createdProduct.id) 
     },
     list: async function (req, res, next){
   
@@ -49,7 +52,7 @@ const productController = {
             product.image = req.file == undefined ? product.image : req.file.filename;
             await product.save()
 
-            res.redirect('/users/admin')
+            res.redirect('/products')
         } 
     },
     delete: async function (req, res, next){
