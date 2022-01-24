@@ -12,7 +12,7 @@ router.get('/apiProducts/:id', mainController.apiProductsDetail)
 
 router.get('/apiUsers', mainController.apiUsers)
 
-router.get('/apiUsers/:id', mainController.apiUsersDetail)
+router.get('/apiUsers/:email', mainController.apiUsersDetail)
 
 router.get('/apiCategories', mainController.apiCategories)
 

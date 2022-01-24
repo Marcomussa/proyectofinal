@@ -46,11 +46,19 @@ let mainController = {
     apiUsersDetail: (req, res) => {
         Users.findOne({
             where: {
-                id: req.params.id
+                email: req.params.email
             }
         })
         .then((par) => {
-            res.json(par)
+            const {id, name, surname, email, gender, avatar} = par
+            res.json({
+                id,
+                name,
+                surname,
+                email,
+                gender,
+                avatar
+            })
         })
         .catch(err => console.log(err))
     },
