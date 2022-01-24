@@ -71,6 +71,15 @@ let mainController = {
             })           
         })
         .catch(err => console.log(err))
+    },
+    apiLastProduct: (req, res) => {
+        Products.findAll({
+            
+        })
+        .then( (par) => {
+            res.json(par)           
+        })
+        .catch(err => console.log(err))
     }
 }
 

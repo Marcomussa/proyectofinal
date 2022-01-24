@@ -123,3 +123,10 @@
 
 - **Dejar de hacer.**
 procrastinar.
+
+## Sprint 8
+Por hacer: 
+- Funcionalidad restante a la api
+- Ultimo prod agregado
+- Validaciones restantes
+- btn en modificar producto

@@ -3,6 +3,7 @@ const router = express.Router()
 const productController = require('../controllers/productController')
 const multer = require('multer')
 const path = require('path')
+const {check} = require('express-validator')
 
 // Configuracion Multer:
 let multerDiskStorage = multer.diskStorage({
@@ -39,6 +40,12 @@ router.put('/mod/:id', fileUpload.single('imagenProducto'), productController.up
 
 router.get('/:id', productController.productDetail)
 
-router.post('/create', fileUpload.single('imagenProducto'), productController.createProduct)
+router.post('/create', fileUpload.single('imagenProducto'), [
+    check('nombreProducto').notEmpty().bail().withMessage('Ingrese un Nombre valido'),
+    check('precioProducto').isNumeric({min: 1, max: 10000}).bail().withMessage('Ingrese un Precio del 1 al 10'),
+    check('discount').optional({checkFalsy: true}).bail().isNumeric({min: 0, max: 99}).bail().withMessage('Ingrese un descuento valido'),
+    check('descripcionProducto').notEmpty().bail().withMessage('Ingrese una Descripcion'),
+    check('categoria').notEmpty().bail().withMessage('Ingrese una Categoria')
+],productController.createProduct)
 
 module.exports = router

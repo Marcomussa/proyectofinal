@@ -32,7 +32,7 @@
           <textarea class="form-control" name="description" id="" cols="30" rows="4"><%= product.description %></textarea>
           <!--Category-->
           <select name= 'category' class="form-control" aria-label="Default select example">
-            <option selected><%- product.category_id.name %></option>
+            <option disabled selected>Categoria</option>
             <option value="<%- product.category_id = 1 %>">Cpus</option>
             <option value="<%- product.category_id = 2 %>">Motherboards</option>
             <option value="<%- product.category_id = 3 %>">Placas de Video</option>
@@ -44,7 +44,7 @@
           <!--current image-->
           <div class="actualImg">
             <span>Imagen actual</span>
-          <img src="/img/products/<%- product.image %>" class="currentImg" alt="">
+          <img src="/img/products/<%- product.image %>" class="currentImg" alt="" name='imagenProducto'>
           </div>
           <!--new image-->
           <div class="center">

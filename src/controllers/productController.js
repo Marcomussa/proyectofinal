@@ -1,25 +1,38 @@
 const  { Products, Category }  = require("../database/models");
+const { check, validationResult, body } = require("express-validator");
 
 const productController = {
     create: function(req, res){
         res.render('createProduct')
     },
     createProduct: async function (req, res, next) {
-        let id = Math.floor(Math.random() * 4294967295)
-        let newProduct = {
-            id: id,
-            name: req.body.nombreProducto,
-            description: req.body.descripcionProducto,
-            price: req.body.precioProducto,
-            discount: req.body.discount,
-            category_id: req.body.categoria || 1,
-            image: req.file ? req.file.filename : 'default.jpeg',
-            apiProduct: `http://localhost:4000/apiProducts/${id}`
+        let errors = validationResult(req)
+        const validaciones = errors.array()
+
+        if(!errors.isEmpty()){
+            res.render('createProduct', {
+                old: req.body,
+                validacionesCreateProduct: validaciones
+            })
+            console.log(errors.array())
+        } 
+        else { 
+            let id = Math.floor(Math.random() * 4294967295)
+            let newProduct = {
+                id: id,
+                name: req.body.nombreProducto,
+                description: req.body.descripcionProducto,
+                price: req.body.precioProducto,
+                discount: req.body.discount,
+                category_id: req.body.categoria,
+                image: req.file ? req.file.filename : 'default.jpeg',
+                apiProduct: `http://localhost:4000/apiProducts/${id}`
+            }
+            console.log(newProduct)
+            const createdProduct = await Products.create(newProduct)  
+            
+            res.redirect('/products/'+ createdProduct.id) 
         }
-        console.log(newProduct)
-        const createdProduct = await Products.create(newProduct)  
-        
-        res.redirect('/products/'+ createdProduct.id) 
     },
     list: async function (req, res, next){
   

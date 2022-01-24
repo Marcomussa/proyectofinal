@@ -23,16 +23,16 @@
       <form method="POST" class="formAgregar" action="/products/create" enctype="multipart/form-data">
   
           <!--name-->
-          <input type="text" name="nombreProducto" class="form-control" placeholder="Nombre">
+          <input type="text" name="nombreProducto" class="form-control" placeholder="Nombre" value="<%= locals.old && old.nombreProducto %>" id='nombreProducto'>
           <!--price-->
-          <input type="text" name="precioProducto" class="form-control" placeholder="Precio">
+          <input type="text" name="precioProducto" class="form-control" placeholder="Precio"  value="<%= locals.old && old.precioProducto %>" id='precioProducto'>
           <!--discount-->
-          <input name="discount"class="form-control" type="text" placeholder="Descuento">
+          <input name="discount"class="form-control" type="text" placeholder="Descuento" value="<%= locals.old && old.discount%>">
           <!--Description-->
-          <textarea class="form-control" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion"></textarea>     
+          <textarea class="form-control" name="descripcionProducto" id="" cols="30" rows="4" placeholder="Descripcion" value="<%= locals.old && old.descripcionProducto %>"></textarea id='descripcionProducto'>     
           <!--Category-->
-          <select class=" formCategory form-control" aria-label="Default select example" name='categoria'>
-              <option selected>Categoria</option>
+          <select class=" formCategory form-control" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
+              <option disabled selected>Categoria</option>
               <option value="1">Cpus</option>
               <option value="2">Motherboards</option>
               <option value="3">Placas de Video</option>
@@ -49,9 +49,17 @@
                 </div>
                 <label for="file-ip-1">Subir imágen</label>
                 <input type="file" id="file-ip-1" name="imagenProducto" accept="image/*" onchange="showPreview(event);">
-                
             </div>
         </div> 
+        <div>
+          <% if(typeof validacionesCreateProduct != 'undefined'){ %>
+              <% validacionesCreateProduct.forEach( (validacion) => { %>
+                  <p style="color: red;">
+                  <%= validacion.msg %> 
+                  </p>
+              <% }) %> 
+          <% } %> 
+        </div>
 <script type="text/javascript">
   function showPreview(event){
   if(event.target.files.length > 0){
@@ -66,7 +74,7 @@
 </script>
       <!--Create and delete-->
       <div class="buttonEdit">
-          <button type="submit" class="btnMain">Crear producto</button> 
+          <button type="submit" class="btnMain" id='btnCrearProducto'>Crear producto</button> 
           <button type="reset" class="btnMain">Borrar</button>
       </div>
     </form>
@@ -75,5 +83,8 @@
     </section>
 
     <%- include('./partials/footer.ejs') %> 
+
+    <script src="../scripts/validacionesCreateProduct.js"></script>
 </body>
 </html>
+
