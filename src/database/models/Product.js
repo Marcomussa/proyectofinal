@@ -27,6 +27,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         apiProduct: {
             type: dataTypes.STRING(500)
+        },
+        createdAt: {
+            type: dataTypes.DATE(6)
         }
     }
 

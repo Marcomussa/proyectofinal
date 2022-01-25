@@ -16,4 +16,6 @@ router.get('/apiUsers/:email', mainController.apiUsersDetail)
 
 router.get('/apiCategories', mainController.apiCategories)
 
+router.get('/apiLastProducts', mainController.apiLastProducts)
+
 module.exports = router

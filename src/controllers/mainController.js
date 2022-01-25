@@ -72,9 +72,11 @@ let mainController = {
         })
         .catch(err => console.log(err))
     },
-    apiLastProduct: (req, res) => {
+    apiLastProducts: (req, res) => {
         Products.findAll({
-            
+            order: [
+                ['createdAt', 'DESC']
+            ]
         })
         .then( (par) => {
             res.json(par)           

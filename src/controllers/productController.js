@@ -18,6 +18,8 @@ const productController = {
         } 
         else { 
             let id = Math.floor(Math.random() * 4294967295)
+            let date = new Date()
+            console.log(date)
             let newProduct = {
                 id: id,
                 name: req.body.nombreProducto,
@@ -26,7 +28,8 @@ const productController = {
                 discount: req.body.discount,
                 category_id: req.body.categoria,
                 image: req.file ? req.file.filename : 'default.jpeg',
-                apiProduct: `http://localhost:4000/apiProducts/${id}`
+                apiProduct: `http://localhost:4000/apiProducts/${id}`,
+                createdAt: date
             }
             console.log(newProduct)
             const createdProduct = await Products.create(newProduct)  

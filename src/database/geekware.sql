@@ -138,6 +138,7 @@ CREATE TABLE `products` (
   `image` char(255) NOT NULL,
   `category_id` int(10) unsigned NOT NULL,
   `apiProduct` char(255) NOT NULL,
+  `createdAt` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `products_id_category_foreign` (`category_id`),
   CONSTRAINT `products_id_category_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
