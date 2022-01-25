@@ -63,7 +63,7 @@ const usersController = {
 
     },
 
-    processLogIn: async function (req, res){
+    processLogIn:  async function (req, res){
         let errors = validationResult(req)
         const validaciones = errors.array()
 
@@ -130,6 +130,7 @@ const usersController = {
         res.render('wishlist')
     },
     profile: function (req, res){
+        console.log(req.session.userLogged)
         res.render('userProfile');
     },
     logout: function(req, res){
@@ -146,25 +147,43 @@ const usersController = {
         .catch((err) => console.log(err))
     },
     update: function (req, res, next){
-        Users.findOne({where: {email: req.session.userLogged.email}})
-        .then((user) => {
-            const {name, surname} = req.body
-            Users.update({
-                name: name,
-                surname: surname
+        // Users.findOne({where: {email: req.session.userLogged.email}})
+        // .then((user) => {
+        //     const {name, surname} = req.body
+        //     Users.update({
+        //         name: name,
+        //         surname: surname
+        //     }, {
+        //         where: {
+        //             email: req.session.userLogged.email
+        //         }
+        //     })
+        //     req.session.userLogged = {
+        //         email: req.session.userLogged.email,
+        //         name: name,
+        //         surname: surname
+        //     }
+        //     res.redirect('/users/profile')
+        // })
+        // .catch((err) => console.log(err))
+        const {name, surname} = req.body
+        Users.update({
+            name: name ? name : req.session.userLogged.name, 
+            surname: surname ? surname : req.session.userLogged.surname,
             }, {
-                where: {
-                    email: req.session.userLogged.email
-                }
-            })
-            req.session.userLogged = {
-                email: req.session.userLogged.email,
-                name: name,
-                surname: surname
+            where: {
+                email: req.session.userLogged.email
             }
-            res.redirect('/users/profile')
         })
-        .catch((err) => console.log(err))
+       
+        req.session.userLogged = {
+            ...req.session.userLogged,
+            name,
+            surname,
+            avatar: req.file ? req.file.filename : req.session.userLogged.avatar
+        }
+
+        res.redirect('/users/profile')
     },     
     delete: async function (req, res, next){
         let user = await Users.findOne({where: {id: req.session.userLogged.id}})
