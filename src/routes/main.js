@@ -18,4 +18,7 @@ router.get('/apiCategories', mainController.apiCategories)
 
 router.get('/apiLastProducts', mainController.apiLastProducts)
 
+router.get('/apiProdsInCategory', mainController.apiProdsInCategory)
+
+
 module.exports = router
