@@ -72,6 +72,21 @@ let mainController = {
         })
         .catch(err => console.log(err))
     },
+    apiProdsInCategory: (req, res) => {
+        Products.findAll()
+        .then((par) => {
+            par.forEach((data) => {
+                if(data.category_id == 3) {
+                    console.log(data.length)
+                }
+            })
+            res.json({
+                count_3: 'testing...'
+            })
+        })
+        .catch(err => console.log(err))
+
+    },
     apiLastProducts: (req, res) => {
         Products.findAll({
             order: [
