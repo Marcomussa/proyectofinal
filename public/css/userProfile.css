@@ -160,18 +160,16 @@
   border-radius: 0%;
   border: 1px solid #1f1a32;
   padding: 7px;
-  background-color: #7b7b7e;
+  background-color: transparent;
   overflow: hidden;
   transform: translateY(calc(50% + 40px));
   border: 1px solid white;
 }
 
 .card-photo .imgProfileView{
-  margin-top: -10px;
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  /*border-radius: 30%;*/
 }
 
 .card-body{
