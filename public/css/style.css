@@ -49,3 +49,45 @@ body {
     background-color: #065757;
     color: white;
   }
+
+  .btnMain2 {
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(15, 180, 95);
+  }
+  
+  .btnMain2:hover {
+    background-color: rgb(15, 121, 66);
+    color: white;
+  }
+
+  .btnMain3 {
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(228, 81, 81);
+  }
+  
+  .btnMain3:hover {
+    background-color: rgb(232, 0, 0);
+    color: white;
+  }
