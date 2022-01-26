@@ -220,6 +220,10 @@
     color: #7d8cc4;
 }
 
+.fas.fa-shipping-fast:hover, .fas.fa-percent:hover{
+    color: #408fb4;
+}
+
 /* descripcion */
 .descripcionProducto{
     margin-left: 10px;
