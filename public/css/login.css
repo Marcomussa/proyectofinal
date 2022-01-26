@@ -81,6 +81,10 @@
     display: block;
 }
 
+.checkUserRemember{
+    margin-bottom: 10px;
+}
+
 @media (max-width: 639px){
     .contenedorLogIn .logIn .logInExterno button, 
     .contenedorLogIn .logIn .logInInterno input ,
