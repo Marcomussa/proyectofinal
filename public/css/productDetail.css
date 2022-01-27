@@ -51,7 +51,7 @@
 }
 
 .añadirProducto:hover, .añadirProducto2:hover{
-    color: #408fb4;
+    color: #aee5ff;
     border-color: #eb5e55;
     transition: all 1s;
 }
@@ -156,20 +156,7 @@
     background-size: cover;
     background-position: center;
     border: 2px solid black;
-   /*animation: carouselAnimacion infinite 10000ms ease-in-out;*/
 }
-
-/*@keyframes carouselAnimacion{
-     0%{background-image: url('../img/intelbanner.jpg'); }
-     25%{background-image: url('../img/intelbanner.jpg');}
-     26%{background-image: url('../img/amdbanner.jpg');}
-     50%{background-image: url('../img/amdbanner.jpg');}
-     51%{background-image: url('../img/combointel.jpeg');}
-     75%{background-image: url('../img/combointel.jpeg');}
-     76%{background-image: url('../img/comboryzen.jpg');}
-     100%{background-image: url('../img/comboryzen.jpg');}
- }*/
- 
 
 .caruselNombre{
     margin-top: -40px;
