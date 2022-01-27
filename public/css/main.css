@@ -295,9 +295,9 @@ align-items: center;
 .fa-arrow-right{
     font-size: 1.8rem;
     text-decoration: none;
-    color: #24a7e4;
+    color: #0d352e;
 }
 
 .fa-arrow-right:hover{
-    color: #23dbbc;
+    color: #139983;
 }
