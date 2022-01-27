@@ -3,6 +3,7 @@ const app = express()
 const mainRoutes = require('./routes/main')
 const productsRoutes = require('./routes/products')
 const usersRoutes = require('./routes/users')
+const apiRoutes = require('./routes/api')
 const path = require('path')
 const methodOverride = require('method-override') 
 const session = require('express-session')
@@ -46,6 +47,8 @@ app.use('/', mainRoutes)
 app.use('/users', usersRoutes)
 
 app.use('/products', productsRoutes)
+
+app.use('/api', apiRoutes)
 
 // Server:
 app.listen (PORT, () => console.log('Server On http://localhost:4000') )
