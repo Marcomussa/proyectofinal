@@ -14,7 +14,7 @@
           
         <!--product image-->
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> 
-            <img src="/img/products/<%= productDetail.image %>" class="d-block w-100">
+            <img src="/img/products/<%= productDetail.image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
           </div>
 
       </article>

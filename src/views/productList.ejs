@@ -25,7 +25,7 @@
       <% for(let i = 0; i < products.length ; i++){ %> 
         <a href="/products/<%= products[i].id %>" class='tarjetaProducto'>
             <div>
-                <img class='imagenProducto' src="/img/products/<%= products[i].image %>" alt= "" >
+                <img class='imagenProducto' src="/img/products/<%= products[i].image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">
             </div>
             <div class='infoProducto'>
                 <div class='nombreProducto'>

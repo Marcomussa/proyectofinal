@@ -53,10 +53,10 @@
   border: 1px solid white;
 }
 
-.card-photo .imgProfileView{
+ .imgProfileView{
   display: inline-block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .card-body{

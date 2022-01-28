@@ -11,7 +11,7 @@
             <div class="card-header" 
             style="background-image: url('/img/world.jpeg')">
                 <div class="card-photo">
-                    <img src="/img/avatars/<%= userLogged.avatar %>" class="imgProfileView" alt="">
+                    <img src="/img/avatars/<%= userLogged.avatar %>" class="imgProfileView" onerror="if (this.src != '/img/logo.png') this.src = '/img/logo.png';">
                 </div>
             </div>
             <div class="card-body">
