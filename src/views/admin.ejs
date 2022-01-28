@@ -15,7 +15,7 @@
     <div class="adminList">
               
       <div class="listCard">
-        <img src="/img/products/<%= products[i].image %>" class="adminImg" alt="...">
+        <img src="/img/products/<%= products[i].image %>" class="adminImg" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">
         <h5 class="adminProductName"><%= products[i].name %></h5>
         <div class="adminProductPrice"><h6>Precio</h6><h6>$<%= products[i].price %></h6></div>
         <div class="adminProductDiscount"><h6>Descuento</h6><h6 ><%= products[i].discount %>%</h6></div>
