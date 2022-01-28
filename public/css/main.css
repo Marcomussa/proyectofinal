@@ -301,3 +301,28 @@ align-items: center;
 .fa-arrow-right:hover{
     color: #139983;
 }
+
+@media (max-width: 745px) {
+    .nombreProducto{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 413px) {
+    .nameProduct{
+       display: none;
+    }
+    .imagenProducto{
+        height: 120px;
+    }
+}
+
+
+@media (max-width: 744px) {
+    .nombreProducto{
+        font-size: 0.9rem;
+    }
+    .imagenProducto{
+        height: 150px;
+    }
+}
