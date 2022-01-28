@@ -13,6 +13,7 @@
 @import url('admin.css');
 @import url('userProfile.css');
 @import url('paymentMethods.css');
+@import 'sweetalert2/theme-dark/dark.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto+Mono:wght@200&display=swap');
 
