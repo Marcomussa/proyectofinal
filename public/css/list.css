@@ -32,6 +32,10 @@
     display: none;
 }
 
+.precioDescuentoProductoList2a{
+    color: white;
+}
+
 .name{
     text-overflow: Ellipsis; /* will make [...] at the end */
     white-space: nowrap; /* paragraph to one line */

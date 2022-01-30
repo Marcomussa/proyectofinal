@@ -97,8 +97,10 @@
 .descText{
     margin-top: 10px;
     display: flex;
+    margin-left: 5%;
+    text-align: center;
     justify-content: center;
-    margin: 20px;
+    width: 90%;
 }
 
 .hr {
@@ -227,6 +229,11 @@
 
 
 /* medias del product detail */
+@media (max-width: 320px){
+    .busquedas{
+        font-size: 1.2rem;
+    }
+}
 @media (max-width: 360px){
     .carousel{
         width:300px;
@@ -310,7 +317,6 @@
         font-size: 0.8em;
         width: 95%;
     }
-    .des
     .busquedas{
         text-align: center;
     }
