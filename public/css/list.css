@@ -28,6 +28,10 @@
     font-weight: lighter;
 }
 
+.precioDescuentoProductoList2{
+    display: none;
+}
+
 .name{
     text-overflow: Ellipsis; /* will make [...] at the end */
     white-space: nowrap; /* paragraph to one line */

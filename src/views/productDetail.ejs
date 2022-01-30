@@ -21,7 +21,17 @@
 
         <article class="datosProducto">
             <h4 class="precioProducto">$<%= JSON.stringify(productDetail.price).replace(/\"/g, "") %></h4> 
+
+
+            <% if(productDetail.discount == 0) { %> 
+
+              <p class='precioDescuentoProductoList'></p>
+                                          
+          <% } else{ %> 
             <p class='precioDescuentoProductoList'><%= JSON.stringify(productDetail.discount).replace(/\"/g, "" ) %>% OFF</p>
+          <% } %> 
+
+
             <button class="añadirProducto" onclick="
             Swal.fire({
               position: 'center',
