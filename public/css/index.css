@@ -67,6 +67,52 @@
     width: 70px;
 }
 
+.moreProducts {
+  align-items: center;
+  background-color: #0d352e;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-bottom: -10px;
+  height: 0.6rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.moreProducts:hover,
+.moreProducts:focus {
+  background-color: #156457;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.moreProducts:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+@media (min-width: 768px){
+    .moreProducts{
+        display: none;
+    }
+}
+
 @media (max-width: 564px){
     .imgBrands{
         margin-top: -20px;
