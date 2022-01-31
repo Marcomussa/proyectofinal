@@ -11,6 +11,9 @@ let mainController = {
     },
     payment: function(req, res){
         res.render('paymentMethods')
+    },
+    return: function(req, res){
+        res.render('orderReturn')
     }
 }
 

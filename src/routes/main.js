@@ -6,4 +6,6 @@ router.get('/', mainController.index)
 
 router.get('/payment', mainController.payment)
 
+router.get('/return', mainController.return)
+
 module.exports = router
