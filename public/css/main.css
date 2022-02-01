@@ -90,6 +90,10 @@ p {
 .tarjetaProducto div{
     width: 100%;
 }
+.nameProduct{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .imagenProducto {
     width: 100%;
     height: 220px;
