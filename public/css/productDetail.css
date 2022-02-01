@@ -72,6 +72,14 @@
 .pagoProducto:hover{
     color: #408fb4;
 }
+.pagoProducto2{
+    font-size: 15px;
+    text-decoration: none;
+    color:#000000;
+}
+.pagoProducto2:hover{
+    color: #3a3a3a;
+}
 .oferta1,.oferta2{
     margin-top: 10px;
     font-size: 20px;
@@ -160,6 +168,37 @@
     border: 2px solid black;
 }
 
+.carouselCart{
+    width: 600px;
+    height: 160px;
+    border: 1px rgba(255, 255, 255, 0) solid;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 253, 190);
+    margin-bottom: 30px;
+}
+
+.carouselCart2{
+    display: flex;
+    margin-left: 10px;
+    width: 600px;
+    height: 220px;
+    border: 1px rgba(255, 255, 255, 0) solid;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.imgCartProduct{
+    width: 35%;
+    margin-right: 15px;
+}
+
 .caruselNombre{
     margin-top: -40px;
 }
@@ -240,6 +279,11 @@
         height: 200px;
         margin-left: 5px;
     }
+    .carouselCart{
+        width:300px;
+        height: 100px;
+        margin-left: 5px;
+    }
     .nombreDeProducto{
         font-size: 1.6rem;
     }
@@ -286,6 +330,11 @@
     .carousel{
         width:350px;
         height: 250px;
+        margin-left: 10px;
+    }
+    .carouselCart{
+        width:350px;
+        height: 120px;
         margin-left: 10px;
     }
    
@@ -358,6 +407,11 @@
         height: 365px;
         margin-left: 10px;
     }
+    .carouselCart{
+        width:600px;
+        height: 365px;
+        margin-left: 10px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -376,6 +430,11 @@
         height: 415px;
         margin-left: 10px;
     }
+    .carouselCart{
+        width: 600px;
+        height: 180px;
+       margin-left: 10px;
+   }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {

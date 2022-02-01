@@ -3,8 +3,14 @@
     <%- include('./partials/head.ejs', {'title': 'carrito'}) %> 
 <body>
     <%- include('./partials/header.ejs') %> 
+
+    <!--
+    <section class="bannerBrands bannerBrands2">
+        <h4 class="titleBrands">¡COMPRÁ AHORA! TU CARRITO NO ASEGURA INVENTARIO</h4>
+    </section>
+
     <section class="contenedorCarrito">
-        <h3>Carrito</h3>
+        <h3>TU CARRITO</h3>
         <div class="contenedorCarritoProducto">
             <p>Producto:</p>
             <p>Precio:</p>
@@ -54,6 +60,113 @@
         </div>
        
     </section>
+-->
+
+<section class="producto">
+    
+    <article class="caruselNombre">
+          
+      <!--user name-->
+        <% if (locals.isLogged) { %>
+            <div class="userNameCart">
+                <div class="bannerCart"><h4 class="bannerCartName">HOLA USUARIO</h4></div>
+                <div class="arrowDown"></div>
+            </div>
+        <% } else { %>
+            <div class="userNameCart2">
+                <div class="bannerCart"><h4 class="bannerCartName">HOLA USUARIO</h4></div>
+                <div class="arrowDown"></div>
+            </div>
+        <% } %>
+
+        <h1 class="cartTitle">TU CARRITO</h1>
+        
+      <!--Cart advice-->
+        <div id="carouselExampleIndicators" class="carouselCart" data-bs-ride="carousel"> 
+            <div class="textOfferCart">
+                <h6 class="carouselCartText">¡COMPRÁ AHORA! TU CARRITO NO ASEGURA INVENTARIO</h6>
+            <p class="carouselCartMiniText">
+                Tené en cuenta que los productos añadidos al carrito no se reservan.
+            </p>
+            <p>
+                Hay un máximo de 10 productos de la misma clase por compra.
+            </p>
+            </div>
+        </div>
+
+        <!--Cart product-->
+        <div id="carouselExampleIndicators" class="carouselCart2" data-bs-ride="carousel"> 
+                <img class="imgCartProduct" src="/img/mouse-magenta.jpeg" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
+
+                <div class="infoProductCart">
+                    <p class="infoCart">Logitech g203</p>
+                    <p class="infoCart">Color : magenta</p>
+                    <br>
+                    <select class=" formCategory form-control infoCart" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
+                        <option disabled selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <strong class="infoCart3">Ultimas unidades!</strong>
+                </div>
+
+                <div class="priceProductCart">
+                    <p>$ xxx.xx</p> <i class="fas fa-trash iconCartProduct" onclick="Swal.fire({
+                        icon: 'error',
+                        title: 'Producto eliminado'
+                      })"></i>
+                </div>
+        </div>
+
+    </article>
+
+      <article class="datosProducto">
+
+            <p class='precioDescuentoProductoList3'><strong>RESUMEN DEL PEDIDO</strong></p>
+
+            <br>
+
+            <div class="borderCartPayment">
+                <p class="pagoProducto2">Logitech g203 <span class="priceSpan">$xxx.xx</span></p>
+                <br>
+                <p class="pagoProducto2">Costo de envío <span class="priceSpan2">$xxx.xx</span></p>
+                <br>
+                <p class="pagoProducto2"><strong>SUBTOTAL+iva</strong><span class="priceSpan2">$xxx.xx</span></p>
+            </div>
+
+            <br>
+
+            <div class="cuponPromocional">
+                <input class="codigoInput" type="text" placeholder="Introduce tu codigo promocional"><button href="#" class="plusButton" 
+                onclick=
+                "Swal.fire('Codigo canjeado')"
+                ><i class="fas fa-plus "></i></button>
+            </div>
+
+            <br>
+
+            <div class="borderCartPayment">
+                <p class="pagoProducto2"><strong>PRECIO FINAL</strong><span class="priceSpan2">$xxx.xx</span></p>
+            </div>
+
+      <article class="ofertaProducto">
+
+        <br>
+
+           <button onclick="window.location.href='#'" class="btnMain">Finalizar compra <i class="fas fa-shopping-cart"></i></button>  
+           <br>
+           <a href="/payment" target="_blank" class="pagoProducto">Metodos de pago</a>        
+
+       </article>
+      </article>
+  </section>
   
     <%- include('./partials/footer.ejs') %> 
 

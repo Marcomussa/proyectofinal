@@ -46,6 +46,15 @@
     /*background: radial-gradient(circle, rgb(72, 94, 94), rgb(126, 126, 126));*/
 }
 
+.bannerBrands2{
+    margin-bottom: -20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 243, 195);
+    /*background: radial-gradient(circle, rgb(72, 94, 94), rgb(126, 126, 126));*/
+}
+
 .titleBrands{
     padding: 6px;
     text-align: center;
