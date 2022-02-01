@@ -28,6 +28,7 @@ const productController = {
                 discount: req.body.discount ? req.body.discount : 0,
                 category_id: req.body.categoria,
                 image: req.file ? req.file.filename : 'default.jpeg',
+                image_url: req.file ? `http://localhost:4000/img/products/${req.file.filename}` : 'http://localhost:4000/img/no-image.jpg',
                 apiProduct: `http://localhost:4000/api/products/${id}`,
                 createdAt: date
             }

@@ -136,6 +136,7 @@ CREATE TABLE `products` (
   `price` double(8,2) NOT NULL,
   `discount` int(2) unsigned NOT NULL,
   `image` char(255) NOT NULL,
+  `image_url` char(255) NOT NULL,
   `category_id` int(10) unsigned NOT NULL,
   `apiProduct` char(255) NOT NULL,
   `createdAt` datetime NOT NULL,
