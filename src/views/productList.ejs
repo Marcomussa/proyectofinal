@@ -30,6 +30,8 @@
             <div class='infoProducto'>
                 <div class='nombreProducto'>
                     <p class="nameProduct"><%= products[i].name %></p>
+                    <hr>
+                    <span><%= products[i].description %> </span>
                     <div class='precioProductoList'>
                         <p class='precioTotalProductoList'>$<%= products[i].price %></p>
                         <% if(products[i].discount == 0) { %> 
@@ -45,8 +47,6 @@
         </a>
     <% } %> 
     </section>
-  
-
     <%- include('./partials/footer.ejs') %> 
 </body>
 </html>
