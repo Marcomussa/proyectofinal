@@ -33,19 +33,17 @@
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
         <% for(let i = 0; i <= 1 ; i++){ %> 
-            <a href="/products/<%= productList.id %>" class='tarjetaProducto'>
-                <div>
-                
-                    <img class='imagenProducto' src="/img/products/<%= productList.image %>" alt= "" >
-               
+            <a href="/products/<%= productList[i].id %>" class='tarjetaProducto'>
+                <div> 
+                    <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">
                     <div class='infoProducto'>
                         <div class='nombreProducto'>
-                            <%= productList.name %>
+                            <%= productList[i].name %>
                         </div>
                         <!--PARA CAMBIAR AGREGAR List A LAS CLASES-->
                         <div class='precioProductoHome'>
-                            <p class='precioTotalProducto'>$<%= productList.price %></p>
-                            <p class='precioDescuentoProducto'><%= productList.discount %>% OFF</p>
+                            <p class='precioTotalProducto'>$<%= productList[i].price %></p>
+                            <p class='precioDescuentoProducto'><%= productList[i].discount %>% OFF</p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +62,7 @@
                 <% for(let i = 1; i <= 1 ; i++){ %> 
                     <a href="/products/<%= productList.id %>" class='tarjetaProducto'>
                         <div>
-                            <img class='imagenProducto' src="/img/products/<%= productList.image %>" alt= "" >
+                            <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">                        
                         </div>
                         <div class='infoProducto'>
                             <div class='nombreProducto'>
