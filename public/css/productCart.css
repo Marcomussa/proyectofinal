@@ -25,6 +25,10 @@
     padding: 0px 10px;
 }
 
+.precioDescuentoProducto2{
+    color: white;
+}
+
 .contenedorCarrito .contenedorCarritoDetallesProducto {
     padding-top: 25px;
 }

@@ -43,7 +43,15 @@
                         <!--PARA CAMBIAR AGREGAR List A LAS CLASES-->
                         <div class='precioProductoHome'>
                             <p class='precioTotalProducto'>$<%= productList[i].price %></p>
-                            <p class='precioDescuentoProducto'><%= productList[i].discount %>% OFF</p>
+                            
+                            <% if(productList[i].discount == 0) { %> 
+
+                                <p class='precioDescuentoProducto2 precioDescuentoProducto'>Sin descuento</p>
+                                                            
+                            <% } else{ %> 
+                                <p class='precioDescuentoProducto'><%= productList[i].discount %>% OFF</p>
+                                <% } %> 
+
                         </div>
                     </div>
                 </div>

@@ -122,6 +122,12 @@
     }
 }
 
+@media (max-width: 1024px){
+    .nombreProducto{
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 564px){
     .imgBrands{
         margin-top: -20px;
