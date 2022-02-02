@@ -32,7 +32,7 @@
          <!-- seccion ofertas -->
          <div class="contenedorOfertasSeccion">
             <!-- Articulo Ofertas 1 -->
-        <% for(let i = 0; i <= 1 ; i++){ %> 
+        <% for(let i = 0; i < productList.length ; i++){ %> 
             <a href="/products/<%= productList[i].id %>" class='tarjetaProducto'>
                 <div> 
                     <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">
@@ -59,22 +59,7 @@
 
             <div class="contenedorOfertasSeccion contenedorVendidoSeccion">
                 <!-- Articulo lo + vendido 1 -->
-                <% for(let i = 1; i <= 1 ; i++){ %> 
-                    <a href="/products/<%= productList.id %>" class='tarjetaProducto'>
-                        <div>
-                            <img class='imagenProducto' src="/img/products/<%= productList[i].image %>" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';">                        
-                        </div>
-                        <div class='infoProducto'>
-                            <div class='nombreProducto'>
-                                <%= productList.name %>
-                                <div class='precioProductoHome'>
-                                    <p class='precioTotalProducto'>$<%= productList.price %></p>
-                                    <p class='precioDescuentoProducto'><%= productList.discount %>% OFF</p>
-                                </div>
-                            </div>  
-                        </div>
-                    </a>
-                <% } %> 
+                 
             <a class="linkArrow" href="/products"><i class="fas fa-arrow-right"></i></a>
             <button class="moreProducts" onclick="window.location.href='/products'">Más productos</button>        </div> 
         </div>
