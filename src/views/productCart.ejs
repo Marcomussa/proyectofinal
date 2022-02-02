@@ -66,19 +66,6 @@
     
     <article class="caruselNombre">
           
-      <!--user name-->
-        <% if (locals.isLogged) { %>
-            <div class="userNameCart">
-                <div class="bannerCart"><h4 class="bannerCartName">HOLA USUARIO</h4></div>
-                <div class="arrowDown"></div>
-            </div>
-        <% } else { %>
-            <div class="userNameCart2">
-                <div class="bannerCart"><h4 class="bannerCartName">HOLA USUARIO</h4></div>
-                <div class="arrowDown"></div>
-            </div>
-        <% } %>
-
         <h1 class="cartTitle">TU CARRITO</h1>
         
       <!--Cart advice-->
@@ -234,7 +221,13 @@
           })">Finalizar compra <i class="fas fa-shopping-cart"></i></button>  
            <br>
            <a href="/payment" target="_blank" class="pagoProducto">Metodos de pago</a>        
-
+           <div class="ofertaCartSale">
+               <p class="marginTextCart">
+                   <strong>                
+                       Comprá y acumulá puntos para conseguir premios en futuras compras!
+                </strong>
+               </p>
+           </div>
        </article>
       </article>
   </section>
