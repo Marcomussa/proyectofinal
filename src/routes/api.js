@@ -16,5 +16,6 @@ router.get('/lastProduct', api.LastProduct)
 
 router.get('/prodsInCategory', api.ProdsInCategory)
 
+router.get('/discounts', api.ProductDiscounts)
 
 module.exports = router

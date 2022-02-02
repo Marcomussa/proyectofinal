@@ -23,6 +23,16 @@ const apiController = {
         })
         .catch(err => console.log(err))
     },
+    ProductDiscounts: (req, res) => {
+        Products.findAll({
+            where: {
+                discount: 10
+            }
+        })
+        .then( (par) => {
+            res.json(par)
+        })
+    },
     Users: (req, res) => {
         Users.findAll()
         .then((par) => {

@@ -3,7 +3,9 @@ const  {Products}  = require("../database/models");
 
 let mainController = {
     index: function (req, res, next){
-        Products.findAll()
+        Products.findAll({
+            limit: 4
+        })
         .then((par) => {
             res.render('index', { productList: par}
         )})
