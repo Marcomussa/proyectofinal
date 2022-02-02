@@ -78,7 +78,7 @@ const productController = {
          if (!product) res.status(418).send('El Producto No Existe')
          else {
             await product.destroy()
-            res.redirect('/users/admin')
+            res.redirect('/products')
          }
         
     },
