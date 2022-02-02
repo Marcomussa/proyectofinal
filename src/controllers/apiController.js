@@ -18,6 +18,7 @@ const apiController = {
             }
         })
         .then((par) => {
+            delete par.apiProduct
             res.json(par)
         })
         .catch(err => console.log(err))
