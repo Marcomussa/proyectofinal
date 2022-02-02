@@ -94,14 +94,65 @@
             </div>
         </div>
 
+        <div id="carouselExampleIndicators" class="carouselCartMini" data-bs-ride="carousel"> 
+            <div class="textOfferCart">
+                <br>
+                <h6 class="carouselCartText ct2">¡COMPRÁ AHORA! TU CARRITO NO ASEGURA INVENTARIO</h6>
+            </div>
+        </div>
+
         <!--Cart product-->
-        <div id="carouselExampleIndicators" class="carouselCart2" data-bs-ride="carousel"> 
+        <div id="carouselExampleIndicators" class="carouselCart3" data-bs-ride="carousel"> 
                 <img class="imgCartProduct" src="/img/mouse-logitech2.webp" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
 
                 <div class="infoProductCart">
-                    <p class="infoCart">Logitech g203</p>
+                    <p class="infoCartName">Logitech g203</p><span><a href="#" class="linkEliminate" onclick="Swal.fire({
+                        icon: 'error',
+                        title: 'Producto eliminado'
+                      })">X</a></span>
                     <p class="infoCart">Color : magenta</p>
                     <br>
+                    
+                    <div class="resumeDataProducts">
+                        <select class=" formCategory form-control infoCart" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
+                            <option disabled selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <strong class="infoCart3">Ultimas unidades!</strong>
+                    </div>
+               
+                </div>
+
+                <div class="priceProductCart">
+                    <p class="pricePCart">$ xxx.xx</p> <i class="fas fa-trash-alt iconCartProduct" onclick="Swal.fire({
+                        icon: 'error',
+                        title: 'Producto eliminado'
+                      })"></i>
+                </div>
+        </div>
+
+        <br>
+
+        <div id="carouselExampleIndicators" class="carouselCart3" data-bs-ride="carousel"> 
+            <img class="imgCartProduct" src="/img/mouse-logitech-blanco.webp" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
+
+            <div class="infoProductCart">
+                <p class="infoCartName">Logitech g203</p> <span><a href="#" class="linkEliminate" onclick="Swal.fire({
+                    icon: 'error',
+                    title: 'Producto eliminado'
+                  })">X</a></span>
+                <p class="infoCart">Color : blanco</p>
+                <br>
+
+                <div class="resumeDataProducts">
                     <select class=" formCategory form-control infoCart" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
                         <option disabled selected>1</option>
                         <option value="2">2</option>
@@ -114,46 +165,19 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>
-                    <strong class="infoCart3">Ultimas unidades!</strong>
+                    <strong class="infoCart4">Ultimas unidades!</strong>
                 </div>
-
-                <div class="priceProductCart">
-                    <p>$ xxx.xx</p> <i class="fas fa-trash iconCartProduct" onclick="Swal.fire({
-                        icon: 'error',
-                        title: 'Producto eliminado'
-                      })"></i>
-                </div>
-        </div>
-
-        <br>
-
-        <div id="carouselExampleIndicators" class="carouselCart2" data-bs-ride="carousel"> 
-            <img class="imgCartProduct" src="/img/mouse-logitech-blanco.webp" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
-
-            <div class="infoProductCart">
-                <p class="infoCart">Logitech g203</p>
-                <p class="infoCart">Color : blanco</p>
-                <br>
-                <select class=" formCategory form-control infoCart" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
-                    <option disabled selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                <strong class="infoCart4">Ultimas unidades!</strong>
+           
             </div>
 
             <div class="priceProductCart">
-                <p>$ xxx.xx</p> <i class="fas fa-trash iconCartProduct" onclick="Swal.fire({
+                <p>$ xxx.xx</p> 
+
+                <i class="fas fa-trash-alt iconCartProduct" onclick="Swal.fire({
                     icon: 'error',
                     title: 'Producto eliminado'
-                  })"></i>
+                  })">
+                  </i>
             </div>
     </div>
 

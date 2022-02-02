@@ -156,6 +156,10 @@
     margin-top: 50px;
 }
 
+.linkEliminate{
+    display: none;
+}
+
 .carousel{
     width: 600px;
     height: 400px;
@@ -180,7 +184,21 @@
     margin-bottom: 30px;
 }
 
-.carouselCart2{
+.carouselCartMini{
+    display: flex;
+    margin-left: 10px;
+    width: 600px;
+    height: 220px;
+    border: 1px rgba(255, 255, 255, 0) solid;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.carouselCart3{
     display: flex;
     margin-left: 10px;
     width: 600px;
@@ -315,11 +333,67 @@
         align-items: center;
         position: relative;
     }
+
+    .carouselCart{
+    display: none;
+    }
+
+    .linkEliminate{
+        margin-left: 170px;
+        display: block;
+        color: red;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .linkEliminate:hover{
+        color: #eb5e55;
+    }
+
+    .carouselCartMini{
+        margin-bottom: 20px;
+        background-color: rgb(255, 253, 190);
+        display:block;
+        height: 100px;
+        width: 95%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .infoProductCart{
+        font-size: 10px;
+    }
     
+    .ct2{
+        margin-top: -10px;
+    }
+
+    .resumeDataProducts{
+        display: none;
+    }
+
+    .infoCartName{
+        display: block;
+        font-size: 10px;
+    }
+
+
+    .infoCart{
+        display: none;
+    }
+
+    .carouselCartText{
+        font-size: 12px;
+    }
+
     .caruselNombre{
         text-align: center;
         justify-content: center;
         width: auto;
+    }
+
+    .priceProductCart{
+        display: none;
     }
     
     .nombreDeProducto{
@@ -334,9 +408,28 @@
     }
     .carouselCart{
         width:350px;
-        height: 120px;
+        height: 180px;
         margin-left: 10px;
     }
+
+    .carouselCart3{
+        display: flex;
+        width: 320px;
+        height: 80px;
+        border: 1px rgba(255, 255, 255, 0) solid;
+        box-sizing: border-box;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+    }
+
+    .pricePCart{
+        font-size: 1.2rem;
+    }
+
+
    
     .similares{
         display: flex;
@@ -415,6 +508,9 @@
 }
 
 @media (min-width: 768px) {
+    .carouselCartMini{
+        display: none;
+    }
     .similares{
         display: flex;
         flex-wrap: wrap;
