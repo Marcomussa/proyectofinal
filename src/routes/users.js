@@ -29,10 +29,10 @@ router.get('/register', guestMiddleware ,usersController.register)
 
 router.post('/register', upload.single('imagenUsuario')
 , [
-    check('name').notEmpty().withMessage('Ingrese un Nombre'),
-    check('surname').notEmpty().withMessage('Ingrese un Apellido'),
-    check('email').notEmpty().withMessage('Ingrese un Email'),
-    check('pass').notEmpty().withMessage('Ingrese una Password')], 
+    check('name').notEmpty(),
+    check('surname').notEmpty(),
+    check('email').notEmpty().bail().isEmail().withMessage('Ingrese un Emal Valido'),
+    check('pass').notEmpty()], 
 usersController.processRegister)
 
 router.get('/wishlist', usersController.wishlist)

@@ -45,7 +45,7 @@ const usersController = {
                 surname: req.body.surname,
                 email: req.body.email,
                 password: bcryptjs.hashSync(req.body.pass, 10),
-                gender: req.body.gender || "",
+                gender: req.body.gender ? req.body.gender : 'No especifica',
                 avatar: req.file ? req.file.filename : 'null',
                 apiUser: `http://localhost:4000/api/users/${id}`
             }
