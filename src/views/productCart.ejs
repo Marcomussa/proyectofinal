@@ -96,7 +96,7 @@
 
         <!--Cart product-->
         <div id="carouselExampleIndicators" class="carouselCart2" data-bs-ride="carousel"> 
-                <img class="imgCartProduct" src="/img/mouse-magenta.jpeg" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
+                <img class="imgCartProduct" src="/img/mouse-logitech2.webp" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
 
                 <div class="infoProductCart">
                     <p class="infoCart">Logitech g203</p>
@@ -125,6 +125,38 @@
                 </div>
         </div>
 
+        <br>
+
+        <div id="carouselExampleIndicators" class="carouselCart2" data-bs-ride="carousel"> 
+            <img class="imgCartProduct" src="/img/mouse-logitech-blanco.webp" onerror="if (this.src != '/img/no-image.jpg') this.src = '/img/no-image.jpg';" class="d-block w-100">
+
+            <div class="infoProductCart">
+                <p class="infoCart">Logitech g203</p>
+                <p class="infoCart">Color : blanco</p>
+                <br>
+                <select class=" formCategory form-control infoCart" aria-label="Default select example" name='categoria' value="<%= locals.old && old.categoria %>">
+                    <option disabled selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <strong class="infoCart4">Ultimas unidades!</strong>
+            </div>
+
+            <div class="priceProductCart">
+                <p>$ xxx.xx</p> <i class="fas fa-trash iconCartProduct" onclick="Swal.fire({
+                    icon: 'error',
+                    title: 'Producto eliminado'
+                  })"></i>
+            </div>
+    </div>
+
     </article>
 
       <article class="datosProducto">
@@ -136,9 +168,11 @@
             <div class="borderCartPayment">
                 <p class="pagoProducto2">Logitech g203 <span class="priceSpan">$xxx.xx</span></p>
                 <br>
+                <p class="pagoProducto2">Logitech g203 <span class="priceSpan">$xxx.xx</span></p>
+                <br>
                 <p class="pagoProducto2">Costo de envío <span class="priceSpan2">$xxx.xx</span></p>
                 <br>
-                <p class="pagoProducto2"><strong>SUBTOTAL+iva</strong><span class="priceSpan2">$xxx.xx</span></p>
+                <p class="pagoProducto2"><strong>SUBTOTAL</strong><span class="priceSpan3">$xxx.xx</span></p>
             </div>
 
             <br>
@@ -160,7 +194,20 @@
 
         <br>
 
-           <button onclick="window.location.href='#'" class="btnMain">Finalizar compra <i class="fas fa-shopping-cart"></i></button>  
+           <button class="btnMain" onclick="Swal.fire({
+            title: 'Compra realizada!',
+            width: 600,
+            timer: 3000,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff',
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url('/img/gif.gif')
+              left top
+              no-repeat
+            `
+          })">Finalizar compra <i class="fas fa-shopping-cart"></i></button>  
            <br>
            <a href="/payment" target="_blank" class="pagoProducto">Metodos de pago</a>        
 
