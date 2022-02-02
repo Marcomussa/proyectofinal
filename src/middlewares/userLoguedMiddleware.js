@@ -5,7 +5,7 @@ function userLoggedMiddleware(req, res, next){
 
 	let emailInCookie = req.cookies;
 	let userFromCookie = User.findByField('mail', emailInCookie);
-	let userIsAdmin = req.cookies.test && req.cookies.test.id == 2
+	let userIsAdmin = req.cookies.test && req.cookies.test.id == 3924826901
 	
 	if (userFromCookie) {
 		req.session.userLogged = userFromCookie;
