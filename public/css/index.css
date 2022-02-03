@@ -191,10 +191,16 @@
         font-size: 1.6rem;
     }
     .contenedorOfertasSeccion {
+        margin-top: 10px;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        }
+        margin-bottom: 20px;
+    }
+    .contenedorOfertasSeccion2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .tarjetaProducto {
             width: 41%;
             
