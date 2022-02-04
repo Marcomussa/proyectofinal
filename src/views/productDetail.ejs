@@ -19,28 +19,24 @@
 
       </article>
 
+
         <article class="datosProducto">
             <h4 class="precioProducto">$<%= JSON.stringify(productDetail.price).replace(/\"/g, "") %></h4> 
-
-
+            
             <% if(productDetail.discount == 0) { %> 
-
-              <p class='precioDescuentoProductoList'></p>
-                                          
+                                 
           <% } else{ %> 
-            <p class='precioDescuentoProductoList'><%= JSON.stringify(productDetail.discount).replace(/\"/g, "" ) %>% OFF</p>
+            <p class='precioDescuentoProductoList'><%= JSON.stringify(productDetail.discount).replace(/\"/g, "" ) %>% OFF <a href="#" onclick="
+              Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Producto añadido a la wishlist',
+                showConfirmButton: false,
+                timer: 1500
+              })"><i class="fas fa-heart" id="fa-heart" onclick="
+              document.getElementById('fa-heart').styles.color='red'
+              "></i></a></p>
           <% } %> 
-
-          <button class="añadirProducto2" onclick="
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Producto añadido a la wishlist',
-            showConfirmButton: false,
-            timer: 1500
-          })"><i class="fas fa-soap"></i> Añadir a la wishlist</button> 
-
-          <br>
 
             <button class="añadirProducto" onclick="
             Swal.fire({
@@ -69,6 +65,8 @@
              <p class="oferta1"><i class="fas fa-shipping-fast"></i> Envios a todo el país</p>
              <p class="oferta2"><i class="fas fa-percent"></i> Cuotas sin interés</p>
          </article>
+         <article>
+         </article>
         </article>
     </section>
     <div class="descripcionDiv">
@@ -96,7 +94,7 @@
               <%= productDetail.name%>
                 <div class='precioProductoList'>
                     <p class='precioTotalProductoList'>$<%= productDetail.price%></p>
-                    <p class='precioDescuentoProductoList'><%= productDetail.discoun%>% OFF</p>
+                    <p class='precioDescuentoProductoList'><%= productDetail.discoun%>% OFF</p> 
                 </div>
             </div>  
         </div>
